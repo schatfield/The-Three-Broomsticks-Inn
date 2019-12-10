@@ -5,9 +5,13 @@ class Home extends Component {
     render() {
 
         return (
-            // JSX goes here
-            <p>Home</p>
-        )
+        
+                <address>
+                  Visit us in The Village of Hogsmede
+                  <br />42 1/2 Broomstick Way
+                </address>
+              )
+        
     }
 }
 

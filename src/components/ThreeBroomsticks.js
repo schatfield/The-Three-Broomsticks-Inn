@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import './ThreeBroomsticks.css'
-import NavBar from './nav/NavBar'
-import ApplicationViews from './ApplicationViews'
+import RoomCard from './room/RoomCard'
+// import NavBar from './nav/NavBar';
+// import ApplicationViews from './ApplicationViews'
+// import './ThreeBroomsticks.css'
+
 
 
 class ThreeBroomsticks extends Component {
@@ -9,11 +11,31 @@ class ThreeBroomsticks extends Component {
     render() {
 
         return (
-            // JSX goes here
-            <p>ThreeBroomsticks</p>
             
-        )
+
+            <div>
+                <div>
+                    <h2>Three Broomsticks<br />
+                        <small>Inn & Sumptuous Stays</small>
+                    </h2>
+                    <address>
+                        Visit us in The Village of Hogsmede
+            <br />42 1/2 Broomstick Way
+          </address>
+                </div>
+                <div>
+                    <RoomCard />
+                    <RoomCard />
+                    <RoomCard />
+                </div>
+
+            </div>
+
+
+        );
     }
 }
 
 export default ThreeBroomsticks;
+
+

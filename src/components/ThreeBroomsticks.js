@@ -3,6 +3,7 @@ import './ThreeBroomsticks.css'
 import NavBar from './nav/NavBar'
 import ApplicationViews from './ApplicationViews'
 
+
 class ThreeBroomsticks extends Component {
 
     render() {

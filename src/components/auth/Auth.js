@@ -11,29 +11,23 @@ class Auth extends Component {
   // Update state whenever an input field is edited
   handleFieldChange = (evt) => {
     const stateToChange = {}
-    stateToChange[evt.target.id] = evt.target.value    
-    stateToChange = {
-        id: value
-    }
-    this.setState({id: value})
+    stateToChange[evt.target.id] = evt.target.value
+    this.setState(stateToChange)
   }
 
-  handleLogin = (evt) => {
-    evt.preventDefault()
-    /*
-        For now, just store the email and password that
-        the customer enters into local storage.
-    */
-    localStorage.setItem(
-        "credentials",
-        JSON.stringify({
-            email: this.state.email,
-            password: this.state.password
-        })
-    )
-    this.props.history.push("/rooms");
+  handleLogin = (e) => {
+    e.preventDefault()
+   this.props.setUser({
+    email: this.state.email,
+    password: this.state.password
+   })
+    this.props.history.push("/");
+    // this.props.history.push redirects to home page after a user logs in (chapter 10 practice exercise)
 
   }
+
+//   executes when submit button is clicked
+  
 
     render() {
 

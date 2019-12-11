@@ -10,8 +10,10 @@ class RoomCard extends Component {
                 <div className="card-content">
                     <picture>
                     </picture>
-                    <h3><span className="card-roomname">The Smethwyck Snuggery</span></h3>
-                    <p>25 Galleons per night</p>
+                    <h3><span className="card-roomname">{this.props.room.name}</span></h3>
+                    <p>{this.props.room.description}</p>
+                    <p>{this.props.room.cost}</p>
+                    <button type="button">BOOK YOUR STAY</button>
                 </div>
             </div>
 
@@ -20,5 +22,4 @@ class RoomCard extends Component {
 }
 
 export default RoomCard;
-
 

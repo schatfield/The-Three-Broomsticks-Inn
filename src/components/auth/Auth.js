@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-class Register extends Component {
+class Auth extends Component {
 
     render() {
 
         return (
             // JSX goes here
-            <p>Register</p>
+            <p>Login</p>
         )
     }
 }
 
-export default Register;
+export default Auth;

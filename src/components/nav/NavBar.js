@@ -1,40 +1,37 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from "react-router-dom"
-import './NavBar.css'
+import { Link } from "react-router-dom"
+// import './NavBar.css'
 
 
 class NavBar extends Component {
 
-    handleLogout = () => {
-        console.log("handlelog out")
-        this.props.clearUser();
-        this.props.history.push('/');
-      }
 
     render() {
 
         return (
             <header>
-        <h1 className="site-title">Three Broomsticks<br />
-          <small>Inn and Luxury Stays</small>
-        </h1>
-        <nav>
-          <ul className="container">
-            <li><Link className="nav-link" to="/">Home</Link></li>
-            <li><Link className="nav-link" to="/locations">Rooms</Link></li>
-            {(this.props.user) ?
-              <>
-                <li><Link className="nav-link" to="/animals">Animals</Link></li>
-                <li><Link className="nav-link" to="/employees">Employees</Link></li>
-                <li><Link className="nav-link" to="/owners">Owners</Link></li>
-                <li><span className="nav-link" onClick={this.handleLogout}>Logout</span></li>
-              </>
-              :
-              <li><Link className="nav-link" to="/login">login</Link></li>
-            }
-          </ul>
-        </nav>
-      </header>
+                <h1 className="site-title">Three Broomsticks<br />
+                    <small>Inn and Sumptuous Stays</small>
+                </h1>
+                <nav>
+                    <ul className="main-nav">
+
+                        <li><Link className="nav-link" to="/">Home</Link></li>
+                        <li><Link className="nav-link" to="/rooms">Rooms</Link></li>
+                        <li><Link className="nav-link" to="/pub">Pub</Link></li>
+                        <li><Link className="nav-link" to="/gallery">Gallery</Link></li>
+                        <li><Link className="nav-link" to="/neighborhood">Neighborhood</Link></li>
+                        <li><Link className="nav-link" to="/login">"suitcase"</Link></li>
+                    </ul>
+                    <ul className="sub-nav">
+                        <li><Link className="nav-link" to="/">Contact</Link></li>
+                        <li><Link className="nav-link" to="/">"brooms"</Link></li>
+                        <li><Link className="nav-link" to="/rooms">Book Now</Link></li>
+                    </ul>
+
+
+                </nav>
+            </header>
         )
     }
 }
@@ -42,4 +39,4 @@ class NavBar extends Component {
 export default NavBar;
 
 
-            
+//                        

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './ThreeBroomsticks.css'
-import NavBar from './nav/NavBar'
+import NavBar from './nav/NavBar';
 import ApplicationViews from './ApplicationViews'
+// import './ThreeBroomsticks.css'
+
 
 
 class ThreeBroomsticks extends Component {
@@ -9,11 +10,18 @@ class ThreeBroomsticks extends Component {
     render() {
 
         return (
-            // JSX goes here
-            <p>ThreeBroomsticks</p>
             
-        )
+            <>
+            <NavBar />
+            <ApplicationViews />
+            </>
+            
+
+        );
     }
 }
 
 export default ThreeBroomsticks;
+
+
+

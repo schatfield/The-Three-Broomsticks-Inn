@@ -18,8 +18,7 @@ class RoomList extends Component {
                 this.setState({
                     rooms: rooms
                 })
-            }
-            )
+            })
     }
 
     render() {
@@ -29,12 +28,15 @@ class RoomList extends Component {
         return (
             <div className="container-cards">
                 {this.state.rooms.map(room =>
-                    <RoomCard key={room.id} room={room} />
-                    
-                    )}
-                
+                    <RoomCard
+                        key={room.id}
+                        room={room}
+                        {...this.props} />
+
+                )}
+
             </div>
-            
+
         )
     }
 }

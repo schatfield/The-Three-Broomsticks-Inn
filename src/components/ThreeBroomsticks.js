@@ -8,9 +8,11 @@ import ApplicationViews from './ApplicationViews'
 class ThreeBroomsticks extends Component {
 
     state = {
-        user: false
+        user: false,
+        userId: null
     }
     // user is set to false above to later check for a user and start with a fresh state??
+    // you're setting the state of user and calling isAuthenticated to check the credentials (this is a boolean)
     // Check if credentials are in local storage
     //returns true/false
     isAuthenticated = () => sessionStorage.getItem("credentials") !== null
@@ -25,6 +27,9 @@ class ThreeBroomsticks extends Component {
             user: this.isAuthenticated()
           });
         }
+
+
+
     // above you're setting the state of user and calling isAuthenticated to check the credentials (this is a boolean)
     componentDidMount(){
         this.setState({
@@ -38,6 +43,7 @@ class ThreeBroomsticks extends Component {
             <NavBar user={this.state.user} />
             <ApplicationViews user={this.state.user}
                               setUser={this.setUser} />
+
           </>
         )
       }

@@ -19,12 +19,13 @@ class ApplicationViews extends Component {
                 <Route exact path="/" render={(props) => {
                     return <Home />
                 }} />
-                <Route path="/rooms" render={(props) => {
-                    return <RoomList {...props}/>
+                <Route exact path="/rooms" render={(props) => {
+                    return <RoomList {...props} />
                 }} />
 
                 <Route path="/rooms/:roomId(\d+)/book" render={props => {
-                    return <ReservationForm {...props} />
+                    return <ReservationForm
+                        roomId={parseInt(props.match.params.roomId)}{...props} />
                 }}
                 />
                 <Route path="/pub" render={(props) => {
@@ -36,7 +37,7 @@ class ApplicationViews extends Component {
                     return <GalleryList />
 
                 }} />
- 
+
                 <Route path="/neighbourhood" render={(props) => {
                     return <NeighbourhoodInfo />
 
@@ -44,21 +45,8 @@ class ApplicationViews extends Component {
 
 
                 <Route path="/myaccount" render={(props) => {
-                    return <Auth />
+                    return <Auth setUser={this.props.setUser} {...props} />
                 }} />
-
-
-
-
-
-
-
-
-
-
-        <Route path="/login" render={(props) => {
-          return <Auth setUser={this.props.setUser} {...props} />
-        }} />
 
 
 

@@ -21,7 +21,7 @@ class NavBar extends Component {
                         <li><Link className="nav-link" to="/pub">Pub</Link></li>
                         <li><Link className="nav-link" to="/gallery">Gallery</Link></li>
                         <li><Link className="nav-link" to="/neighbourhood">Neighbourhood</Link></li>
-                        <li><Link className="nav-link" to="/login">"suitcase"</Link></li>
+                        <li><Link className="nav-link" to="/myaccount">"suitcase"</Link></li>
                     </ul>
                     <ul className="sub-nav">
                         <li><Link className="nav-link" to="/">Contact</Link></li>

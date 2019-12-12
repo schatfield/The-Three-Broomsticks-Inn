@@ -37,9 +37,9 @@ class RoomList extends Component {
 
             </div>
 
-        )
-    }
-}
+        );
+    };
+};
 
 
 export default RoomList;

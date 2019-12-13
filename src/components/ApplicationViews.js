@@ -8,6 +8,7 @@ import GalleryList from './gallery/GalleryList';
 import NeighbourhoodInfo from './neighborhood/NeighborhoodInfo';
 import Auth from './auth/Auth';
 import ReservationForm from './reservation/ReservationForm';
+import ReservationEditForm from '.reservation/ReservationEditForm';
 
 
 
@@ -20,10 +21,11 @@ class ApplicationViews extends Component {
                 <Route exact path="/" render={(props) => {
                     return <Home />
                 }} />
+
+
                 <Route exact path="/rooms" render={(props) => {
                     return <RoomList {...props} />
                 }} />
-
 
                 <Route path="/rooms/:roomId(\d+)/book" render={props => {
                     if (this.props.user) {
@@ -34,10 +36,17 @@ class ApplicationViews extends Component {
                     }
                 }} />
 
+
+                <Route path="/rooms/:roomId(\d+)/editBooking" render={props => {
+                    return <ReservationEditForm {...props} />
+                }} />
+
                 {/* <Route path="/rooms/:roomId(\d+)/book" render={props => {
                     return <ReservationForm roomId={parseInt(props.match.params.roomId)}{...props} />
                 }}
                 /> */}
+
+
                 <Route path="/pub" render={(props) => {
                     return <PubInfo />
 
@@ -59,7 +68,9 @@ class ApplicationViews extends Component {
                 }} />
 
 
-
+                <Route path="/myaccount" render={(props) => {
+                    return <Account />
+                }} />
 
 
 

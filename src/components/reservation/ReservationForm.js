@@ -28,10 +28,10 @@ class ReservationForm extends Component {
             this.setState({ loadingStatus: true });
             // const user = localStorage.getItem("credentials")
             // const userId = parseInt(user)
-            // const userId = JSON.parse(sessionStorage.getItem("credentials"))
+            const userId = JSON.parse(sessionStorage.getItem("credentials"))
 
             const newReservation = {
-                user_Id: 1,
+                user_Id: userId.id,
                 room_Id: this.props.roomId,
                 check_in_date: this.state.checkInDate,
                 check_out_date: this.state.checkOutDate,

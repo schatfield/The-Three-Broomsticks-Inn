@@ -23,7 +23,7 @@ export default {
       body: JSON.stringify(newReservation)
     }).then(data => data.json())
   },
-  updateReservation(editedReservation) {
+  update(editedReservation) {
     return fetch(`${remoteURL}/locations/${editedReservation.id}`, {
       method: "PUT",
       headers: {

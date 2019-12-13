@@ -51,13 +51,3 @@ class NavBar extends Component {
 
 export default NavBar;
 
-
-// li>{this.props.user ?
-//     <Link className="nav-link" to="/myaccount"
-//     onClick={() => {this.props.history.push(`/myaccount`)}}{...this.props}>"suitcase"</Link>
-
-//   : 
-
-//   <Link className="nav-link" to="/auth"
-//   onClick={() => {this.props.history.push(`/auth`)}}{...this.props}>"suitcase"</Link>
-//   }</li>                      

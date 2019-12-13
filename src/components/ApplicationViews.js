@@ -1,4 +1,5 @@
-import { Route } from 'react-router-dom';
+
+import { Route, Redirect } from "react-router-dom";
 import React, { Component } from 'react';
 import Home from './home/Home';
 import RoomList from './room/RoomList';
@@ -23,11 +24,20 @@ class ApplicationViews extends Component {
                     return <RoomList {...props} />
                 }} />
 
+
                 <Route path="/rooms/:roomId(\d+)/book" render={props => {
-                    return <ReservationForm
-                        roomId={parseInt(props.match.params.roomId)}{...props} />
+                    if (this.props.user) {
+                        return <ReservationForm roomId={parseInt(props.match.params.roomId)}{...props} />
+
+                    } else {
+                        return <Redirect to="/auth" />
+                    }
+                }} />
+
+                {/* <Route path="/rooms/:roomId(\d+)/book" render={props => {
+                    return <ReservationForm roomId={parseInt(props.match.params.roomId)}{...props} />
                 }}
-                />
+                /> */}
                 <Route path="/pub" render={(props) => {
                     return <PubInfo />
 
@@ -44,12 +54,9 @@ class ApplicationViews extends Component {
                 }} />
 
 
-                <Route path="/myaccount" render={(props) => {
+                <Route path="/account" render={(props) => {
                     return <Auth setUser={this.props.setUser} {...props} />
                 }} />
-
-
-
 
 
 

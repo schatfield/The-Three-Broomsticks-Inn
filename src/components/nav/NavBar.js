@@ -21,12 +21,25 @@ class NavBar extends Component {
                         <li><Link className="nav-link" to="/pub">Pub</Link></li>
                         <li><Link className="nav-link" to="/gallery">Gallery</Link></li>
                         <li><Link className="nav-link" to="/neighbourhood">Neighbourhood</Link></li>
-                        <li><Link className="nav-link" to="/myaccount">"suitcase"</Link></li>
+
+                        <li>{this.props.user ?
+
+                            <Link className="nav-link" to="/myaccount"
+                                {...this.props}>"suitcase"</Link>
+
+                        
+                        :
+                        <Link className="nav-link" to="/account"
+                            {...this.props}>"suitcase"</Link>
+
+                        }</li>
+
                     </ul>
                     <ul className="sub-nav">
                         <li><Link className="nav-link" to="/">Contact</Link></li>
                         <li><Link className="nav-link" to="/">"brooms"</Link></li>
                         <li><Link className="nav-link" to="/rooms">Book Now</Link></li>
+
                     </ul>
 
 
@@ -39,4 +52,12 @@ class NavBar extends Component {
 export default NavBar;
 
 
-//                        
+// li>{this.props.user ?
+//     <Link className="nav-link" to="/myaccount"
+//     onClick={() => {this.props.history.push(`/myaccount`)}}{...this.props}>"suitcase"</Link>
+
+//   : 
+
+//   <Link className="nav-link" to="/auth"
+//   onClick={() => {this.props.history.push(`/auth`)}}{...this.props}>"suitcase"</Link>
+//   }</li>                      

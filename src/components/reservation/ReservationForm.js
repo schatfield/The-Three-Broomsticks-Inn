@@ -28,7 +28,7 @@ class ReservationForm extends Component {
             this.setState({ loadingStatus: true });
             // const user = localStorage.getItem("credentials")
             // const userId = parseInt(user)
-            const userId = JSON.parse(sessionStorage.getItem("credentials"))
+            // const userId = JSON.parse(sessionStorage.getItem("credentials"))
 
             const newReservation = {
                 user_Id: 1,

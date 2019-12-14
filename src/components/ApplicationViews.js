@@ -8,7 +8,8 @@ import GalleryList from './gallery/GalleryList';
 import NeighbourhoodInfo from './neighborhood/NeighborhoodInfo';
 import Auth from './auth/Auth';
 import ReservationForm from './reservation/ReservationForm';
-import ReservationEditForm from '.reservation/ReservationEditForm';
+import ReservationEditForm from './reservation/ReservationEditForm';
+import Account from './account/Account'
 
 
 
@@ -37,7 +38,7 @@ class ApplicationViews extends Component {
                 }} />
 
 
-                <Route path="/rooms/:roomId(\d+)/editBooking" render={props => {
+                <Route path="/reservations/:reservationId(\d+)/editBooking" render={props => {
                     return <ReservationEditForm {...props} />
                 }} />
 
@@ -63,13 +64,13 @@ class ApplicationViews extends Component {
                 }} />
 
 
-                <Route path="/account" render={(props) => {
+                <Route path="/accountauth" render={(props) => {
                     return <Auth setUser={this.props.setUser} {...props} />
                 }} />
 
 
                 <Route path="/myaccount" render={(props) => {
-                    return <Account />
+                    return <Account userObj={this.props.userObj} {...props}/>
                 }} />
 
 

@@ -25,8 +25,7 @@ class Auth extends Component {
             .then((existingUser) => {
                 if (existingUser.length === [0]) {
                     alert("There is no account associated with this user")
-                } else if (existingUser[0].password === this.state.password) {
-                    
+                } else if (existingUser[0].password === this.state.password) {                    
                         this.props.setUser(existingUser[0])
                         this.props.history.push("/")
                     } else {

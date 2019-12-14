@@ -29,7 +29,7 @@ class ReservationEditForm extends Component {
         const editedReservation = {
             user_Id: userId.id,
             room_id: this.props.match.params.room_id,
-            id: this.props.match.params.bookingId,
+            id: this.props.match.params.reservationId,
             check_in_date: this.state.checkIn,
             check_out_date: this.state.checkOut,
             persons: this.state.people,
@@ -42,7 +42,7 @@ class ReservationEditForm extends Component {
     }
 
     componentDidMount() {
-        ReservationManager.get(this.props.match.params.bookingId)
+        ReservationManager.get(this.props.match.params.reservationId)
             .then(booking => {
                 this.setState({
                     checkIn: booking.check_in_date,
@@ -72,8 +72,8 @@ class ReservationEditForm extends Component {
                                 required
                                 className="form-control"
                                 onChange={this.handleFieldChange}
-                                id="checkInDate"
-                                value={this.state.checkIn}
+                                id="checkIn"
+                                value={this.state.checkIn || ""}
                             />
 
 
@@ -82,8 +82,8 @@ class ReservationEditForm extends Component {
                                 required
                                 className="form-control"
                                 onChange={this.handleFieldChange}
-                                id="checkOutDate"
-                                value={this.state.checkOut}
+                                id="checkOut"
+                                value={this.state.checkOut || ""}
                             />
                             <p><label htmlFor="guests">Guests:</label></p>
 
@@ -94,8 +94,8 @@ class ReservationEditForm extends Component {
                                 required
                                 className="form-control"
                                 onChange={this.handleFieldChange}
-                                id="persons"
-                                value={this.state.people}
+                                id="people"
+                                value={this.state.people || ""}
                             />
                         
                          <label htmlFor="persons">Number of creatures:</label>
@@ -105,8 +105,8 @@ class ReservationEditForm extends Component {
                                 required
                                 className="form-control"
                                 onChange={this.handleFieldChange}
-                                id="checkOutDate"
-                                value={this.state.nonPerson}
+                                id="nonPerson"
+                                value={this.state.nonPerson || ""}
                             />
 
 

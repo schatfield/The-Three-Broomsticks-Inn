@@ -18,30 +18,11 @@
   "reservations": [
     {
       "user_Id": 1,
-      "room_Id": 1,
-      "check_in_date": "2019-12-19",
-      "check_out_date": "2019-12-20",
-      "persons": "1",
-      "creatures": "9",
-      "id": 1
-    },
-    {
-      "user_Id": 1,
-      "room_Id": 1,
-      "check_in_date": "2019-12-18",
-      "check_out_date": "2019-12-19",
-      "persons": "1",
-      "creatures": "9",
-      "id": 2
-    },
-    {
-      "user_Id": 1,
-      "room_Id": 1,
+      "id": 3,
       "check_in_date": "2019-12-28",
       "check_out_date": "2019-12-30",
-      "persons": "9",
-      "creatures": "1",
-      "id": 3
+      "persons": "8",
+      "creatures": "4000"
     }
   ],
   "room_images": [

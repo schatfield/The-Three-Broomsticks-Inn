@@ -1,15 +1,15 @@
 const remoteURL = "http://localhost:5002"
 
 export default {
-  get(id) {
-    return fetch(`${remoteURL}/reservations/${id}`).then(result => result.json())
+  get(reservationId) {
+    return fetch(`${remoteURL}/reservations/${reservationId}`).then(result => result.json())
   },
   getAll() {
     return fetch(`${remoteURL}/reservations`).then(result => result.json())
   },
 
   delete(id) {
-    return fetch(`http://localhost:5002/reservations/${id}`, {
+    return fetch(`${remoteURL}/reservations/${id}`, {
         method: "DELETE"
     })
     .then(result => result.json())
@@ -24,7 +24,7 @@ export default {
     }).then(data => data.json())
   },
   update(editedReservation) {
-    return fetch(`${remoteURL}/locations/${editedReservation.id}`, {
+    return fetch(`${remoteURL}/reservations/${editedReservation.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"

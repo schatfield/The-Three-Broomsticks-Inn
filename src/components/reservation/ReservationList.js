@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReservationCard from './reservations/ReservationCard';
+import ReservationCard from './ReservationCard';
 import ReservationManager from '../../modules/ReservationManager';
 
 class ReservationList extends Component {
@@ -15,13 +15,24 @@ class ReservationList extends Component {
         // getAll from RerservationManager and hang on to that data; put it in state
         ReservationManager.getAll()
         .then((reservations) => {
+            console.log(reservations)
             this.setState({
                 reservations : reservations
             })
         })
     };
 
-        
+    deleteReservation = id => {
+        ReservationManager.delete(id)
+        .then(() => {
+          ReservationManager.getAll()
+          .then((reservations) => {
+            this.setState({
+                reservations: reservations
+            })
+          })
+        })
+      };
     
 
     render() {
@@ -32,8 +43,9 @@ class ReservationList extends Component {
                 {this.state.reservations.map(reservation =>
                 <ReservationCard 
                     key={reservation.id}
-                    reservations={reservation}
-                    // {...this.props} 
+                    reservation={reservation}
+                    deleteReservation={this.deleteReservation}
+                    {...this.props} 
                     />
 
                     

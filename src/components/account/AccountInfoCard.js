@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import ReservationList from './reservation/ReservationList';
 
 
-class AccountInfo extends Component {
+
+class AccountInfoCard extends Component {
 
     render() {
-
+        console.log("AccountInfo Car: ",this.props)
         return (
            <div>
                 <h1 className="page-title">My Account<br />
@@ -16,22 +16,19 @@ class AccountInfo extends Component {
                  <h2>Account Information<br />
                  </h2>
                 
-                 <small>
-                    Name:
+                 <small> 
+                   <p>Name:</p>{this.props.userObj.name}
                      <br />
                  </small>
                  <small>
-                    Email:
+                    Email:{this.props.userObj.email}
                      <br />
                  </small>
              </div>
 
-
-            //  <ReservationCard
-            //  user= {user} />
             
         )
     }
 }
 
-export default AccountInfo;
+export default AccountInfoCard;

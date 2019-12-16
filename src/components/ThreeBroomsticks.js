@@ -35,6 +35,14 @@ class ThreeBroomsticks extends Component {
           });
         }
 
+        clearUser = () => {
+          sessionStorage.clear("credentials")
+          this.setState({
+            user: this.isAuthenticated(),
+            userObj:{}
+            
+          });
+        }
 
 
     // above you're setting the state of user and calling isAuthenticated to check if there are credentials present (this is a boolean)
@@ -57,10 +65,12 @@ class ThreeBroomsticks extends Component {
         return (
           
           <>
-             <NavBar user={this.state.user ? 1 : 0}/>
+             <NavBar user={this.state.user ? 1 : 0} />
             <ApplicationViews user={this.state.user}
-                              setUser={this.setUser} 
+                              setUser={this.setUser}
+                              clearUser={this.clearUser} 
                               userObj= {this.state.userObj}
+
                               
                               />
 

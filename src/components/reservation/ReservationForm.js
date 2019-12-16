@@ -9,6 +9,7 @@ class ReservationForm extends Component {
         checkOutDate: "",
         persons: "",
         creatures: "",
+        userId: Number(sessionStorage["user_Id"]),
         loadingStatus: false,
 
     };
@@ -27,7 +28,7 @@ class ReservationForm extends Component {
         } else {
             this.setState({ loadingStatus: true });
             // const user = localStorage.getItem("credentials")
-            // const userId = parseInt(user)
+            // const userId = parseInt(userId.id)
             const userId = JSON.parse(sessionStorage.getItem("credentials"))
 
             const newReservation = {

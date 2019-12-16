@@ -1,5 +1,5 @@
 
-import { Route, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import React, { Component } from 'react';
 import Home from './home/Home';
 import RoomList from './room/RoomList';
@@ -7,9 +7,10 @@ import PubInfo from './pub/PubInfo';
 import GalleryList from './gallery/GalleryList';
 import NeighbourhoodInfo from './neighborhood/NeighborhoodInfo';
 import Auth from './auth/Auth';
+import Register from './auth/Register';
 import ReservationForm from './reservation/ReservationForm';
 import ReservationEditForm from './reservation/ReservationEditForm';
-import Account from './account/Account'
+import Account from './account/Account';
 
 
 
@@ -33,7 +34,7 @@ class ApplicationViews extends Component {
                         return <ReservationForm roomId={parseInt(props.match.params.roomId)}{...props} />
 
                     } else {
-                        return <Redirect to="/auth" />
+                        return <Auth roomId={parseInt(props.match.params.roomId)} setUser={this.props.setUser} {...props} />
                     }
                 }} />
 
@@ -68,9 +69,14 @@ class ApplicationViews extends Component {
                     return <Auth setUser={this.props.setUser} {...props} />
                 }} />
 
+                <Route
+                    path="/accountauth" render={props => {
+                        return <Register setUser={this.props.setUser} {...props}{...this.props} />
+                    }}
+                />
 
                 <Route path="/myaccount" render={(props) => {
-                    return <Account userObj={this.props.userObj} {...props}/>
+                    return <Account userObj={this.props.userObj} clearUser={this.props.clearUser}{...props} />
                 }} />
 
 

@@ -5,24 +5,52 @@
       "name": "Shawna Chatfield",
       "email": "dgoldmine@icloud.com",
       "password": "Jack"
+    },
+    {
+      "id": 2,
+      "name": "Rita Skeeter",
+      "email": "Ritaskeeter@owl.com",
+      "password": "ladybug"
+    },
+    {
+      "name": "Francois Moret",
+      "email": "fmoret@email.com",
+      "password": "lalala",
+      "id": 3
     }
   ],
   "rooms": [
     {
       "id": 1,
       "name": "The Smethwyck Snuggery",
-      "description": "an extremely large room",
+      "description": "an extremely small room",
       "cost": 25
+    },
+    {
+      "id": 2,
+      "name": "The Cupboard Under The Stairs",
+      "description": "an extremely large room",
+      "cost": 35
     }
   ],
   "reservations": [
     {
       "user_Id": 1,
-      "id": 3,
-      "check_in_date": "2019-12-28",
+      "room_Id": 1,
+      "check_in_date": "2019-12-25",
       "check_out_date": "2019-12-30",
-      "persons": "8",
-      "creatures": "4000"
+      "persons": "1",
+      "creatures": "9",
+      "id": 5
+    },
+    {
+      "user_Id": 2,
+      "room_Id": 2,
+      "check_in_date": "2019-12-25",
+      "check_out_date": "2019-12-26",
+      "persons": "1",
+      "creatures": "1",
+      "id": 6
     }
   ],
   "room_images": [

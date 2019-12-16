@@ -8,6 +8,7 @@ class ReservationList extends Component {
 
     state = {
         reservations: [],
+        room: {}
     }
 
     componentDidMount() {
@@ -18,6 +19,7 @@ class ReservationList extends Component {
             console.log(reservations)
             this.setState({
                 reservations : reservations
+
             })
         })
     };
@@ -45,6 +47,7 @@ class ReservationList extends Component {
                     key={reservation.id}
                     reservation={reservation}
                     deleteReservation={this.deleteReservation}
+                    
                     {...this.props} 
                     />
 

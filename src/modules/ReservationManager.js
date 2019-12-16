@@ -2,10 +2,13 @@ const remoteURL = "http://localhost:5002"
 
 export default {
   get(reservationId) {
-    return fetch(`${remoteURL}/reservations/${reservationId}`).then(result => result.json())
+    return fetch(`${remoteURL}/reservations/${reservationId}?embed=rooms`).then(result => result.json())
   },
   getAll() {
-    return fetch(`${remoteURL}/reservations`).then(result => result.json())
+    const userId = JSON.parse(sessionStorage.getItem("credentials"))
+    // console.log(userId.id)
+    console.log("USER ID", userId.id)
+    return fetch(`${remoteURL}/reservations?userId=${userId.id}`).then(result => result.json())
   },
 
   delete(id) {
@@ -31,5 +34,10 @@ export default {
       },
       body: JSON.stringify(editedReservation)
     }).then(data => data.json());
-  }
+  },
+
+  getWithUser(id) {
+    return fetch(`${remoteURL}/users/${id}?_embed=reservations`)
+            .then(result => result.json())
+}
 };

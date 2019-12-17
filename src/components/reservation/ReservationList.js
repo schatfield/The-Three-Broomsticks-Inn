@@ -8,7 +8,7 @@ class ReservationList extends Component {
 
     state = {
         reservations: [],
-        room: {}
+        
     }
 
      componentDidMount() {    
@@ -26,9 +26,10 @@ class ReservationList extends Component {
     };
 
     deleteReservation = id => {
+        let userInfo = this.props.getUser()
         ReservationManager.delete(id)
         .then(() => {
-          ReservationManager.getAll()
+          ReservationManager.getReservationByUserId(userInfo.id)
           .then((reservations) => {
             this.setState({
                 reservations: reservations
@@ -39,7 +40,7 @@ class ReservationList extends Component {
     
 
     render() {
-        console.log("Reservation List: Render")
+        console.log("Reservation List: Render", this.state)
 
         return (
             <div className="container-cards">

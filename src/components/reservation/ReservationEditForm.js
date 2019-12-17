@@ -28,7 +28,7 @@ class ReservationEditForm extends Component {
 
         const editedReservation = {
             userId: userId.id,
-            roomId: this.props.match.params.roomId,
+            roomId: Number (this.props.match.params.roomId),
             id: this.props.match.params.reservationId,
             checkInDate: this.state.checkIn,
             checkOutDate: this.state.checkOut,

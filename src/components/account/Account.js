@@ -16,6 +16,8 @@ class Account extends Component {
                    />
                     
                 <ReservationList 
+                 userObj={this.props.userObj} 
+                 getUser={this.props.getUser}
                 {...this.props}/>
 
             </>

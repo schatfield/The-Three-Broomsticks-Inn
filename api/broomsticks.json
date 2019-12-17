@@ -35,36 +35,45 @@
   ],
   "reservations": [
     {
-      "user_Id": 1,
-      "room_Id": 1,
-      "check_in_date": "2019-12-25",
-      "check_out_date": "2019-12-30",
+      "userId": 1,
+      "roomId": 1,
+      "checkInDate": "2019-12-25",
+      "checkOutDate": "2019-12-30",
       "persons": "1",
       "creatures": "9",
       "id": 5
     },
     {
-      "user_Id": 2,
-      "room_Id": 2,
-      "check_in_date": "2019-12-25",
-      "check_out_date": "2019-12-26",
+      "userId": 2,
+      "roomId": 2,
+      "checkInDate": "2019-12-25",
+      "checkOutDate": "2019-12-26",
       "persons": "1",
       "creatures": "1",
       "id": 6
+    },
+    {
+      "userId": 1,
+      "roomId": 2,
+      "checkInDate": "2019-12-25",
+      "checkOutDate": "2019-12-26",
+      "persons": "1",
+      "creatures": "9",
+      "id": 7
     }
   ],
-  "room_images": [
+  "roomImages": [
     {
       "id": 1,
-      "room_id": 1,
+      "roomId": 1,
       "url": ""
     }
   ],
-  "gallery_images": [
+  "galleryImages": [
     {
       "id": 1,
       "url": "",
-      "image_alt": ""
+      "imageAlt": ""
     }
   ]
 }

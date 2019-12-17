@@ -10,9 +10,9 @@ class ReservationCard extends Component {
                 <div className="card-content">
                     <picture>
                     </picture>
-                    {/* <h3><span className="card-reservation">{this.props.rooms.name}</span></h3> */}
-                    <p>Check in: {this.props.reservation.check_in_date}</p>
-                    <p>Check out: {this.props.reservation.check_out_date}</p>
+                    <h3><span className="card-reservation">{this.props.roomName}</span></h3>
+                    <p>Check in: {this.props.reservation.checkInDate}</p>
+                    <p>Check out: {this.props.reservation.checkOutDate}</p>
                     <p>Number of persons: {this.props.reservation.persons}</p>
                     <p>Number of creatures: {this.props.reservation.creatures}</p>
                     <button type="button"

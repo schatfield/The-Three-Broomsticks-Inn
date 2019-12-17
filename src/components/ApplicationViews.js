@@ -10,6 +10,7 @@ import Auth from './auth/Auth';
 import Register from './auth/Register';
 import ReservationForm from './reservation/ReservationForm';
 import ReservationEditForm from './reservation/ReservationEditForm';
+import ReservationConfirmation from './reservation/ReservationConfirmation'
 import Account from './account/Account';
 
 
@@ -41,6 +42,10 @@ class ApplicationViews extends Component {
 
                 <Route path="/reservations/:reservationId(\d+)/editBooking" render={props => {
                     return <ReservationEditForm {...props} />
+                }} />
+
+                <Route path="/reservations/:reservationId(\d+)/confirmation" render={props => {
+                    return <ReservationConfirmation {...props} />
                 }} />
 
                 {/* <Route path="/rooms/:roomId(\d+)/book" render={props => {
@@ -76,7 +81,7 @@ class ApplicationViews extends Component {
                 />
 
                 <Route path="/myaccount" render={(props) => {
-                    return <Account userObj={this.props.userObj} clearUser={this.props.clearUser}{...props} />
+                    return <Account userObj={this.props.userObj} clearUser={this.props.clearUser} getUser={this.props.getUser}{...props} />
                 }} />
 
 

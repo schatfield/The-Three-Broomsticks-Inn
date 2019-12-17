@@ -35,14 +35,18 @@ class ThreeBroomsticks extends Component {
           });
         }
 
-        clearUser = () => {
-          sessionStorage.clear("credentials")
-          this.setState({
-            user: this.isAuthenticated(),
-            userObj:{}
-            
-          });
+        getUser = () => {
+          return JSON.parse(sessionStorage.credentials);
         }
+
+      clearUser = () => {
+        sessionStorage.clear("credentials")
+        this.setState({
+          user: this.isAuthenticated(),
+          userObj:{}
+          
+        });
+      }
 
 
     // above you're setting the state of user and calling isAuthenticated to check if there are credentials present (this is a boolean)
@@ -52,11 +56,10 @@ class ThreeBroomsticks extends Component {
       //2. If Authenticated, get credentials and call setUser
       // 3. Else do the code below
       if(this.isAuthenticated()) {
-        let userObj = JSON.parse(sessionStorage.credentials);
+        let userObj = this.getUser()
         this.setUser(userObj)        
       } else {
         this.setState({user: this.isAuthenticated()})
-
       }
     }
     
@@ -70,15 +73,15 @@ class ThreeBroomsticks extends Component {
                               setUser={this.setUser}
                               clearUser={this.clearUser} 
                               userObj= {this.state.userObj}
+                              getUser= {this.getUser}
 
-                              
                               />
 
 
 
           </>
         )
-      }
+      };
     }
     
 

@@ -27,11 +27,11 @@ class ReservationEditForm extends Component {
         const userId = JSON.parse(sessionStorage.getItem("credentials"))
 
         const editedReservation = {
-            user_Id: userId.id,
-            room_id: this.props.match.params.room_id,
+            userId: userId.id,
+            roomId: this.props.match.params.roomId,
             id: this.props.match.params.reservationId,
-            check_in_date: this.state.checkIn,
-            check_out_date: this.state.checkOut,
+            checkInDate: this.state.checkIn,
+            checkOutDate: this.state.checkOut,
             persons: this.state.people,
             creatures: this.state.nonPerson
 
@@ -45,8 +45,8 @@ class ReservationEditForm extends Component {
         ReservationManager.get(this.props.match.params.reservationId)
             .then(booking => {
                 this.setState({
-                    checkIn: booking.check_in_date,
-                    checkOut: booking.check_out_date,
+                    checkIn: booking.checkInDate,
+                    checkOut: booking.checkOutDate,
                     people: booking.persons,
                     nonPerson: booking.creatures,
                     loadingStatus: false,

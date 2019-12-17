@@ -2,6 +2,6 @@
 "users":[],
 "rooms":[],
 "reservations":[],
-"room_images":[],
-"gallery_images":[]
+"roomImages":[],
+"galleryImages":[]
 }

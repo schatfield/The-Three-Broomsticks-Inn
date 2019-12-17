@@ -8,7 +8,7 @@ export default {
     const userId = JSON.parse(sessionStorage.getItem("credentials"))
     // console.log(userId.id)
     console.log("USER ID", userId.id)
-    return fetch(`${remoteURL}/reservations?userId=${userId.id}`).then(result => result.json())
+    return fetch(`${remoteURL}/reservations`).then(result => result.json())
   },
 
   delete(id) {
@@ -36,8 +36,8 @@ export default {
     }).then(data => data.json());
   },
 
-  getWithUser(id) {
-    return fetch(`${remoteURL}/users/${id}?_embed=reservations`)
-            .then(result => result.json())
-}
+  getReservationByUserId(userId) {
+    return fetch(`${remoteURL}/reservations?userId=${userId}&_expand=room`).then(result => result.json())
+  }
 };
+

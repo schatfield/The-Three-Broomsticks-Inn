@@ -11,12 +11,13 @@ class ReservationList extends Component {
         room: {}
     }
 
-    componentDidMount() {
-        console.log("reservation list: componentDidMount")
-        // getAll from RerservationManager and hang on to that data; put it in state
-        ReservationManager.getAll()
+     componentDidMount() {    
+         let userInfo = this.props.getUser()
+         console.log("userInfo", userInfo)
+        ReservationManager.getReservationByUserId(userInfo.id)
         .then((reservations) => {
             console.log(reservations)
+            
             this.setState({
                 reservations : reservations
 
@@ -47,7 +48,8 @@ class ReservationList extends Component {
                     key={reservation.id}
                     reservation={reservation}
                     deleteReservation={this.deleteReservation}
-                    
+                    roomName={reservation.room.name}
+
                     {...this.props} 
                     />
 

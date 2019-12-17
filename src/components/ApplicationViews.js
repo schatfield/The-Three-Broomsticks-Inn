@@ -40,8 +40,8 @@ class ApplicationViews extends Component {
                 }} />
 
 
-                <Route path="/reservations/:reservationId(\d+)/editBooking" render={props => {
-                    return <ReservationEditForm {...props} />
+                <Route path="/reservations/:reservationId(\d+)/room/:roomId(\d+)/editBooking" render={props => {
+                    return <ReservationEditForm roomId={parseInt(props.match.params.roomId)} {...props} />
                 }} />
 
                 <Route path="/reservations/:reservationId(\d+)/confirmation" render={props => {

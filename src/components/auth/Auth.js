@@ -25,9 +25,17 @@ class Auth extends Component {
             .then((existingUser) => {
                 if (existingUser.length === [0]) {
                     alert("There is no account associated with this user")
-                } else if (existingUser[0].password === this.state.password) {
-                    
+                } else if (existingUser[0].password === this.state.password) {                    
                         this.props.setUser(existingUser[0])
+                        this.props.roomId ? 
+
+                        // If there's a roomId present after login, push user to the room they clicked on before logging in
+                        
+                        this.props.history.push(`/rooms/${this.props.roomId}/book`)
+                        :
+
+                    // if there isn't a room id present it's because they didn't come from that route to login so take them home.
+
                         this.props.history.push("/")
                     } else {
                         alert("This Password Is Incorrect, Please Try Again.")
@@ -38,7 +46,11 @@ class Auth extends Component {
 
     render() {
 
+
         return (
+            <div>
+            <center><h1>Welcome to the Three Broomsticks!</h1></center>
+           
             <form onSubmit={this.handleLogin}>
                 <fieldset>
                     <h3>Please sign in</h3>
@@ -60,6 +72,7 @@ class Auth extends Component {
             </button>
                 </fieldset>
             </form>
+            </div>
         )
     }
 }

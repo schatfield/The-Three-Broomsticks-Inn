@@ -1,15 +1,18 @@
 const remoteURL = "http://localhost:5002"
 
 export default {
-  get(id) {
-    return fetch(`${remoteURL}/reservations/${id}`).then(result => result.json())
+  get(reservationId) {
+    return fetch(`${remoteURL}/reservations/${reservationId}?embed=rooms`).then(result => result.json())
   },
   getAll() {
+    const userId = JSON.parse(sessionStorage.getItem("credentials"))
+    // console.log(userId.id)
+    console.log("USER ID", userId.id)
     return fetch(`${remoteURL}/reservations`).then(result => result.json())
   },
 
   delete(id) {
-    return fetch(`http://localhost:5002/reservations/${id}`, {
+    return fetch(`${remoteURL}/reservations/${id}`, {
         method: "DELETE"
     })
     .then(result => result.json())
@@ -23,13 +26,18 @@ export default {
       body: JSON.stringify(newReservation)
     }).then(data => data.json())
   },
-  updateReservation(editedReservation) {
-    return fetch(`${remoteURL}/locations/${editedReservation.id}`, {
+  update(editedReservation) {
+    return fetch(`${remoteURL}/reservations/${editedReservation.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(editedReservation)
     }).then(data => data.json());
+  },
+
+  getReservationByUserId(userId) {
+    return fetch(`${remoteURL}/reservations?userId=${userId}&_expand=room`).then(result => result.json())
   }
 };
+

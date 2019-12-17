@@ -7,10 +7,15 @@ import ApplicationViews from './ApplicationViews'
 
 class ThreeBroomsticks extends Component {
 
+
     state = {
         user: false,
-        userId: null
+        userId: null,
+        userObj: {}
+       
     }
+
+    
     // user is set to false above to later check for a user and start with a fresh state??
     // you're setting the state of user and calling isAuthenticated to check to see if there are credentials present (this is a boolean)
     // Check if credentials are in session storage
@@ -18,36 +23,65 @@ class ThreeBroomsticks extends Component {
 
     isAuthenticated = () => sessionStorage.getItem("credentials") !== null
 
-    setUser = (authObj) => {
+    setUser = (userData) => {
 
         sessionStorage.setItem(
             "credentials",
-            JSON.stringify(authObj)
+            JSON.stringify(userData)
           )
           this.setState({
-            user: this.isAuthenticated()
+            user: this.isAuthenticated(),
+            userObj: userData,
           });
         }
 
+        getUser = () => {
+          return JSON.parse(sessionStorage.credentials);
+        }
+
+      clearUser = () => {
+        sessionStorage.clear("credentials")
+        this.setState({
+          user: this.isAuthenticated(),
+          userObj:{}
+          
+        });
+      }
 
 
     // above you're setting the state of user and calling isAuthenticated to check if there are credentials present (this is a boolean)
     componentDidMount(){
-        this.setState({
-        user: this.isAuthenticated()
-        })
+
+      //1. CHECK IF AUTHENTICATED-to do this write an if statement 
+      //2. If Authenticated, get credentials and call setUser
+      // 3. Else do the code below
+      if(this.isAuthenticated()) {
+        let userObj = this.getUser()
+        this.setUser(userObj)        
+      } else {
+        this.setState({user: this.isAuthenticated()})
+      }
     }
     
       render() {
+      
         return (
+          
           <>
-             <NavBar user={this.state.user ? 1 : 0}/>
+             <NavBar user={this.state.user ? 1 : 0} />
             <ApplicationViews user={this.state.user}
-                              setUser={this.setUser} />
+                              setUser={this.setUser}
+                              clearUser={this.clearUser} 
+                              userObj= {this.state.userObj}
+                              getUser= {this.getUser}
+
+                              />
+
+
 
           </>
         )
-      }
+      };
     }
     
 

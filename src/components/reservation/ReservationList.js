@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReservationCard from './reservations/ReservationCard';
+import ReservationCard from './ReservationCard';
 import ReservationManager from '../../modules/ReservationManager';
 
 class ReservationList extends Component {
@@ -8,20 +8,34 @@ class ReservationList extends Component {
 
     state = {
         reservations: [],
+        room: {}
     }
 
-    componentDidMount() {
-        console.log("reservation list: componentDidMount")
-        // getAll from RerservationManager and hang on to that data; put it in state
-        ReservationManager.getAll()
+     componentDidMount() {    
+         let userInfo = this.props.getUser()
+         console.log("userInfo", userInfo)
+        ReservationManager.getReservationByUserId(userInfo.id)
         .then((reservations) => {
+            console.log(reservations)
+            
             this.setState({
                 reservations : reservations
+
             })
         })
     };
 
-        
+    deleteReservation = id => {
+        ReservationManager.delete(id)
+        .then(() => {
+          ReservationManager.getAll()
+          .then((reservations) => {
+            this.setState({
+                reservations: reservations
+            })
+          })
+        })
+      };
     
 
     render() {
@@ -32,8 +46,11 @@ class ReservationList extends Component {
                 {this.state.reservations.map(reservation =>
                 <ReservationCard 
                     key={reservation.id}
-                    reservations={reservation}
-                    // {...this.props} 
+                    reservation={reservation}
+                    deleteReservation={this.deleteReservation}
+                    roomName={reservation.room.name}
+
+                    {...this.props} 
                     />
 
                     

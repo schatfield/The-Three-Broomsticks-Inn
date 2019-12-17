@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import ReservationManager from '../../modules/ReservationManager'
+import RoomManager from '../../modules/RoomManager';
 
 class ReservationForm extends Component {
 
     state = {
-        
+
         checkInDate: "",
         checkOutDate: "",
         persons: "",
         creatures: "",
         loadingStatus: false,
+        roomName: "",
+        roomDescription: "",
+        roomCost: ""
 
     };
 
@@ -20,6 +24,21 @@ class ReservationForm extends Component {
         this.setState(stateToChange);
     }
 
+    componentDidMount() {
+        RoomManager.get(this.props.roomId)
+            .then(room => {
+                console.log("room", room)
+                this.setState({
+                    roomName: room.name,
+                    roomDescription: room.description,
+                    roomCost: room.cost
+
+                })
+
+            })
+    };
+
+
     constructNewReservation = evt => {
         evt.preventDefault();
         if (this.state.checkInDate === "" || this.state.checkOutDate === "" || this.state.persons === "" || this.state.creatures === "") {
@@ -27,14 +46,14 @@ class ReservationForm extends Component {
         } else {
             this.setState({ loadingStatus: true });
             // const user = localStorage.getItem("credentials")
-            // const userId = parseInt(user)
-            // const userId = JSON.parse(sessionStorage.getItem("credentials"))
+            // const userId = parseInt(userId.id)
+            const userId = JSON.parse(sessionStorage.getItem("credentials"))
 
             const newReservation = {
-                user_Id: 1,
-                room_Id: this.props.roomId,
-                check_in_date: this.state.checkInDate,
-                check_out_date: this.state.checkOutDate,
+                userId: userId.id,
+                roomId: this.props.roomId,
+                checkInDate: this.state.checkInDate,
+                checkOutDate: this.state.checkOutDate,
                 persons: this.state.persons,
                 creatures: this.state.creatures
             };
@@ -42,8 +61,9 @@ class ReservationForm extends Component {
             // Create the location and redirect user to location list
             ReservationManager.post(newReservation)
 
-                .then(() => {
-                    console.log(newReservation)
+                .then((confirmedReservation) => {
+                    console.log("CONFIRMED", confirmedReservation)
+                    this.props.history.push(`/reservations/${confirmedReservation.id}/confirmation`)
                     // this.props.history.push("/myaccount")
                 })
         }
@@ -59,7 +79,7 @@ class ReservationForm extends Component {
                 <form>
                     <fieldset>
                         <div className="formgrid">
-                            <label htmlFor="bookedRoomName"><h2>Please begin your reservation request:</h2></label>
+                            <label htmlFor="bookedRoomName"><h2>Please begin your reservation request for {this.state.roomName}:</h2></label>
                             <p><label htmlFor="date">Dates:</label></p>
 
                             <input

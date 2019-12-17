@@ -9,7 +9,7 @@
     {
       "id": 2,
       "name": "Rita Skeeter",
-      "email": "Ritaskeeter@owl.com",
+      "email": "Ritaskeeter@owlmail.com",
       "password": "ladybug"
     },
     {
@@ -17,6 +17,12 @@
       "email": "fmoret@email.com",
       "password": "lalala",
       "id": 3
+    },
+    {
+      "name": "Eddy",
+      "email": "eduquesne@email.com",
+      "password": "12345",
+      "id": 4
     }
   ],
   "rooms": [
@@ -31,6 +37,12 @@
       "name": "The Cupboard Under The Stairs",
       "description": "an extremely large room",
       "cost": 35
+    },
+    {
+      "id": 3,
+      "name": "Weasleby's Watercloset",
+      "description": "A home from home in a most magical bathroom. For the travelling ghost who feels most at home pottering around in the plumbing",
+      "cost": 20
     }
   ],
   "reservations": [
@@ -60,6 +72,14 @@
       "persons": "1",
       "creatures": "9",
       "id": 7
+    },
+    {
+      "userId": 2,
+      "id": 8,
+      "checkInDate": "2019-12-25",
+      "checkOutDate": "2019-12-28",
+      "persons": "1",
+      "creatures": "0"
     }
   ],
   "roomImages": [

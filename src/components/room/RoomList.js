@@ -31,6 +31,7 @@ class RoomList extends Component {
                     <RoomCard
                         key={room.id}
                         room={room}
+                        //imagePath={room.roomImages.path}
                         {...this.props} />
 
                 )}

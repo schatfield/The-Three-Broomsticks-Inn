@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './nav/NavBar';
 import ApplicationViews from './ApplicationViews'
-// import './ThreeBroomsticks.css'
+import './ThreeBroomsticks.css'
 
 
 
@@ -68,6 +68,8 @@ class ThreeBroomsticks extends Component {
         return (
           
           <>
+          
+          
              <NavBar user={this.state.user ? 1 : 0} />
             <ApplicationViews user={this.state.user}
                               setUser={this.setUser}

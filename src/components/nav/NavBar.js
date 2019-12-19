@@ -10,9 +10,9 @@ class NavBar extends Component {
 
         return (
             <header>
-                <h1 className="site-title">Three Broomsticks<br />
+                {/* <h1 className="site-title">Three Broomsticks<br />
                     <small>Resplendent Rooms & Inn</small>
-                </h1>
+                </h1> */}
                 <nav>
                     <ul className="main-nav">
 

@@ -63,20 +63,80 @@
       "persons": "9",
       "creatures": "0",
       "id": 4
+    },
+    {
+      "userId": 1,
+      "roomId": 2,
+      "checkInDate": "2019-12-19",
+      "checkOutDate": "2019-12-21",
+      "persons": "1",
+      "creatures": "9",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "roomId": 2,
+      "checkInDate": "2019-12-26",
+      "checkOutDate": "2019-12-27",
+      "persons": "1",
+      "creatures": "9",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "roomId": 1,
+      "checkInDate": "2019-12-26",
+      "checkOutDate": "2019-12-28",
+      "persons": "0",
+      "creatures": "9",
+      "id": 7
     }
   ],
   "roomImages": [
     {
       "id": 1,
       "roomId": 1,
-      "url": ""
+      "path": ""
     }
   ],
   "galleryImages": [
     {
       "id": 1,
-      "url": "",
+      "path": "",
       "imageAlt": ""
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "The Daily Prophet newspaper delivery",
+      "cost": 15,
+      "description": "Have a copy of the Wizarding community's beloved daily rag waiting for you right outside your door each day of your stay. Disclaimer: your eyes are just fine, the pictures are moving."
+    },
+    {
+      "id": 2,
+      "name": "service 2",
+      "cost": 15,
+      "description": ""
+    },
+    {
+      "id": 3,
+      "name": "service 3",
+      "cost": 15,
+      "description": ""
+    },
+    {
+      "id": 4,
+      "name": "service 4",
+      "cost": 15,
+      "description": ""
+    }
+  ],
+  "reservationServices": [
+    {
+      "id": 1,
+      "reservation_id": 1,
+      "service_id": 1
     }
   ]
 }

@@ -1,0 +1,20 @@
+.card {
+ 
+    /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+
+  /**
+   * Rotate the main axis so that the children
+   * are laid out vertically.
+   */
+    /* SET WIDTH */
+    /* JUSTIFY CONTENT */
+    justify-content: space-between;
+    width: 300px;
+    border: 1px solid #CAD0D2;
+    border-radius: 4px;
+    overflow: hidden;
+     
+    }

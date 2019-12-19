@@ -118,6 +118,32 @@ class ReservationForm extends Component {
                                 placeholder="please enter a number"
                             />
 
+                            <p><label htmlFor="services">Services & Treatments:</label></p>
+
+                             <input type="checkbox"
+                             required
+                             onChange={this.handleFieldChange}
+                                id=""
+                            />
+                            <input type="checkbox"
+                             required
+                             onChange={this.handleFieldChange}
+                                id=""
+                            />
+                            <input type="checkbox"
+                             required
+                             onChange={this.handleFieldChange}
+                                id=""
+                            />
+                        <input type="checkbox"
+                             required
+                             onChange={this.handleFieldChange}
+                                id=""
+                            />
+
+
+
+
 
                         </div>
                         <div className="alignRight">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Home.css'
 
 class Home extends Component {
 
@@ -6,10 +7,15 @@ class Home extends Component {
 
         return (
         
-                <address>
-                  Visit us in The Village of Hogsmede
-                  <br />42 1/2 Broomstick Way
-                </address>
+                <>
+              
+              <div class="logo">
+            <img src={require('./hero1.png')} alt="threeBroomsticks" />
+            </div>
+        
+          
+                  
+               </>
               )
         
     }

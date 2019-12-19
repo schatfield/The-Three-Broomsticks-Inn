@@ -9,7 +9,7 @@ class Home extends Component {
         
                 <>
               
-              <div class="logo">
+              <div className="logo">
             <img src={require('./hero1.png')} alt="threeBroomsticks" />
             </div>
         

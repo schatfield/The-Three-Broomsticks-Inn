@@ -3,6 +3,10 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    height:700px;
-   
+    height:700px;    
 }
+
+#logo {
+    margin-top: 125px;
+}
+

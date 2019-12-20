@@ -3,22 +3,16 @@ import './Home.css'
 
 class Home extends Component {
 
-    render() {
+  render() {
 
-        return (
-        
-                <>
-              
-              <div className="logo">
-            <img src={require('./hero1.png')} alt="threeBroomsticks" />
-            </div>
-        
-          
-                  
-               </>
-              )
-        
-    }
+    return (
+      <>
+        <div id="logo">
+          <img src={require('./hero-doubleLine.png')} alt="threeBroomsticks" />
+        </div>
+      </>
+    )
+  }
 }
 
 export default Home;

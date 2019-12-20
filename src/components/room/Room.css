@@ -1,6 +1,6 @@
-.card {
+/* .card {  */
  
-    /**
+    /* /**
    * Lay out the children of this container with
    * flexbox, which is horizontal by default.
    */
@@ -9,12 +9,16 @@
    * Rotate the main axis so that the children
    * are laid out vertically.
    */
-    /* SET WIDTH */
-    /* JUSTIFY CONTENT */
-    justify-content: space-between;
+   
+.card{
     width: 300px;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
-     
-    }
+}
+
+.card-image{
+    max-height:185px;
+    width: 275px;
+    padding-top: 15px; 
+}

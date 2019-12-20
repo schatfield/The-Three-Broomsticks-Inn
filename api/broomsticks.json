@@ -63,15 +63,6 @@
       "persons": "1",
       "creatures": "1",
       "id": 3
-    },
-    {
-      "userId": 1,
-      "roomId": 2,
-      "checkInDate": "2020-02-08",
-      "checkOutDate": "2020-02-10",
-      "persons": "1",
-      "creatures": "9",
-      "id": 4
     }
   ],
   "roomImages": [

@@ -15,7 +15,8 @@ body {
     grid-auto-rows: repeat(3, 1fr);
     grid-gap: 1rem;
     justify-content: space-around;
-    margin-top: 145px;
+    margin-top: 165px;
+    background-color:"#cdc6a5";
   } 
 
   #sticky{

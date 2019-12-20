@@ -48,7 +48,8 @@ class NavBar extends Component {
                         <ul className="sub-nav">
 
                             <li><Link className="sub-link" to="/">CONTACT</Link></li>
-                            <li><Link className="sub-link" to="/">"brooms"</Link></li>
+                            <li><Link className="sub-link" to="/"> <img className="broom-nav" src={require('./broom-small.png')} alt="home" />
+                            </Link></li>
                             <li><Link className="sub-link" to="/rooms">Book Now</Link></li>
 
                         </ul>

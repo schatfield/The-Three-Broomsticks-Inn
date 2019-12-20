@@ -15,6 +15,7 @@
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    
 }
 
 .card-image{
@@ -25,6 +26,7 @@
 
 #room-card{
     text-align: center;
+    background-color:"#cdc6a5";
 }
 
 .galleon {

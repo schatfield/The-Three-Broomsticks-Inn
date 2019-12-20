@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReservationManager from '../../modules/ReservationManager'
+import './ReservationEditForm.css'
 
 class ReservationEditForm extends Component {
 
@@ -60,7 +61,7 @@ class ReservationEditForm extends Component {
         return (
 
             <>
-                <form>
+                <form className="res-edit-form">
                     <fieldset>
                         <div className="formgrid">
                             <label htmlFor="bookedRoomName"><h2>Modify Your Booking:</h2></label>

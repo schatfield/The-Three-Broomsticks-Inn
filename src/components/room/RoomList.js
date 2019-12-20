@@ -15,6 +15,7 @@ class RoomList extends Component {
         // getAll from RoomManager and hang on to that data; put it in state
         RoomManager.getAll()
             .then((rooms) => {
+                console.log("Rooms", rooms);
                 this.setState({
                     rooms: rooms
                 })
@@ -31,6 +32,7 @@ class RoomList extends Component {
                     <RoomCard
                         key={room.id}
                         room={room}
+                        //imagePath={room.roomImages.path}
                         {...this.props} />
 
                 )}

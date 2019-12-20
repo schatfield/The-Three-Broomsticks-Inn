@@ -1,0 +1,36 @@
+/* .card {  */
+ 
+    /* /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+
+  /**
+   * Rotate the main axis so that the children
+   * are laid out vertically.
+   */
+   
+.card{
+    width: 300px;
+    border: 1px solid #CAD0D2;
+    border-radius: 4px;
+    overflow: hidden;
+    
+}
+
+.card-image{
+    max-height:185px;
+    width: 275px;
+    padding-top: 15px; 
+}
+
+#room-card{
+    text-align: center;
+    background-color:"#cdc6a5";
+}
+
+.galleon {
+    display: inline;
+    width: 10px;
+    height: 10px;
+}

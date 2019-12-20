@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
+import './Home.css'
 
 class Home extends Component {
 
-    render() {
+  render() {
 
-        return (
-        
-                <address>
-                  Visit us in The Village of Hogsmede
-                  <br />42 1/2 Broomstick Way
-                </address>
-              )
-        
-    }
+    return (
+      <>
+        <div id="logo">
+          <img src={require('./hero-doubleLine.png')} alt="threeBroomsticks" />
+        </div>
+      </>
+    )
+  }
 }
 
 export default Home;

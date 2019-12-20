@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UserManager from '../../modules/UserManager';
+import './Auth.css'
 
 class Auth extends Component {
     // Set initial state of user name, email, and password
@@ -25,53 +26,52 @@ class Auth extends Component {
             .then((existingUser) => {
                 if (existingUser.length === [0]) {
                     alert("There is no account associated with this user")
-                } else if (existingUser[0].password === this.state.password) {                    
-                        this.props.setUser(existingUser[0])
-                        this.props.roomId ? 
+                } else if (existingUser[0].password === this.state.password) {
+                    this.props.setUser(existingUser[0])
+                    this.props.roomId ?
 
                         // If there's a roomId present after login, push user to the room they clicked on before logging in
-                        
+
                         this.props.history.push(`/rooms/${this.props.roomId}/book`)
                         :
 
-                    // if there isn't a room id present it's because they didn't come from that route to login so take them home.
+                        // if there isn't a room id present it's because they didn't come from that route to login so take them home.
 
                         this.props.history.push("/")
-                    } else {
-                        alert("This Password Is Incorrect, Please Try Again.")
-    
-                    }
-                })
-        }
+                } else {
+                    alert("This Password Is Incorrect, Please Try Again.")
+
+                }
+            })
+    }
 
     render() {
 
 
         return (
-            <div>
-            <center><h1>Welcome to the Three Broomsticks!</h1></center>
-           
-            <form onSubmit={this.handleLogin}>
-                <fieldset>
-                    <h3>Please sign in</h3>
-                    <div className="formgrid">
-                        <input onChange={this.handleFieldChange} type="email"
-                            id="email"
-                            placeholder="Email address"
-                            required="" autoFocus="" />
-                        <label htmlFor="inputEmail">Email address</label>
+            <div className="auth-container">
+                <center><h1>Welcome to the Three Broomsticks!</h1></center>
+                <form onSubmit={this.handleLogin}>
+                    <fieldset>
+                        <h3>Please sign in</h3>
+                        <div className="formgrid">
+                            <input onChange={this.handleFieldChange} type="email"
+                                id="email"
+                                placeholder="Email address"
+                                required="" autoFocus="" />
+                            <label htmlFor="inputEmail">Email address</label>
 
-                        <input onChange={this.handleFieldChange} type="password"
-                            id="password"
-                            placeholder="Password"
-                            required="" />
-                        <label htmlFor="inputPassword">Password</label>
-                    </div>
-                    <button type="submit">
-                        Sign in
+                            <input onChange={this.handleFieldChange} type="password"
+                                id="password"
+                                placeholder="Password"
+                                required="" />
+                            <label htmlFor="inputPassword">Password</label>
+                        </div>
+                        <button type="submit">
+                            Sign in
             </button>
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
             </div>
         )
     }

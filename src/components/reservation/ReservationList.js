@@ -43,7 +43,7 @@ class ReservationList extends Component {
         console.log("Reservation List: Render", this.state)
 
         return (
-            <div className="container-cards">
+            <div >
                 {this.state.reservations.map(reservation =>
                 <ReservationCard 
                     key={reservation.id}

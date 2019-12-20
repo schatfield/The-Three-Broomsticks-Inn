@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom"
-// import './NavBar.css'
+import './NavBar.css'
 
 
 class NavBar extends Component {
@@ -10,39 +10,51 @@ class NavBar extends Component {
 
         return (
             <header>
-                <h1 className="site-title">Three Broomsticks<br />
+                {/* <h1 className="site-title">Three Broomsticks<br />
                     <small>Resplendent Rooms & Inn</small>
-                </h1>
-                <nav>
-                    <ul className="main-nav">
+                </h1> */}
+                <nav >
+                    <ul id="sticky">
+                        <ul className="main-nav">
 
-                        <li><Link className="nav-link" to="/">Home</Link></li>
-                        <li><Link className="nav-link" to="/rooms">Rooms</Link></li>
-                        <li><Link className="nav-link" to="/pub">Pub</Link></li>
-                        <li><Link className="nav-link" to="/gallery">Gallery</Link></li>
-                        <li><Link className="nav-link" to="/neighbourhood">Neighbourhood</Link></li>
+                            <li><Link className="nav-link" to="/">HOME</Link></li>
+                            <li><Link className="nav-link" to="/rooms">ROOMS</Link></li>
+                            <li><Link className="nav-link" to="/pub">PUBLIC HOUSE</Link></li>
+                            <li><Link className="nav-link" to="/gallery">GALLERY</Link></li>
+                            <li><Link className="nav-link" to="/neighbourhood">NEIGHBOURHOOD</Link></li>
 
-                        <li>{this.props.user ?
 
-                            <Link className="nav-link" to="/myaccount"
-                                {...this.props}>"suitcase"</Link>
+                            <li>{this.props.user ?
 
-                        
-                        :
-                        <Link className="nav-link" to="/accountauth"
-                            {...this.props}>"suitcase"</Link>
+                                <Link className="nav-link" to="/myaccount"
+                                    {...this.props}>"suitcase"</Link>
 
-                        }</li>
+
+                                :
+                                <Link className="nav-link" to="/accountauth"
+                                    {...this.props}>"suitcase"</Link>
+
+                            }
+
+                            </li>
+                        </ul>
+
+                        <ul className="border-nav">
+
+                            <img className="border" src={require('./navBorder3.png')} alt="" />
+
+                        </ul>
+
+                        <ul className="sub-nav">
+
+                            <li><Link className="sub-link" to="/">CONTACT</Link></li>
+                            <li><Link className="sub-link" to="/"> <img className="broom-nav" src={require('./broom-small.png')} alt="home" />
+                            </Link></li>
+                            <li><Link className="sub-link" to="/rooms">Book Now</Link></li>
+
+                        </ul>
 
                     </ul>
-                    <ul className="sub-nav">
-                        <li><Link className="nav-link" to="/">Contact</Link></li>
-                        <li><Link className="nav-link" to="/">"brooms"</Link></li>
-                        <li><Link className="nav-link" to="/rooms">Book Now</Link></li>
-
-                    </ul>
-
-
                 </nav>
             </header>
         )

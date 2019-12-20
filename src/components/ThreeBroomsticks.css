@@ -1,0 +1,25 @@
+body {
+    background-color: #f4ecec;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+.card { 
+    background-color:"";
+    
+}
+
+.container-cards { 
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: space-around;
+    margin-top: 165px;
+    background-color:"#cdc6a5";
+  } 
+
+  #sticky{
+    position:"fixed";
+    top:0;
+    }

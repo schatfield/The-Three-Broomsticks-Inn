@@ -38,6 +38,23 @@ export default {
 
   getReservationByUserId(userId) {
     return fetch(`${remoteURL}/reservations?userId=${userId}&_expand=room`).then(result => result.json())
+  },
+
+  postNewReservationService(service) {
+   return fetch (`${remoteURL}/reservationServices`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(service)
+    }).then(data => data.json())
+  },
+
+  deleteReservationService(id) {
+    return fetch(`${remoteURL}/reservationServices/${id}`, {
+      method: "DELETE"
+    })
+    .then(result => result.json())
   }
 };
 

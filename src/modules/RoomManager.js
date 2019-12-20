@@ -6,5 +6,8 @@ export default {
   },
   getAll() {
     return fetch(`${remoteURL}/rooms`).then(result => result.json())
-  }
+  },
+// getAll() {
+//   return fetch(`${remoteURL}/rooms/${id}?_embed=roomImages`).then(result => result.json())
+// }
 }

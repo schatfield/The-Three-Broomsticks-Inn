@@ -5,7 +5,7 @@ class ReservationCard extends Component {
     render() {
         console.log("Room Check: ", this.props)
         return (
-            <div className="card">
+            <div >
 
                 <div className="card-content">
                     <picture>

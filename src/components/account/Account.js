@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReservationList from '../reservation/ReservationList';
 import AccountInfoCard from './AccountInfoCard';
+import './Account.css'
 
 
 class Account extends Component {
@@ -9,17 +10,21 @@ class Account extends Component {
 
         return (
             <>
+                <div className="account-info">
+                    <h2>Welcome to your account page. </h2>
+                    <p>Here you can find all of your user information and manage your bookings.</p>
+                    <div className="account-flex">
+                        <AccountInfoCard                            
+                            userObj={this.props.userObj}
+                            {...this.props}
+                        />
 
-                <AccountInfoCard
-                    userObj={this.props.userObj} 
-                    {...this.props}
-                   />
-                    
-                <ReservationList 
-                 userObj={this.props.userObj} 
-                 getUser={this.props.getUser}
-                {...this.props}/>
-
+                        <ReservationList                            
+                            userObj={this.props.userObj}
+                            getUser={this.props.getUser}
+                            {...this.props} />
+                    </div>
+                </div>
             </>
 
 

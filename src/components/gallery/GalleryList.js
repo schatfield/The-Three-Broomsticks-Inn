@@ -24,12 +24,12 @@ class GalleryList extends Component {
 
         return (
             <div className="container-cards">
-                {this.state.images.map(image =>
+                {/* {this.state.images.map(image =>
                     <GalleryCard
                         // key={image.id}
                         // images={images}
                         // {...this.props}
-                    />)}
+                    />)} */}
             </div>
         )
     }

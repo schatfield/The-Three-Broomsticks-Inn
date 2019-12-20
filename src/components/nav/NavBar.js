@@ -47,9 +47,9 @@ class NavBar extends Component {
 
                         <ul className="sub-nav">
 
-                            <li><Link className="nav-link" to="/">CONTACT</Link></li>
-                            <li><Link className="nav-link" to="/">"brooms"</Link></li>
-                            <li><Link className="nav-link" to="/rooms">Book Now</Link></li>
+                            <li><Link className="sub-link" to="/">CONTACT</Link></li>
+                            <li><Link className="sub-link" to="/">"brooms"</Link></li>
+                            <li><Link className="sub-link" to="/rooms">Book Now</Link></li>
 
                         </ul>
 

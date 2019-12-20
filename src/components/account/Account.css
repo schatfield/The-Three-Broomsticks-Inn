@@ -1,0 +1,15 @@
+.account-info{
+    margin-top:185px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.account-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.account-flex-item {
+    width:40% 
+}

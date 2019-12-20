@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReservationManager from '../../modules/ReservationManager'
 import RoomManager from '../../modules/RoomManager';
+import './ReservationForm.css';
 
 class ReservationForm extends Component {
 
@@ -76,7 +77,7 @@ class ReservationForm extends Component {
         return (
 
             <>
-                <form>
+                <form className="booking-form">
                     <fieldset>
                         <div className="formgrid">
                             <label htmlFor="bookedRoomName"><h2>Please begin your reservation request for {this.state.roomName}:</h2></label>
@@ -120,24 +121,24 @@ class ReservationForm extends Component {
 
                             <p><label htmlFor="services">Services & Treatments:</label></p>
 
-                             <input type="checkbox"
-                             required
-                             onChange={this.handleFieldChange}
+                            <input type="checkbox"
+                                required
+                                onChange={this.handleFieldChange}
                                 id=""
                             />
                             <input type="checkbox"
-                             required
-                             onChange={this.handleFieldChange}
+                                required
+                                onChange={this.handleFieldChange}
                                 id=""
                             />
                             <input type="checkbox"
-                             required
-                             onChange={this.handleFieldChange}
+                                required
+                                onChange={this.handleFieldChange}
                                 id=""
                             />
-                        <input type="checkbox"
-                             required
-                             onChange={this.handleFieldChange}
+                            <input type="checkbox"
+                                required
+                                onChange={this.handleFieldChange}
                                 id=""
                             />
 

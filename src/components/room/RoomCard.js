@@ -20,8 +20,8 @@ class RoomCard extends Component {
 
                     <p>{this.props.room.description}</p>
                     <hr></hr>
-                    <p>{this.props.room.cost}</p>
-                    <button type="button"
+                    <p><img className="galleon" src={require('./galleon-icon.png')}/> {this.props.room.cost} / night</p>
+                    <button type="button" className="btn btn-secondary btn-lg btn-block"
                         onClick={() => { this.props.history.push(`/rooms/${this.props.room.id}/book`) }}>BOOK YOUR STAY</button>
                 </div>
             </div>

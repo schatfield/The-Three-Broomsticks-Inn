@@ -42,4 +42,33 @@
 
 .nav-link {
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color:#696d7d;
 }
+
+.nav-link:hover {
+    color:#6f9283;
+    transition: .3s;
+}
+
+.sub-link{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color:#620940;
+}
+
+/* a:hover {
+    color: gray;
+  }
+  
+  a:active {
+    color: black;
+  }
+  
+  a:visited {
+    color:black;
+  } */
+
+  /* #bb7e8c */

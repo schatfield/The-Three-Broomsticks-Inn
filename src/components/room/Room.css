@@ -22,3 +22,13 @@
     width: 275px;
     padding-top: 15px; 
 }
+
+#room-card{
+    text-align: center;
+}
+
+.galleon {
+    display: inline;
+    width: 10px;
+    height: 10px;
+}

@@ -60,17 +60,26 @@
 }
 
 .broom-nav {
-    height: 80px;
-    width: 50%;
+    height: 87px;
+    width: 22%;
     padding: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
+    margin-left:150px;
     transition: transform .8s ease-in-out;
 }
 
 .broom-nav:hover {
     transform: rotate(349deg);
 }
+
+.book-nav{
+   height:70%;
+   width:75%;
+   margin-right:0px;
+   
+}
+
 
 /* a:hover {
     color: gray;

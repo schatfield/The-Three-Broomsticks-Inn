@@ -35,7 +35,7 @@
     {
       "id": 2,
       "name": "The Cupboard Under The Stairs",
-      "description": "an extremely large room",
+      "description": " An extremely large room in spite of it's namesake. What's in a name anyway? Since you'll enter from a door that leads to a cupboard under a set of stairs, we thought we'd just tell like it is. In honor of Mr. Potter himself, we made sure this room is bursting with space to spread out so you definitely won't need to mind your head or your manners.",
       "cost": 35
     },
     {
@@ -57,24 +57,45 @@
     },
     {
       "userId": 1,
-      "roomId": 2,
-      "checkInDate": "2020-02-06",
-      "checkOutDate": "2020-02-08",
+      "roomId": 3,
+      "id": 4,
+      "checkInDate": "2020-01-17",
+      "checkOutDate": "2020-01-19",
       "persons": "1",
-      "creatures": "1",
-      "id": 3
+      "creatures": "2000"
     }
   ],
   "roomImages": [
     {
       "id": 1,
       "roomId": 1,
-      "path": ""
+      "path": "./dippetDomitory.png"
+    },
+    {
+      "id": 2,
+      "roomId": 2,
+      "path": "./dippetDomitory.png"
+    },
+    {
+      "id": 3,
+      "roomId": 3,
+      "path": "./dippetDomitory.png"
     }
   ],
   "galleryImages": [
     {
       "id": 1,
+      "path": "",
+      "imageAlt": ""
+    },
+    {
+      "id": 2,
+      "path": "",
+      "imageAlt": ""
+    },
+
+    {
+      "id": 3,
       "path": "",
       "imageAlt": ""
     }

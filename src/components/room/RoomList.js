@@ -24,15 +24,17 @@ class RoomList extends Component {
 
     render() {
         console.log("Room List: RENDER")
-
+        
+        console.log("state", this.state.rooms)
 
         return (
             <div className="container-cards">
                 {this.state.rooms.map(room =>
+   
                     <RoomCard
                         key={room.id}
                         room={room}
-                        //imagePath={room.roomImages.path}
+                        imagePath={room.roomImages[0].path}
                         {...this.props} />
 
                 )}

@@ -1,25 +1,38 @@
 body {
     background-color: #f4ecec;
     font-family: 'Roboto Condensed', sans-serif;
-    
 }
 
-.card { 
-    background-color:"";
-    
+fieldset {
+    border: none;
 }
 
-.container-cards { 
+.card {
+    background-color: #faf3ea;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-size: 18px; */
+    color: #620940;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+    width: 75%;
+}
+
+.container-cards {
     display: flex;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: repeat(3, 1fr);
     grid-gap: 1rem;
     justify-content: space-around;
     margin-top: 165px;
-    background-color:"#cdc6a5";
-  } 
+}
 
-  #sticky{
-    position:"fixed";
-    top:0;
-    }
+#sticky {
+    position: "fixed";
+    top: 0;
+}
+
+/* #a59b53 */

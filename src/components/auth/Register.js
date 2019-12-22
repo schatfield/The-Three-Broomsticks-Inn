@@ -79,11 +79,13 @@ class Register extends Component {
         return (
             <>
             <br/>
+         
+           
             <form onSubmit={this.handleRegistration}>
                 <fieldset>
-                    <h3>Register Account</h3>
-                    <div className="formgrid">
-                        <input onChange={this.handleFieldChange} type="text"
+                
+                <div className="register-container"> <h3>New here?</h3>
+                        <input onChange={this.handleFieldChange} type="text" size="60"
                         /* if you are doing an input, and you want the content that the user is putting in the input box to be saved in state, then your ID in you input box has to match the state key. See below for example.
 
                         State = {
@@ -99,29 +101,39 @@ class Register extends Component {
                             id="name"
                             placeholder="Name"
                             required="" autoFocus="" />
-                        <label htmlFor="inputEmail">Name</label>
+                        {/* <label htmlFor="inputEmail">Name</label> */}
+                        <br/>
+                        <br/>
 
-                        <input onChange={this.handleFieldChange} type="email"
+                        <input onChange={this.handleFieldChange} type="email" size="60"
                             id="registeredEmail"
                             placeholder="Email address"
                             required="" autoFocus="" />
-                        <label htmlFor="inputEmail">Email</label>
+                        {/* <label htmlFor="inputEmail">Email</label> */}
+                        <br/>
+                        <br/>
 
-                        <input onChange={this.handleFieldChange} type="password"
+                        <input onChange={this.handleFieldChange} type="password" size="60"
                             id="registeredPassword"
                             placeholder="Password"
                             required="" />
-                        <label htmlFor="inputPassword">Password</label>
+                        {/* <label htmlFor="inputPassword">Password</label> */}
+                        <br/>
+                        <br/>
 
-                        <input onChange={this.handleFieldChange} type="password"
+                        <input onChange={this.handleFieldChange} type="password" size="60"
                             id="confirmPassword"
                             placeholder="Confirm Password"
                             required="" />
-                        <label htmlFor="inputPassword">Confirm Password</label>
-                    </div>
-                    <button type="submit">
-                        Register
+                        {/* <label htmlFor="inputPassword">Confirm Password</label> */}
+                        <br/>
+
+                        <button type="submit">
+                        Register 
                     </button>
+                        
+                    </div>
+                   
                 </fieldset>
             </form>
             </>

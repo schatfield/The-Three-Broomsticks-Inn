@@ -74,12 +74,6 @@ class ApplicationViews extends Component {
                     return <Auth setUser={this.props.setUser} {...props} />
                 }} />
 
-                <Route
-                    path="/accountauth" render={props => {
-                        return <Register setUser={this.props.setUser} {...props}{...this.props} />
-                    }}
-                />
-
                 <Route path="/myaccount" render={(props) => {
                     return <Account userObj={this.props.userObj} clearUser={this.props.clearUser} getUser={this.props.getUser}{...props} />
                 }} />

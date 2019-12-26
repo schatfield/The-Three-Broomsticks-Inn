@@ -3,10 +3,34 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    height:700px;    
+    height: 700px;
 }
+
+.home-flex-container{
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.swept-away-flex-item {
+    /* display:flex;
+    justify-content: space-around; */
+    max-width: 50%;
+    height:600px;
+    margin-right: 0px;
+    margin-left: 200px;
+}
+ 
+.welcome-flex-item{ 
+    padding-top: 125px;
+    padding-right: 200px;
+    padding-left: 150px;
+    text-align: center;
+   
+}
+
+
 
 #logo {
     margin-top: 145px;
 }
-

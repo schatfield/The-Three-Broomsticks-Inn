@@ -27,12 +27,13 @@ class NavBar extends Component {
                             <li>{this.props.user ?
 
                                 <Link className="nav-link" to="/myaccount"
-                                    {...this.props}>"suitcase"</Link>
+                                    {...this.props}><i className="fas fa-suitcase"></i></Link>
+                                    
 
 
                                 :
                                 <Link className="nav-link" to="/accountauth"
-                                    {...this.props}>"suitcase"</Link>
+                                    {...this.props}><i className="fas fa-suitcase"></i></Link>
 
                             }
 
@@ -50,7 +51,7 @@ class NavBar extends Component {
                             <li><Link className="sub-link" to="/">CONTACT</Link></li>
                             <li><Link className="sub-link" to="/"> <img className="broom-nav" src={require('./broom-small.png')} alt="home" />
                             </Link></li>
-                            <li><Link className="sub-link" to="/rooms">Book Now</Link></li>
+                            <li><Link className="sub-link" to="/rooms"><img className="book-nav" src={require('./book.png')} alt="book now" /></Link></li>
 
                         </ul>
 
@@ -63,3 +64,4 @@ class NavBar extends Component {
 
 export default NavBar;
 
+// img className="suitcase" src={require('./suitcase.svg')} alt="My Account" />

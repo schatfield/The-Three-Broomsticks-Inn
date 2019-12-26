@@ -35,7 +35,7 @@
     {
       "id": 2,
       "name": "The Cupboard Under The Stairs",
-      "description": "an extremely large room",
+      "description": " An extremely large room in spite of it's namesake. What's in a name anyway? Since you'll enter from a door that leads to a cupboard under a set of stairs, we thought we'd just tell like it is. In honor of Mr. Potter himself, we made sure this room is bursting with space to spread out so you definitely won't need to mind your head or your manners.",
       "cost": 35
     },
     {
@@ -43,6 +43,24 @@
       "name": "Weasleby's Watercloset",
       "description": "A home from home in a most magical bathroom. For the travelling ghost who feels most at home pottering around in the plumbing",
       "cost": 20
+    },
+    {
+      "id": 4,
+      "name": "room 4",
+      "description": "an extremely small room",
+      "cost": 25
+    },
+    {
+      "id": 5,
+      "name": "room 5",
+      "description": "an extremely small room",
+      "cost": 25
+    },
+    {
+      "id": 6,
+      "name": "room 6",
+      "description": "an extremely small room",
+      "cost": 25
     }
   ],
   "reservations": [
@@ -57,24 +75,59 @@
     },
     {
       "userId": 1,
-      "roomId": 2,
-      "checkInDate": "2020-02-06",
-      "checkOutDate": "2020-02-08",
+      "roomId": 1,
+      "id": 5,
+      "checkInDate": "2020-01-04",
+      "checkOutDate": "2020-01-05",
       "persons": "1",
-      "creatures": "1",
-      "id": 3
+      "creatures": "157"
     }
   ],
   "roomImages": [
     {
       "id": 1,
       "roomId": 1,
-      "path": ""
+      "path": "./BagshotBoxroom.png"
+    },
+    {
+      "id": 2,
+      "roomId": 2,
+      "path": "./dippetDomitory.png"
+    },
+    {
+      "id": 3,
+      "roomId": 3,
+      "path": "./dippetDomitory.png"
+    },
+    {
+      "id": 4,
+      "roomId": 4,
+      "path": "./BlackLakeBudoir.png"
+    },
+    {
+      "id": 5,
+      "roomId": 5,
+      "path": "./LufkinsLoft.png"
+    },
+    {
+      "id": 6,
+      "roomId": 6,
+      "path": "./dippetDomitory.png"
     }
   ],
   "galleryImages": [
     {
       "id": 1,
+      "path": "",
+      "imageAlt": ""
+    },
+    {
+      "id": 2,
+      "path": "",
+      "imageAlt": ""
+    },
+    {
+      "id": 3,
       "path": "",
       "imageAlt": ""
     }

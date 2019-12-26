@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import UserManager from '../../modules/UserManager';
+import Register from './Register';
 import './Auth.css'
+
 
 class Auth extends Component {
     // Set initial state of user name, email, and password
@@ -50,28 +52,33 @@ class Auth extends Component {
 
         return (
             <div className="auth-container">
-                <center><h1>Welcome to the Three Broomsticks!</h1></center>
-                <form onSubmit={this.handleLogin}>
-                    <fieldset>
-                        <h3>Please sign in</h3>
-                        <div className="formgrid">
-                            <input onChange={this.handleFieldChange} type="email"
-                                id="email"
-                                placeholder="Email address"
-                                required="" autoFocus="" />
-                            <label htmlFor="inputEmail">Email address</label>
+                <center><h1 className="my-account">Welcome to the Three Broomsticks!</h1></center>
+                <div className="auth-flex-container">
+                    <form onSubmit={this.handleLogin}>
+                        <fieldset>
+                            <h3>Already a registered Muggle?</h3>
+                            <div className="formgrid">
+                                {/* <label htmlFor="inputEmail">Email address</label> */}
+                                <input onChange={this.handleFieldChange} type="email" size="60"
+                                    id="email"
+                                    placeholder="Email address"
+                                    required="" autoFocus="" />
+                                <br />
+                                <br />
 
-                            <input onChange={this.handleFieldChange} type="password"
-                                id="password"
-                                placeholder="Password"
-                                required="" />
-                            <label htmlFor="inputPassword">Password</label>
-                        </div>
-                        <button type="submit">
-                            Sign in
-            </button>
-                    </fieldset>
-                </form>
+                                {/* <label htmlFor="inputPassword">Password</label>  */}
+                                <input onChange={this.handleFieldChange} type="password" size="60"
+                                    id="password"
+                                    placeholder="Password"
+                                    required="" />
+
+                            </div>
+                            <button type="submit">Log in</button>
+                        </fieldset>
+                    </form>
+                    <Register setUser={this.props.setUser} {...this.props} />
+                </div>
+
             </div>
         )
     }

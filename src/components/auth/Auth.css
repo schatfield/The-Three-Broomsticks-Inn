@@ -1,4 +1,43 @@
 .auth-container{
 
-    margin-top:145px;
+    margin-top:220px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    
+}
+
+/* .register-container{
+
+    margin-top:0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: right;  
+    width:20%
+
+} */
+
+.auth-flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.account-info{
+    margin-top:220px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.account-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.account-flex-item {
+    width:40% 
+}
+
+.my-account{
+    /* font-family: 'IM Fell English SC', serif; */
 }

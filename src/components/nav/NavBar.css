@@ -48,7 +48,7 @@
 }
 
 .nav-link:hover {
-    color: #6f9283;
+    color: #620940;
     transition: .3s;
 }
 
@@ -60,17 +60,32 @@
 }
 
 .broom-nav {
-    height: 80px;
-    width: 50%;
+    height: 93px;
+    width: 22%;
     padding: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
+    margin-left: 160px;
     transition: transform .8s ease-in-out;
 }
 
 .broom-nav:hover {
     transform: rotate(349deg);
 }
+
+.book-nav {
+    height: 70%;
+    width: 75%;
+    margin-right: 0px;
+}
+
+/* .suitcase {
+    height: 30%;
+    width: 25%;
+    margin-left: auto;
+    margin-right:auto;
+    padding:0px;
+} */
 
 /* a:hover {
     color: gray;

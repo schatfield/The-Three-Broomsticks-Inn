@@ -73,7 +73,11 @@ class Auth extends Component {
                                     required="" />
 
                             </div>
-                            <button type="submit">Log in</button>
+                            <div className="login-flex-item"
+
+                                onClick={() => { this.props.history.push(`/`) }}><img className="login-btn" src={require('./login-mauve.png')} alt="" />
+                            </div>
+
                         </fieldset>
                     </form>
                     <Register setUser={this.props.setUser} {...this.props} />

@@ -75,7 +75,7 @@ class Auth extends Component {
                             </div>
                             <div className="login-flex-item"
 
-                                onClick={() => { this.props.history.push(`/`) }}><img className="login-btn" src={require('./login-mauve.png')} alt="" />
+                                onClick={(evt) =>  this.handleLogin(evt) }><img className="login-btn" src={require('./login-mauve.png')} alt="" />
                             </div>
 
                         </fieldset>
@@ -90,3 +90,10 @@ class Auth extends Component {
 
 export default Auth;
 
+{/* <input onChange={this.handleFieldChange} type="password" size="60"
+                                    id="password"
+                                    placeholder="Password"
+                                    required="" />
+
+                            </div>
+                            <button type="submit">Log in</button> */}

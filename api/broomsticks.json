@@ -78,15 +78,6 @@
       "checkOutDate": "2019-12-27",
       "persons": "9",
       "creatures": "19"
-    },
-    {
-      "userId": 1,
-      "roomId": 1,
-      "id": 5,
-      "checkInDate": "2020-01-04",
-      "checkOutDate": "2020-01-05",
-      "persons": "1",
-      "creatures": "157"
     }
   ],
   "roomImages": [

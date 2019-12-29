@@ -14,8 +14,7 @@
     width: 300px;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
-    overflow: hidden;
-    
+    overflow: hidden;  
     
 }
 
@@ -34,4 +33,11 @@
     display: inline;
     width: 10px;
     height: 10px;
+}
+
+.book-btn{
+    width:150px;
+    height: 40px;
+    margin-top: 20px;
+  
 }

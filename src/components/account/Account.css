@@ -13,3 +13,10 @@
 .account-flex-item {
     width:40% 
 }
+
+.logout-btn{
+    width:230px;
+    height: 70px;
+    margin-top: 75px;
+  
+}

@@ -10,11 +10,13 @@ class AccountInfoCard extends Component {
         return (
             <div className="account-flex-item">
                 <h3 className="page-title">Account Information<br /></h3>
-                
+
                 <p>Name: {this.props.userObj.name}</p>
                 <p>Email: {this.props.userObj.email}</p>
-                <button type="button" onClick={() => this.props.clearUser(this.props.history.push('/'))}>Log Out</button>
 
+                <div className="logout-container"
+                    onClick={() => this.props.clearUser(this.props.history.push('/'))}><img className="logout-btn" src={require('./logout-dark.png')} alt="" />
+                </div>
             </div>
 
 

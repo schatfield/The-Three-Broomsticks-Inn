@@ -23,12 +23,18 @@
       "email": "eduquesne@email.com",
       "password": "12345",
       "id": 4
+    },
+    {
+      "name": "Rachel",
+      "email": "rachel@email.com",
+      "password": "1234",
+      "id": 5
     }
   ],
   "rooms": [
     {
       "id": 1,
-      "name": "The Smethwyck Snuggery",
+      "name": "Lufkin's Loft",
       "description": "an extremely small room",
       "cost": 25
     },
@@ -46,15 +52,15 @@
     },
     {
       "id": 4,
-      "name": "room 4",
+      "name": "The Smethwyck Snuggery",
       "description": "an extremely small room",
       "cost": 25
     },
     {
       "id": 5,
-      "name": "room 5",
-      "description": "an extremely small room",
-      "cost": 25
+      "name": "The Bagshot Boxroom",
+      "description": "This is an extremely small room. Delighted in solitude? This one is perfect for the for the refined solo traveler and won’t have you parting with all your galleons in one place. Note: use of undetectable extension charms to accommodate a party of larger than one in this room is strictly prohibited.",
+      "cost": 15
     },
     {
       "id": 6,
@@ -76,18 +82,18 @@
     {
       "userId": 1,
       "roomId": 1,
-      "id": 5,
-      "checkInDate": "2020-01-04",
-      "checkOutDate": "2020-01-05",
+      "checkInDate": "2019-12-12",
+      "checkOutDate": "2019-12-19",
       "persons": "1",
-      "creatures": "157"
+      "creatures": "1",
+      "id": 2
     }
   ],
   "roomImages": [
     {
       "id": 1,
       "roomId": 1,
-      "path": "./BagshotBoxroom.png"
+      "path": "./LufkinsLoft.png"
     },
     {
       "id": 2,
@@ -107,7 +113,7 @@
     {
       "id": 5,
       "roomId": 5,
-      "path": "./LufkinsLoft.png"
+      "path": "./BagshotBoxroom.png"
     },
     {
       "id": 6,
@@ -118,17 +124,32 @@
   "galleryImages": [
     {
       "id": 1,
-      "path": "",
+      "path": "./Hallway-large.png",
       "imageAlt": ""
     },
     {
       "id": 2,
-      "path": "",
+      "path": "./Hallway-large.png",
       "imageAlt": ""
     },
     {
       "id": 3,
-      "path": "",
+      "path": "./Hallway-large.png",
+      "imageAlt": ""
+    },
+    {
+      "id": 4,
+      "path": "./Hallway-large.png",
+      "imageAlt": ""
+    },
+    {
+      "id": 5,
+      "path": "./Hallway-large.png",
+      "imageAlt": ""
+    },
+    {
+      "id": 6,
+      "path": "./Hallway-large.png",
       "imageAlt": ""
     }
   ],

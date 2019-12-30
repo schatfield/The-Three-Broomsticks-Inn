@@ -1,6 +1,7 @@
 .booking-form {
-    margin-top: 165px;
-    margin-left: 15%;
-    margin-right: 15%;
-
+    margin-top: 265px;
+    display: flex;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -1,0 +1,81 @@
+
+.neighbourhood-flex-container{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 185px;
+    /* margin-left:0px; */
+    /* margin-right:0px; */  
+}
+
+.left-hand{
+    display:flex;
+    vertical-align: top;
+    justify-content: space-between; 
+    max-width: 20%;
+    height: 60%;
+    margin-left: 0px;
+    
+}
+
+.right-hand{
+    display:flex;
+    vertical-align: top;
+    justify-content: space-evenly; 
+    max-width: 20%;
+    height: 60%;
+    padding-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;   
+}
+
+.hogsmede-desc {
+    display:flex;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: justify;
+}
+
+.hogsmede-title-container{
+    display:flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+.hogwarts-title-container{
+    display:flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+.hogwarts-desc {
+    display:flex;
+    max-width:100%;    
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: justify;
+}
+
+/* .margin {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 275px;
+} */
+
+.margin-line{
+    padding-top:200px;
+    max-width: 30%;
+    height: 65%
+}
+
+
+
+.neighborhoud-flex-item {
+    width: 35%;
+}

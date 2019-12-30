@@ -5,9 +5,8 @@ import Home from './home/Home';
 import RoomList from './room/RoomList';
 import PubInfo from './pub/PubInfo';
 import GalleryList from './gallery/GalleryList';
-import NeighbourhoodInfo from './neighborhood/NeighborhoodInfo';
+import NeighbourhoodInfo from './neighbourhood/NeighbourhoodInfo';
 import Auth from './auth/Auth';
-import Register from './auth/Register';
 import ReservationForm from './reservation/ReservationForm';
 import ReservationEditForm from './reservation/ReservationEditForm';
 import ReservationConfirmation from './reservation/ReservationConfirmation'
@@ -65,7 +64,7 @@ class ApplicationViews extends Component {
                 }} />
 
                 <Route path="/neighbourhood" render={(props) => {
-                    return <NeighbourhoodInfo />
+                    return <NeighbourhoodInfo {...props} />
 
                 }} />
 

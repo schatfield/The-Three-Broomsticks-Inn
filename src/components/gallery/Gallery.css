@@ -1,0 +1,19 @@
+.gallery-container{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top:300px;
+}
+
+.gallery-image{
+margin-top: 30px;
+
+}
+
+.image-card{
+    height: 200px;
+    width:300px;
+    
+}

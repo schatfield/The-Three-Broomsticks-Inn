@@ -1,37 +1,34 @@
-/* .card {  */
- 
-    /* /**
-   * Lay out the children of this container with
-   * flexbox, which is horizontal by default.
-   */
-
-  /**
-   * Rotate the main axis so that the children
-   * are laid out vertically.
-   */
-   
-.card{
-    width: 300px;
+.cards {
+    display: flex;
+    justify-content: space-around;
     border: 1px solid #CAD0D2;
-    border-radius: 4px;
-    overflow: hidden;
-    
-    
-}
-
-.card-image{
-    max-height:185px;
-    width: 275px;
-    padding-top: 15px; 
-}
-
-#room-card{
+    border-radius: 1px;
     text-align: center;
-    
+    flex: 0 0 350px;
+    margin-bottom: 40px;
+    margin: 0 10px 40px 10px;
+}
+
+.card {
+    border: 1px solid #CAD0D2;
+    border-radius: 1px;
+    width: 100%;
+}
+
+.card-image {
+    max-height: 185px;
+    width: 275px;
+    padding-top: 15px;
 }
 
 .galleon {
     display: inline;
     width: 10px;
     height: 10px;
+}
+
+.book-btn {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
 }

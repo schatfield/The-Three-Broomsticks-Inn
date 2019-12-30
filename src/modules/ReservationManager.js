@@ -40,6 +40,12 @@ export default {
     return fetch(`${remoteURL}/reservations?userId=${userId}&_expand=room`).then(result => result.json())
   },
 
+  getServices(){
+    
+    return fetch(`${remoteURL}/services`).then(result => result.json())
+  },
+
+
   postNewReservationService(service) {
    return fetch (`${remoteURL}/reservationServices`, {
       method: "POST",

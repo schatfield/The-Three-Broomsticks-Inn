@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GalleryCard from './GalleryCard'
 import GalleryManager from '../../modules/GalleryManager';
+import './Gallery.css';
 
 class GalleryList extends Component {
 
@@ -23,20 +24,16 @@ class GalleryList extends Component {
         console.log("Render Gallery List")
 
         return (
-            <div className="container-cards">
-                {/* {this.state.images.map(image =>
+            <div className="gallery-container">
+                {this.state.images.map(image =>
                     <GalleryCard
-                        // key={image.id}
-                        // images={images}
-                        // {...this.props}
-                    />)} */}
+                        key={image.id}
+                        image={image}
+                        {...this.props}
+                    />)}
             </div>
         )
     }
 }
 
 export default GalleryList;
-
-console.log("Room List: RENDER")
-
-

@@ -23,11 +23,9 @@ hr {
 
 .container-cards {
     display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: repeat(3, 1fr);
-    grid-gap: 1rem;
     justify-content: space-around;
-    margin-top: 165px;
+    flex-wrap: wrap;
+    margin: 185px 150px 40px 150px;
 }
 
 #sticky {

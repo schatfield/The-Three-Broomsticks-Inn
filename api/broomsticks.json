@@ -87,6 +87,15 @@
       "persons": "1",
       "creatures": "1",
       "id": 2
+    },
+    {
+      "userId": 1,
+      "roomId": 1,
+      "checkInDate": "2019-12-19",
+      "checkOutDate": "2019-12-31",
+      "persons": "1",
+      "creatures": "1",
+      "id": 3
     }
   ],
   "roomImages": [
@@ -181,9 +190,28 @@
   ],
   "reservationServices": [
     {
-      "id": 1,
-      "reservation_id": 1,
-      "service_id": 1
+      "reservationId": 3,
+      "serviceId": 1,
+      "isSelected": true,
+      "id": 2
+    },
+    {
+      "reservationId": 3,
+      "serviceId": 2,
+      "isSelected": false,
+      "id": 3
+    },
+    {
+      "reservationId": 3,
+      "serviceId": 3,
+      "isSelected": false,
+      "id": 4
+    },
+    {
+      "reservationId": 3,
+      "serviceId": 4,
+      "isSelected": false,
+      "id": 5
     }
   ]
 }

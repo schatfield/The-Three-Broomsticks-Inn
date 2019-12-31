@@ -33,4 +33,10 @@ hr {
     top: 0;
 }
 
+.galleon {
+    display: inline;
+    width: 10px;
+    height: 10px;
+}
+
 /* #a59b53 */

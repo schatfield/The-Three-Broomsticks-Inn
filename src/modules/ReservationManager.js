@@ -41,7 +41,6 @@ export default {
   },
 
   getServices(){
-    
     return fetch(`${remoteURL}/services`).then(result => result.json())
   },
 

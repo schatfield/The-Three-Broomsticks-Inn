@@ -23,10 +23,6 @@ class RoomList extends Component {
     }
 
     render() {
-        console.log("Room List: RENDER")
-        
-        console.log("state", this.state.rooms)
-
         return (
             <div className="container-cards">
                 {this.state.rooms.map(room =>

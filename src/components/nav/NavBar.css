@@ -20,6 +20,8 @@
     justify-content: space-between;
     margin: 0px 200px;
     padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     list-style-type: none;
 }
 
@@ -52,12 +54,40 @@
     transition: .3s;
 }
 
-.sub-link {
+.contact {
+    position: relative;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
     text-decoration: none;
-    color: #620940;
+    color:#696d7d;   
+   
+    border: 1px solid #620940;
+    padding: 5px;
+    transition: all 0.5s ease;
 }
+
+  
+  .contact:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border: solid 1px  #620940;;
+    margin: -6px;
+    z-index: -1;
+    transition: transform 0.3s linear;
+    transform: scale(0.97, 0.93);
+    
+  }
+
+
+  
+  .contact:hover::after { 
+      transform: scale(1.1,1); 
+     
+
+}
+  
 
 .broom-nav {
     height: 93px;
@@ -65,7 +95,7 @@
     padding: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
-    margin-left: 160px;    
+    margin-left: 178px;    
     transition: transform .8s ease-in-out;
 }
 
@@ -75,8 +105,8 @@
 
 .book-nav {
     height: 70%;
-    width: 75%;
-    margin-right: 0px;
+    width: 88%;
+    margin-right: -18px;
 }
 
 /* .suitcase {

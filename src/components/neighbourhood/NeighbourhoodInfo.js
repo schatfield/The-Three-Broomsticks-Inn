@@ -11,8 +11,8 @@ class NeighbourhoodInfo extends Component {
 
                 <div className="hogsmede-flex neighborhoud-flex-item">
                     <div className="hogsmede-title-container">
-                        <img className="right-hand" src={require('./right-hand.png')} alt=""></img>
-                        <p>Hogsmede</p>
+                        <img className="left-hand" src={require('./dark-leftHand.png')} alt=""></img>  
+                          <h4 className="hogsmede-title"> Hogsmede </h4>
                     </div>
                     <p className="hogsmede-desc">Welcome to Hogsmede Village, the only all-wizarding village in Britain. Founded over a thousand years ago by medieval wizard Hengist of Woodcroft as he was fleeing persecution by Muggles, The village is the site of many important historical happenings in the wizarding world often serving as a wizards’ headquarters during wartime’s.</p>
 
@@ -27,8 +27,8 @@ class NeighbourhoodInfo extends Component {
 
                 <div className="hogwarts-flex neighborhoud-flex-item">
                     <div className="hogwarts-title-container">
-                        <p>Hogwarts</p>
-                        <img className="left-hand" src={require('./left-hand.png')} alt=""></img>
+                        <h4>Hogwarts</h4>
+                        <img className="right-hand" src={require('./dark-rightHand.png')} alt=""></img>
                     </div>
 
                     <p className="hogwarts-desc"> Just a stone’s skim from the village of Hogsmede, Hogwarts School of Witchcraft and Wizardry is the British wizarding school located right here in the Scottish Highlands. Founded in the 10th century, It accepts magical students from Great Britain and Ireland for enrolment. The precise location of the school can never be uncovered because it was rendered Unplottable. To Muggles, the school generally looks like an old abandoned castle to protect the students and institution from any harm. however as a muggle patron of three broomsticks, the unplottable charm can be temporality lifted during private tours of the school exclusively available through your stay with us!</p>

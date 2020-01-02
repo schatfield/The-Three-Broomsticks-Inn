@@ -23,7 +23,9 @@ class ReservationList extends Component {
 
             })
         })
+
     };
+
 
     deleteReservation = id => {
         let userInfo = this.props.getUser()

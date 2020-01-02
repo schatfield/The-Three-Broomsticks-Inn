@@ -1,18 +1,21 @@
 .cards {
     display: flex;
     justify-content: space-around;
-    border: 1px solid #CAD0D2;
+    /* border: 1px solid #CAD0D2; */
     border-radius: 1px;
     text-align: center;
     flex: 0 0 350px;
+    padding-top: 30px;
     margin-bottom: 40px;
     margin: 0 10px 40px 10px;
 }
 
 .card {
+
     border: 1px solid #CAD0D2;
-    border-radius: 1px;
+    border-radius: 15px;
     width: 100%;
+    
 }
 
 .card-image {
@@ -25,4 +28,24 @@
     width: 150px;
     height: 40px;
     margin-top: 20px;
+}
+
+.book-button-container:hover {
+    cursor: pointer;
+}
+
+h6{
+    text-align:center;
+}
+
+h3{
+    text-align:center;
+}
+
+.cost{
+    text-align: center;
+}
+
+.rooms-heading {
+    margin-top: 240px;
 }

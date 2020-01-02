@@ -99,10 +99,10 @@ class ReservationForm extends Component {
                 isSelected: service.isSelected
             }
             ReservationManager.postNewReservationService(newRezService);
-            
+
         })
 
-    }
+    };
 
 
 
@@ -112,10 +112,16 @@ class ReservationForm extends Component {
 
             <>
                 <form className="booking-form">
+
+
                     <fieldset>
+                        <img className="booking-border" src={require('./bookingFormBorder.png')} alt="" />
+
                         <div className="formgrid">
-                            <label htmlFor="bookedRoomName"><h2>Please begin your reservation request for {this.state.roomName}:</h2></label>
-                            <p><label htmlFor="date">Dates:</label></p>
+
+                            <center><label htmlFor="bookedRoomName"><h2 className="rez-form">Please begin your reservation request for:</h2>
+                              <p className="room-name">'{this.state.roomName}'</p></label></center>
+                            <p className="form-label"><label htmlFor="date">Dates:</label></p>
 
                             <input
                                 type="date"
@@ -133,18 +139,19 @@ class ReservationForm extends Component {
                                 placeholder="checkout-date"
                             />
 
-                            <p><label htmlFor="guests">Guests:</label></p>
+                            <p className="form-label"><label htmlFor="guests">Guests:</label></p>
 
-                            <label htmlFor="persons">Number of persons:</label>
+                            <p className="number"> <label htmlFor="persons">Number of persons </label>
+                            </p>
                             <input
                                 type="text"
                                 required
                                 onChange={this.handleFieldChange}
                                 id="persons"
                                 placeholder="please enter a number"
-                            />
+                            /><br />
 
-                            <label htmlFor="creatures">Number of creatures:</label>
+                            <p className="number"> <label htmlFor="creatures">Number of creatures  </label></p>
                             <input
                                 type="text"
                                 required
@@ -153,9 +160,9 @@ class ReservationForm extends Component {
                                 placeholder="please enter a number"
                             />
 
-                            <p><label htmlFor="services">Services & Treatments:</label></p>
+                            <p className="form-label"><label htmlFor="services">Services & Treatments:</label></p>
 
-                            {this.state.services.map((service, index) =>
+                            <div className="services"> {this.state.services.map((service, index) =>
                                 <label key={service.id}>
                                     <input type="checkbox"
                                         checked={service.isSelected}
@@ -169,9 +176,10 @@ class ReservationForm extends Component {
                                     <br />
 
                                     <br />
+
                                 </label>
                             )}
-
+                            </div>
                         </div>
                         <div className="alignRight">
                             <button type="button" disabled={this.state.loadingStatus} onClick={this.constructNewReservation}>Submit</button>

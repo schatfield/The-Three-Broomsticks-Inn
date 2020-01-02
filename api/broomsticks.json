@@ -82,20 +82,11 @@
     {
       "userId": 1,
       "roomId": 1,
-      "checkInDate": "2019-12-12",
-      "checkOutDate": "2019-12-19",
-      "persons": "1",
-      "creatures": "1",
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "roomId": 1,
+      "id": 3,
       "checkInDate": "2019-12-19",
       "checkOutDate": "2019-12-31",
       "persons": "1",
-      "creatures": "1",
-      "id": 3
+      "creatures": "1"
     }
   ],
   "roomImages": [
@@ -198,7 +189,7 @@
     {
       "reservationId": 3,
       "serviceId": 2,
-      "isSelected": false,
+      "isSelected": true,
       "id": 3
     },
     {

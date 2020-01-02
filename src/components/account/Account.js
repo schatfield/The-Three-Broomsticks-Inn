@@ -11,15 +11,18 @@ class Account extends Component {
         return (
             <>
                 <div className="account-info">
-                    <h2>Welcome to your account page. </h2>
+                    <h2>Welcome to your account page</h2>
                     <p>Here you can find all of your user information and manage your bookings.</p>
+                    <br />
                     <div className="account-flex">
-                        <AccountInfoCard                            
+                        <AccountInfoCard
                             userObj={this.props.userObj}
                             {...this.props}
                         />
-
-                        <ReservationList                            
+                        <div className="margin">
+                            <img className="margin-line" src={require('../neighbourhood/margins.png')} alt=""></img>
+                        </div>
+                        <ReservationList
                             userObj={this.props.userObj}
                             getUser={this.props.getUser}
                             {...this.props} />

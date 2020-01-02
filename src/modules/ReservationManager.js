@@ -60,6 +60,14 @@ export default {
       method: "DELETE"
     })
     .then(result => result.json())
+  },
+
+  getSelectedServicesByReservationId(id){
+    return fetch(`${remoteURL}/reservationServices?reservationId=${id}&isSelected=true&_expand=service`).then(result => result.json())
+  },
+
+  getServicesByReservationId(id){
+    return fetch(`${remoteURL}/reservationServices?reservationId=${id}&_expand=service`).then(result => result.json())
   }
 };
 

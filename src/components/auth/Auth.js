@@ -52,7 +52,8 @@ class Auth extends Component {
 
         return (
             <div className="auth-container">
-                <center><h1 className="my-account">Welcome to the Three Broomsticks!</h1></center>
+                <center><h1 className="my-account">My Account</h1></center>
+                <center><p className="heading">Create a Three Broomsticks account to place reservation requests and keep track of your upcoming visits.</p></center>
                 <div className="auth-flex-container">
                     <form onSubmit={this.handleLogin}>
                         <fieldset>
@@ -73,20 +74,24 @@ class Auth extends Component {
                                     required="" />
 
                             </div>
-                            <div className="login-flex-item"
+                           <a> <div className="login-flex-item"
 
                                 onClick={(evt) =>  this.handleLogin(evt) }><img className="login-btn" src={require('./login-mauve.png')} alt="" />
-                            </div>
+                            </div></a>
 
                         </fieldset>
                     </form>
+                    <div className="margin">
+                    <img className="margin-line" src={require('../neighbourhood/margins.png')} alt=""></img>
+                </div>
+
                     <Register setUser={this.props.setUser} {...this.props} />
                 </div>
 
             </div>
         )
     }
-}
+};
 
 export default Auth;
 

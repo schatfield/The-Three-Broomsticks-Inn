@@ -24,20 +24,26 @@ class RoomList extends Component {
 
     render() {
         return (
-            <div className="container-cards">
-                {this.state.rooms.map(room =>
-   
-                    <RoomCard
-                        key={room.id}
-                        room={room}
-                        imagePath={room.roomImages[0].path}
-                        {...this.props} />
 
-                )}
+            <>
+                <div className="rooms-heading">
+                    <center>Our Rooms</center>
 
-            </div>
+                    <div className="container-cards">
+                        {this.state.rooms.map(room =>
 
-        );
+                            <RoomCard
+                                key={room.id}
+                                room={room}
+                                imagePath={room.roomImages[0].path}
+                                {...this.props} />
+
+                        )}
+                    </div>
+                </div>
+            </>
+
+        )
     };
 };
 

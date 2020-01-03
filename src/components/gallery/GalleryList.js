@@ -21,8 +21,6 @@ class GalleryList extends Component {
     }
 
     render() {
-        console.log("Render Gallery List")
-
         return (
             <div className="gallery-container">
                 {this.state.images.map(image =>

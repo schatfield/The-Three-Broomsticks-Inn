@@ -4,7 +4,6 @@ import './Neighbourhood.css';
 class NeighbourhoodInfo extends Component {
 
     render() {
-        console.log("RENDERED NEIGHBOURHOOD INFO!");
         return (
 
             <div className="neighbourhood-flex-container">

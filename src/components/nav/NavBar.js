@@ -28,10 +28,9 @@ class NavBar extends Component {
 
                                 <Link className="nav-link" to="/myaccount"
                                     {...this.props}><i className="fas fa-suitcase"></i></Link>
-                                    
-
 
                                 :
+                                
                                 <Link className="nav-link" to="/accountauth"
                                     {...this.props}><i className="fas fa-suitcase"></i></Link>
 

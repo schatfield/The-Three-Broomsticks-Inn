@@ -34,15 +34,15 @@
   "rooms": [
     {
       "id": 1,
-      "name": "Lufkin's Loft",
-      "description": "an extremely small room",
+      "name": "The Cupboard Under The Stairs",
+      "description": " An extremely large room in spite of it's namesake. What's in a name anyway? Since you'll enter from a door that leads to a cupboard under a set of stairs, we thought we'd just tell like it is. In honor of Mr. Potter himself, we made sure this room is bursting with space to spread out so you definitely won't need to mind your head or your manners.",
       "cost": 25
     },
     {
       "id": 2,
-      "name": "The Cupboard Under The Stairs",
-      "description": " An extremely large room in spite of it's namesake. What's in a name anyway? Since you'll enter from a door that leads to a cupboard under a set of stairs, we thought we'd just tell like it is. In honor of Mr. Potter himself, we made sure this room is bursting with space to spread out so you definitely won't need to mind your head or your manners.",
-      "cost": 35
+      "name": "The Bagshot Boxroom",
+      "description": "This is an extremely small room. Delighted in solitude? This one is perfect for the for the refined solo traveler and won’t have you parting with all your galleons in one place. Note: use of undetectable extension charms to accommodate a party of larger than one in this room is strictly prohibited.",
+      "cost": 15
     },
     {
       "id": 3,
@@ -58,13 +58,31 @@
     },
     {
       "id": 5,
-      "name": "The Bagshot Boxroom",
-      "description": "This is an extremely small room. Delighted in solitude? This one is perfect for the for the refined solo traveler and won’t have you parting with all your galleons in one place. Note: use of undetectable extension charms to accommodate a party of larger than one in this room is strictly prohibited.",
-      "cost": 15
+      "name": "Lufkin's Loft",
+      "description": "an extremely small room",
+      "cost": 35
     },
     {
       "id": 6,
-      "name": "room 6",
+      "name": "Black Lake Budoir",
+      "description": "an extremely small room",
+      "cost": 25
+    },
+    {
+      "id": 7,
+      "name": "Albus's Attic",
+      "description": "an extremely small room",
+      "cost": 25
+    },
+    {
+      "id": 8,
+      "name": "The Burbage Bedchamber",
+      "description": "an extremely small room",
+      "cost": 25
+    },
+    {
+      "id": 9,
+      "name": "Ignotus's Inglenook",
       "description": "an extremely small room",
       "cost": 25
     }
@@ -87,38 +105,62 @@
       "checkOutDate": "2019-12-31",
       "persons": "1",
       "creatures": "1"
+    },
+    {
+      "userId": 1,
+      "roomId": 3,
+      "id": 4,
+      "checkInDate": "2020-01-08",
+      "checkOutDate": "2020-01-11",
+      "persons": "9",
+      "creatures": "1"
     }
   ],
   "roomImages": [
     {
       "id": 1,
       "roomId": 1,
-      "path": "./LufkinsLoft.png"
+      "path": "./cupboard.png"
     },
     {
       "id": 2,
       "roomId": 2,
-      "path": "./dippetDomitory.png"
+      "path": "./BagshotBoxroom.png"
     },
     {
       "id": 3,
       "roomId": 3,
-      "path": "./dippetDomitory.png"
+      "path": "./WeaslebysWaterCloset.png"
     },
     {
       "id": 4,
       "roomId": 4,
-      "path": "./BlackLakeBudoir.png"
+      "path": "./snuggery.jpeg"
     },
     {
       "id": 5,
       "roomId": 5,
-      "path": "./BagshotBoxroom.png"
+      "path": "./LufkinsLoft.png"
     },
     {
       "id": 6,
       "roomId": 6,
-      "path": "./dippetDomitory.png"
+      "path": "./BlackLakeBudoir.png"
+    },
+    {
+      "id": 7,
+      "roomId": 7,
+      "path": "./IgnotusInglenook.png"
+    },
+    {
+      "id": 8,
+      "roomId": 8,
+      "path": "./BurbageBedchamber.png"
+    },
+    {
+      "id": 9,
+      "roomId": 9,
+      "path": "./AlbusAttic.jpg"
     }
   ],
   "galleryImages": [
@@ -181,28 +223,52 @@
   ],
   "reservationServices": [
     {
-      "reservationId": 3,
+      "reservationId": "3",
       "serviceId": 1,
       "isSelected": true,
       "id": 2
     },
     {
-      "reservationId": 3,
+      "reservationId": "3",
       "serviceId": 2,
       "isSelected": true,
       "id": 3
     },
     {
-      "reservationId": 3,
+      "reservationId": "3",
       "serviceId": 3,
-      "isSelected": false,
+      "isSelected": true,
       "id": 4
     },
     {
-      "reservationId": 3,
+      "reservationId": "3",
+      "serviceId": 4,
+      "isSelected": true,
+      "id": 5
+    },
+    {
+      "reservationId": "4",
+      "serviceId": 1,
+      "isSelected": false,
+      "id": 6
+    },
+    {
+      "reservationId": "4",
+      "serviceId": 2,
+      "isSelected": false,
+      "id": 7
+    },
+    {
+      "reservationId": "4",
       "serviceId": 4,
       "isSelected": false,
-      "id": 5
+      "id": 8
+    },
+    {
+      "reservationId": "4",
+      "serviceId": 3,
+      "isSelected": false,
+      "id": 9
     }
   ]
 }

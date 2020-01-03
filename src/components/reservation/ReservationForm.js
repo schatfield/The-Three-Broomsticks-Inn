@@ -22,7 +22,6 @@ class ReservationForm extends Component {
     handleFieldChange = evt => {
         const stateToChange = {};
         stateToChange[evt.target.id] = evt.target.value;
-        console.log(evt.target.id)
         this.setState(stateToChange);
     }
 
@@ -37,7 +36,6 @@ class ReservationForm extends Component {
     componentDidMount() {
         RoomManager.get(this.props.roomId)
             .then(room => {
-                console.log("room", room)
                 this.setState({
                     roomName: room.name,
                     roomDescription: room.description,
@@ -49,7 +47,6 @@ class ReservationForm extends Component {
         ReservationManager.getServices()
             .then(services => {
                 services.forEach(service => service.isSelected = false);
-                console.log("services", services);
                 // TODO: CHECKBOX COMMENT
                 this.setState({
                     services: services
@@ -79,7 +76,6 @@ class ReservationForm extends Component {
             // Create the location and redirect user to location list
             ReservationManager.post(newReservation)
                 .then((confirmedReservation) => {
-                    console.log("CONFIRMED", confirmedReservation)
                     this.props.history.push(`/reservations/${confirmedReservation.id}/confirmation`)
                     this.constructNewServices(confirmedReservation.id)
 
@@ -91,7 +87,7 @@ class ReservationForm extends Component {
     constructNewServices = (reservationId) => {
         // changing state of services again- the services in your state above. "services" here is storing a copy of services in state.
         const services = this.state.services;
-        services.map(service => {
+        services.forEach(service => {
             const newRezService = {
                 // resservationId from data / reservationId argument passed into constructNewServices
                 reservationId: reservationId,
@@ -117,7 +113,7 @@ class ReservationForm extends Component {
                     <fieldset>
                         <img className="booking-border" src={require('./bookingFormBorder.png')} alt="" />
 
-                        <div className="formgrid">
+                        <div className="rez-formgrid">
 
                             <center><label htmlFor="bookedRoomName"><h2 className="rez-form">Please begin your reservation request for:</h2>
                               <p className="room-name">'{this.state.roomName}'</p></label></center>

@@ -58,7 +58,7 @@ class Auth extends Component {
                     <form onSubmit={this.handleLogin}>
                         <fieldset>
                             <h3>Already a registered Muggle?</h3>
-                            <div className="formgrid">
+                            <div className="auth-formgrid">
                                 {/* <label htmlFor="inputEmail">Email address</label> */}
                                 <input onChange={this.handleFieldChange} type="email" size="60"
                                     id="email"
@@ -95,10 +95,3 @@ class Auth extends Component {
 
 export default Auth;
 
-{/* <input onChange={this.handleFieldChange} type="password" size="60"
-                                    id="password"
-                                    placeholder="Password"
-                                    required="" />
-
-                            </div>
-                            <button type="submit">Log in</button> */}

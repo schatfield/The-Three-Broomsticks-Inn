@@ -1,17 +1,14 @@
 .res-edit-form{
-    margin-top: 185px;
-}
-/* 
-.booking-form {
+
     margin-top: 265px;
     display: flex;
     width: 750px;        
     margin-left: auto;
     margin-right: auto;
     
-} */
+}
 
-.form-label{
+.edit-form-label{
     font-size: 25px;
 }
 
@@ -26,7 +23,7 @@
     /* font-family: 'IM Fell English SC', serif; */
 }
 
-.rez-form{
+.edit-rez-form{
     font-size: 27px;
     font-family: 'IM Fell English SC', serif;
 }
@@ -41,6 +38,6 @@
 }
 
 .edit-formgrid {
-    /* margin-top: -680px;    */
+    margin-top: -680px;   
     padding: 0 40px;
 }

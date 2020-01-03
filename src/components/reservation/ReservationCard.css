@@ -1,0 +1,20 @@
+/* rez-card styling below */
+
+.rez-card-image{
+    width:300px;
+    height: 200px;
+
+}
+
+.rez-room-name{
+    font-family: 'Roboto Condensed';
+}
+
+.rez-card-title {
+    font-family: 'IM Fell English SC';
+    font-size: 18.72px;
+}
+
+a {
+    cursor: pointer;
+}

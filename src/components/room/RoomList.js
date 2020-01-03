@@ -11,11 +11,9 @@ class RoomList extends Component {
     }
 
     componentDidMount() {
-        console.log("Room List: ComponentDidMount");
         // getAll from RoomManager and hang on to that data; put it in state
         RoomManager.getAll()
             .then((rooms) => {
-                console.log("Rooms", rooms);
                 this.setState({
                     rooms: rooms
                 })
@@ -27,7 +25,7 @@ class RoomList extends Component {
 
             <>
                 <div className="rooms-heading">
-                    <center>Our Rooms</center>
+                    <center><p className="rooms-heading">Our Rooms</p></center>
 
                     <div className="container-cards">
                         {this.state.rooms.map(room =>

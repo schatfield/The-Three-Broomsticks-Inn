@@ -29,7 +29,7 @@ class ReservationEditForm extends Component {
         services[index].isSelected = !isSelected;
         this.setState({ rezServices: services })
     }
-    
+
     updateExistingReservation = evt => {
         evt.preventDefault()
         this.setState({ loadingStatus: true });
@@ -55,27 +55,27 @@ class ReservationEditForm extends Component {
     constructNewServices = (reservationId) => {
         // changing state of services again- the services in your state above. "services" here is storing a copy of services in state.
         const services = this.state.rezServices;
-        services.map(service => {
+        services.forEach(service => {
             const newRezService = {
                 // resservationId from data / reservationId argument passed into constructNewServices
                 reservationId: reservationId,
                 serviceId: service.id,
-                isSelected: service.isSelected
+                isSelected: service.isSelected,
+                id: service.rezServiceId
             }
-            // TODO: Make put call for editing reservation services
-            ReservationManager.editReservationService(newRezService);
             
+            // TODO: Make put call for editing reservation services
+            ReservationManager.updateReservationService(newRezService);
+
         })
 
     }
 
     componentDidMount() {
-        console.log("RES EDIT FORM MOUNTED")
         const reservationId = this.props.match.params.reservationId
 
         ReservationManager.get(reservationId)
             .then(booking => {
-                console.log("BOOKING: ", booking)
                 this.setState({
                     checkIn: booking.checkInDate,
                     checkOut: booking.checkOutDate,
@@ -89,9 +89,11 @@ class ReservationEditForm extends Component {
             .then(reservationServices => {
                 const newArray = reservationServices.map((reservationService) => {
                     reservationService.service.isSelected = reservationService.isSelected;
+                    reservationService.service.rezServiceId = reservationService.id;
                     // ADD rezService ID onto service object, similar to line above
                     return reservationService.service
                 })
+                console.log(newArray)
                 this.setState({
                     rezServices: newArray
 
@@ -108,9 +110,14 @@ class ReservationEditForm extends Component {
             <>
                 <form className="res-edit-form">
                     <fieldset>
+
+                        <img className="booking-border" src={require('./bookingFormBorder.png')} alt="" />
+
                         <div className="edit-formgrid">
-                            <label htmlFor="bookedRoomName"><h2>Modify Your Booking:</h2></label>
-                            <p><label htmlFor="date">Dates:</label></p>
+                            <center>
+                                <label htmlFor="bookedRoomName"><h2 className="edit-rez-form">Modify My Booking:</h2></label></center>
+                            <center><p>Please make desired changes to your booking and we will contact you directly with confirmation of your request.</p></center>
+                            <p className="edit-form-label"><label htmlFor="date">Dates:</label></p>
 
 
                             <input
@@ -131,9 +138,9 @@ class ReservationEditForm extends Component {
                                 id="checkOut"
                                 value={this.state.checkOut || ""}
                             />
-                            <p><label htmlFor="guests">Guests:</label></p>
+                            <p className="edit-form-label"><label htmlFor="guests">Guests:</label></p>
 
-                            <label htmlFor="persons">Number of persons:</label>
+                            <p className="number"> <label htmlFor="persons">Number of persons</label></p>
 
                             <input
                                 type="text"
@@ -142,9 +149,9 @@ class ReservationEditForm extends Component {
                                 onChange={this.handleFieldChange}
                                 id="people"
                                 value={this.state.people || ""}
-                            />
+                            /><br />
 
-                            <label htmlFor="persons">Number of creatures:</label>
+                            <p className="number"> <label htmlFor="persons">Number of creatures</label></p>
 
                             <input
                                 type="text"
@@ -154,9 +161,9 @@ class ReservationEditForm extends Component {
                                 id="nonPerson"
                                 value={this.state.nonPerson || ""}
                             />
-                            <p><label htmlFor="services">Services & Treatments:</label></p>
+                            <p className="edit-form-label"><label htmlFor="services">Services & Treatments:</label></p>
 
-                            {this.state.rezServices.map((service, index) =>
+                            <div className="services"> {this.state.rezServices.map((service, index) =>
                                 <label key={service.id}>
                                     <input type="checkbox"
                                         checked={service.isSelected}
@@ -172,7 +179,7 @@ class ReservationEditForm extends Component {
                                     <br />
                                 </label>
                             )}
-
+                            </div>
                         </div>
                         <div className="alignRight">
                             <button

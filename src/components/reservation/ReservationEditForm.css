@@ -1,3 +1,43 @@
 .res-edit-form{
-    margin-top: 185px;
+
+    margin-top: 265px;
+    display: flex;
+    width: 750px;        
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.edit-form-label{
+    font-size: 25px;
+}
+
+.number{
+    font-size: 13px;
+
+}
+
+.room-name{
+   
+    font-size: 25px;
+    /* font-family: 'IM Fell English SC', serif; */
+}
+
+.edit-rez-form{
+    font-size: 27px;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.services{
+    font-size: 13px;
+}
+
+.booking-border{
+    width:100%;
+    height: 80%
+}
+
+.edit-formgrid {
+    margin-top: -680px;   
+    padding: 0 40px;
 }

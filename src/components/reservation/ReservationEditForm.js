@@ -12,14 +12,22 @@ class ReservationEditForm extends Component {
         people: "",
         nonPerson: "",
         loadingStatus: true,
+        rezServices: []
 
     };
 
     handleFieldChange = evt => {
         const stateToChange = {}
         stateToChange[evt.target.id] = evt.target.value
-        console.log(evt.target.id)
         this.setState(stateToChange)
+    }
+
+    handleCheckbox = (evt, index) => {
+        const services = this.state.rezServices;
+        // if service.isSelected is crruently TRUE
+        const isSelected = services[index].isSelected;
+        services[index].isSelected = !isSelected;
+        this.setState({ rezServices: services })
     }
 
     updateExistingReservation = evt => {
@@ -29,7 +37,7 @@ class ReservationEditForm extends Component {
 
         const editedReservation = {
             userId: userId.id,
-            roomId: Number (this.props.match.params.roomId),
+            roomId: Number(this.props.match.params.roomId),
             id: this.props.match.params.reservationId,
             checkInDate: this.state.checkIn,
             checkOutDate: this.state.checkOut,
@@ -40,10 +48,33 @@ class ReservationEditForm extends Component {
 
         ReservationManager.update(editedReservation)
             .then(() => this.props.history.push("/myaccount"))
+        // TODO: Call constructNewServices
+        this.constructNewServices(editedReservation.id)
+    }
+
+    constructNewServices = (reservationId) => {
+        // changing state of services again- the services in your state above. "services" here is storing a copy of services in state.
+        const services = this.state.rezServices;
+        services.forEach(service => {
+            const newRezService = {
+                // resservationId from data / reservationId argument passed into constructNewServices
+                reservationId: reservationId,
+                serviceId: service.id,
+                isSelected: service.isSelected,
+                id: service.rezServiceId
+            }
+            
+            // TODO: Make put call for editing reservation services
+            ReservationManager.updateReservationService(newRezService);
+
+        })
+
     }
 
     componentDidMount() {
-        ReservationManager.get(this.props.match.params.reservationId)
+        const reservationId = this.props.match.params.reservationId
+
+        ReservationManager.get(reservationId)
             .then(booking => {
                 this.setState({
                     checkIn: booking.checkInDate,
@@ -53,7 +84,23 @@ class ReservationEditForm extends Component {
                     loadingStatus: false,
                 });
             });
-    }
+
+        ReservationManager.getServicesByReservationId(reservationId)
+            .then(reservationServices => {
+                const newArray = reservationServices.map((reservationService) => {
+                    reservationService.service.isSelected = reservationService.isSelected;
+                    reservationService.service.rezServiceId = reservationService.id;
+                    // ADD rezService ID onto service object, similar to line above
+                    return reservationService.service
+                })
+                console.log(newArray)
+                this.setState({
+                    rezServices: newArray
+
+                })
+            })
+
+    };
 
 
     render() {
@@ -63,9 +110,14 @@ class ReservationEditForm extends Component {
             <>
                 <form className="res-edit-form">
                     <fieldset>
-                        <div className="formgrid">
-                            <label htmlFor="bookedRoomName"><h2>Modify Your Booking:</h2></label>
-                            <p><label htmlFor="date">Dates:</label></p>
+
+                        <img className="booking-border" src={require('./bookingFormBorder.png')} alt="" />
+
+                        <div className="edit-formgrid">
+                            <center>
+                                <label htmlFor="bookedRoomName"><h2 className="edit-rez-form">Modify My Booking:</h2></label></center>
+                            <center><p>Please make desired changes to your booking and we will contact you directly with confirmation of your request.</p></center>
+                            <p className="edit-form-label"><label htmlFor="date">Dates:</label></p>
 
 
                             <input
@@ -86,9 +138,9 @@ class ReservationEditForm extends Component {
                                 id="checkOut"
                                 value={this.state.checkOut || ""}
                             />
-                            <p><label htmlFor="guests">Guests:</label></p>
+                            <p className="edit-form-label"><label htmlFor="guests">Guests:</label></p>
 
-                            <label htmlFor="persons">Number of persons:</label>
+                            <p className="number"> <label htmlFor="persons">Number of persons</label></p>
 
                             <input
                                 type="text"
@@ -97,9 +149,9 @@ class ReservationEditForm extends Component {
                                 onChange={this.handleFieldChange}
                                 id="people"
                                 value={this.state.people || ""}
-                            />
-                        
-                         <label htmlFor="persons">Number of creatures:</label>
+                            /><br />
+
+                            <p className="number"> <label htmlFor="persons">Number of creatures</label></p>
 
                             <input
                                 type="text"
@@ -109,8 +161,25 @@ class ReservationEditForm extends Component {
                                 id="nonPerson"
                                 value={this.state.nonPerson || ""}
                             />
+                            <p className="edit-form-label"><label htmlFor="services">Services & Treatments:</label></p>
 
+                            <div className="services"> {this.state.rezServices.map((service, index) =>
+                                <label key={service.id}>
+                                    <input type="checkbox"
+                                        checked={service.isSelected}
+                                        onChange={(evt) => this.handleCheckbox(evt, index)}
+                                        id={service.id}
+                                    />
+                                    <span className="service-name">{service.name}</span> - <img className="galleon" src={require('../room/galleon-icon.png')} alt="" /> {service.cost}
+                                    <br />
+                                    <br />
+                                    <span className="service-desc">{service.description}</span>
+                                    <br />
 
+                                    <br />
+                                </label>
+                            )}
+                            </div>
                         </div>
                         <div className="alignRight">
                             <button

@@ -39,7 +39,11 @@
 }
 
 .my-account{
-    /* font-family: 'IM Fell English SC', serif; */
+    font-family: 'IM Fell English SC', serif;
+}
+
+h3{
+    font-family: 'IM Fell English SC', serif;
 }
 
 .register-btn{
@@ -56,4 +60,8 @@
     margin-right: 0;
     margin-top: 85px;
   
+}
+
+a {
+    cursor: pointer;
 }

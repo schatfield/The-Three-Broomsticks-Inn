@@ -8,54 +8,53 @@ class ReservationList extends Component {
 
     state = {
         reservations: [],
-        
+
     }
 
-     componentDidMount() {    
-         let userInfo = this.props.getUser()
-         console.log("userInfo", userInfo)
+    componentDidMount() {
+        let userInfo = this.props.getUser()
         ReservationManager.getReservationByUserId(userInfo.id)
-        .then((reservations) => {
-            console.log(reservations)
-            
-            this.setState({
-                reservations : reservations
+            .then((reservations) => {
 
+                this.setState({
+                    reservations: reservations
+
+                })
             })
-        })
+
     };
+
 
     deleteReservation = id => {
         let userInfo = this.props.getUser()
         ReservationManager.delete(id)
-        .then(() => {
-          ReservationManager.getReservationByUserId(userInfo.id)
-          .then((reservations) => {
-            this.setState({
-                reservations: reservations
+            .then(() => {
+                ReservationManager.getReservationByUserId(userInfo.id)
+                    .then((reservations) => {
+                        this.setState({
+                            reservations: reservations
+                        })
+                    })
             })
-          })
-        })
-      };
-    
+    };
+
 
     render() {
-        console.log("Reservation List: Render", this.state)
 
         return (
             <div >
                 {this.state.reservations.map(reservation =>
-                <ReservationCard 
-                    key={reservation.id}
-                    reservation={reservation}
-                    deleteReservation={this.deleteReservation}
-                    roomName={reservation.room.name}
+                    <ReservationCard
+                        key={reservation.id}
+                        reservation={reservation}
+                        deleteReservation={this.deleteReservation}
+                        roomName={reservation.room.name}
 
-                    {...this.props} 
+                        {...this.props}
                     />
 
-                    
-                    )}
+
+                )}
             </div>
         );
     };

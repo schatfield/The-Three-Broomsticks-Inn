@@ -11,11 +11,9 @@ class RoomList extends Component {
     }
 
     componentDidMount() {
-        console.log("Room List: ComponentDidMount");
         // getAll from RoomManager and hang on to that data; put it in state
         RoomManager.getAll()
             .then((rooms) => {
-                console.log("Rooms", rooms);
                 this.setState({
                     rooms: rooms
                 })
@@ -23,25 +21,27 @@ class RoomList extends Component {
     }
 
     render() {
-        console.log("Room List: RENDER")
-        
-        console.log("state", this.state.rooms)
-
         return (
-            <div className="container-cards">
-                {this.state.rooms.map(room =>
-   
-                    <RoomCard
-                        key={room.id}
-                        room={room}
-                        imagePath={room.roomImages[0].path}
-                        {...this.props} />
 
-                )}
+            <>
+                <div className="rooms-heading">
+                    <center><p className="rooms-heading">Our Rooms</p></center>
 
-            </div>
+                    <div className="container-cards">
+                        {this.state.rooms.map(room =>
 
-        );
+                            <RoomCard
+                                key={room.id}
+                                room={room}
+                                imagePath={room.roomImages[0].path}
+                                {...this.props} />
+
+                        )}
+                    </div>
+                </div>
+            </>
+
+        )
     };
 };
 

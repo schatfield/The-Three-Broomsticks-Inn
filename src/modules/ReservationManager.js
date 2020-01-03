@@ -5,9 +5,7 @@ export default {
     return fetch(`${remoteURL}/reservations/${reservationId}?embed=rooms`).then(result => result.json())
   },
   getAll() {
-    const userId = JSON.parse(sessionStorage.getItem("credentials"))
-    // console.log(userId.id)
-    console.log("USER ID", userId.id)
+    // const userId = JSON.parse(sessionStorage.getItem("credentials"))
     return fetch(`${remoteURL}/reservations`).then(result => result.json())
   },
 
@@ -41,7 +39,6 @@ export default {
   },
 
   getServices(){
-    
     return fetch(`${remoteURL}/services`).then(result => result.json())
   },
 
@@ -56,11 +53,35 @@ export default {
     }).then(data => data.json())
   },
 
+  updateReservationService(editedService) {
+    return fetch(`${remoteURL}/reservationServices/${editedService.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedService)
+    }).then(data => data.json());
+
+  },
+
   deleteReservationService(id) {
     return fetch(`${remoteURL}/reservationServices/${id}`, {
       method: "DELETE"
     })
     .then(result => result.json())
+  },
+
+  getSelectedServicesByReservationId(id){
+    return fetch(`${remoteURL}/reservationServices?reservationId=${id}&isSelected=true&_expand=service`).then(result => result.json())
+  },
+
+  getServicesByReservationId(id){
+    return fetch(`${remoteURL}/reservationServices?reservationId=${id}&_expand=service`).then(result => result.json())
+  },
+
+  getRoomImageByRoomId(id){
+    return fetch(`${remoteURL}/roomImages?roomId=${id}`).then(result => result.json())
   }
+   
 };
 

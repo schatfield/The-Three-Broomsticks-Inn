@@ -3,6 +3,7 @@ import './Room.css'
 
 class RoomCard extends Component {
 
+
     render() {
         return (
             <div className="cards">
@@ -16,7 +17,7 @@ class RoomCard extends Component {
 
                         <p>{this.props.room.description}</p>
                         <hr></hr>
-                        <p><img className="galleon" src={require('./galleon-icon.png')} alt="" /> {this.props.room.cost} / night</p>
+                        <div className= "cost"><img className="galleon" src={require('./galleon-icon.png')} alt="" /> {this.props.room.cost} / night</div>
                         <div type="book-button-container" className="btn btn-secondary btn-lg btn-block"
                             onClick={() => { this.props.history.push(`/rooms/${this.props.room.id}/book`) }}><img className="book-btn" src={require('./book-button.png')} alt="" /> </div>
                     </div>

@@ -24,8 +24,9 @@ class RoomList extends Component {
         return (
 
             <>
-                <div className="rooms-heading">
-                    <center><p className="rooms-heading">Our Rooms</p></center>
+                <div className="rooms-page">
+                    <center><h1 className="rooms-page">Our Rooms</h1></center>
+                    <center><p className="rooms-page-message">Each room at the Three Broomsticks has been thoughtfully furnished to create a feeling of restful refinery. Choose your favourite and start relaxing in one clean sweep... </p></center>
 
                     <div className="container-cards">
                         {this.state.rooms.map(room =>

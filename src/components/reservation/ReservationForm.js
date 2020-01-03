@@ -66,8 +66,8 @@ class ReservationForm extends Component {
             const userId = JSON.parse(sessionStorage.getItem("credentials"))
 
             const newReservation = {
-                userId: userId.id,
-                roomId: this.props.roomId,
+                userId: Number(userId.id),
+                roomId: Number(this.props.roomId),
                 checkInDate: this.state.checkInDate,
                 checkOutDate: this.state.checkOutDate,
                 persons: this.state.persons,
@@ -90,8 +90,8 @@ class ReservationForm extends Component {
         services.forEach(service => {
             const newRezService = {
                 // resservationId from data / reservationId argument passed into constructNewServices
-                reservationId: reservationId,
-                serviceId: service.id,
+                reservationId: Number(reservationId),
+                serviceId: Number(service.id),
                 isSelected: service.isSelected
             }
             ReservationManager.postNewReservationService(newRezService);

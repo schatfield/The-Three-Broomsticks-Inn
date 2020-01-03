@@ -21,7 +21,11 @@ class GalleryList extends Component {
     }
 
     render() {
+        
         return (
+            <div className="gallery-page">
+                    <center><h1 className="gallery-page-title">Gallery</h1></center>
+                    <center><p className="gallery-page-message">Take a gander around the Three Broomsticks and see what we have to offer. Wander down our halls, stroll through our gardens, and have a peek at things nearby... </p></center> 
             <div className="gallery-container">
                 {this.state.images.map(image =>
                     <GalleryCard
@@ -30,6 +34,8 @@ class GalleryList extends Component {
                         {...this.props}
                     />)}
             </div>
+            </div>
+            
         )
     }
 }

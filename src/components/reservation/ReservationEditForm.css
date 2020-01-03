@@ -5,6 +5,8 @@
     width: 750px;        
     margin-left: auto;
     margin-right: auto;
+    padding-top:0px;
+    
     
 }
 
@@ -28,16 +30,23 @@
     font-family: 'IM Fell English SC', serif;
 }
 
+.service-desc{
+    font-size: 13px;
+    font-style: italic;
+}
+
 .services{
     font-size: 13px;
 }
 
 .booking-border{
     width:100%;
-    height: 80%
+    height: 130%;
+   
 }
 
 .edit-formgrid {
-    margin-top: -680px;   
+    margin-top: -910px;   
     padding: 0 40px;
+    margin-left:20px;
 }

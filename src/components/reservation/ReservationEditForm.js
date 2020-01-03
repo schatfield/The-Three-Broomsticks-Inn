@@ -36,9 +36,9 @@ class ReservationEditForm extends Component {
         const userId = JSON.parse(sessionStorage.getItem("credentials"))
 
         const editedReservation = {
-            userId: userId.id,
+            userId: Number(userId.id),
             roomId: Number(this.props.match.params.roomId),
-            id: this.props.match.params.reservationId,
+            id: Number(this.props.match.params.reservationId),
             checkInDate: this.state.checkIn,
             checkOutDate: this.state.checkOut,
             persons: this.state.people,
@@ -58,10 +58,10 @@ class ReservationEditForm extends Component {
         services.forEach(service => {
             const newRezService = {
                 // resservationId from data / reservationId argument passed into constructNewServices
-                reservationId: reservationId,
-                serviceId: service.id,
+                reservationId: Number(reservationId),
+                serviceId: Number(service.id),
                 isSelected: service.isSelected,
-                id: service.rezServiceId
+                id: Number(service.rezServiceId)
             }
             
             // TODO: Make put call for editing reservation services

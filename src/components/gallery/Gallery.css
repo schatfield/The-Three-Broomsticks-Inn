@@ -2,18 +2,33 @@
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top:300px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top:30px;
 }
 
 .gallery-image{
 margin-top: 30px;
+margin-right:20px;
 
 }
 
 .image-card{
-    height: 200px;
-    width:300px;
+    height: 245px;
+    width:295px;
     
+}
+
+.gallery-page{
+    margin-top: 240px;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.gallery-page-message{
+    margin-right:120px;
+    margin-left:120px;
+    font-size:15px;
+    font-family: 'Roboto Condensed', sans-serif;
+ 
+   
 }

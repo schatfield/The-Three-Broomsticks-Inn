@@ -40,7 +40,7 @@
     },
     {
       "id": 2,
-      "name": "Lufkin's Loft",
+      "name": "Lupin's Loft",
       "description": "Minister Artemisia Lufkin, a Hufflepuff student while attending Hogwarts, eventually became the first woman ever to serve as Minister for Magic for Great Britain. A lovely loft room with her namesake fully equpped with a stocked larder, woodstove, and a four-poster bed.",
       "cost": 35
     },
@@ -85,6 +85,18 @@
       "name": "The Bagshot Boxroom",
       "description": "This is an extremely small room. Delighted in solitude? This one is perfect for the for the refined solo traveler and won’t have you parting with all your galleons in one place. Note: use of undetectable extension charms to accommodate a party of larger than one in this room is strictly prohibited.",
       "cost": 15
+    },
+    {
+      "id": 10,
+      "name": "Dippet's Dormitory",
+      "description": "Overlooking the delightful Black Lake and the massive grounds of Hogwarts School, if it's mountainous views from the comfort of your own cosy four-poster bed you're after, look no further.",
+      "cost": 18
+    },
+    {
+      "id": 11,
+      "name": "Lufkin's Landing",
+      "description": "Overlooking the delightful Black Lake and the massive grounds of Hogwarts School, if it's mountainous views from the comfort of your own cosy four-poster bed you're after, look no further.",
+      "cost": 25
     }
   ],
   "reservations": [
@@ -105,6 +117,69 @@
       "checkOutDate": "2020-01-17",
       "persons": "1",
       "creatures": "0"
+    },
+    {
+      "userId": 1,
+      "roomId": 6,
+      "checkInDate": "2020-01-15",
+      "checkOutDate": "2020-01-17",
+      "persons": "9",
+      "creatures": "1",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "roomId": 4,
+      "checkInDate": "2020-01-24",
+      "checkOutDate": "2020-01-25",
+      "persons": "9",
+      "creatures": "9",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "roomId": 4,
+      "checkInDate": "2020-01-23",
+      "checkOutDate": "2020-01-30",
+      "persons": "9",
+      "creatures": "1",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "roomId": 4,
+      "checkInDate": "2020-01-08",
+      "checkOutDate": "2020-01-16",
+      "persons": "9",
+      "creatures": "0",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "roomId": 3,
+      "checkInDate": "2020-01-31",
+      "checkOutDate": "2020-02-08",
+      "persons": "9",
+      "creatures": "0",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "roomId": 5,
+      "checkInDate": "2020-01-22",
+      "checkOutDate": "2020-01-24",
+      "persons": "1",
+      "creatures": "2",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "roomId": 2,
+      "checkInDate": "2020-01-02",
+      "checkOutDate": "2020-01-03",
+      "persons": "2",
+      "creatures": "3",
+      "id": 9
     }
   ],
   "roomImages": [
@@ -116,7 +191,7 @@
     {
       "id": 2,
       "roomId": 2,
-      "path": "./LufkinsLoft.png"
+      "path": "./LupinsLoft.png"
     },
     {
       "id": 3,
@@ -152,6 +227,16 @@
       "id": 9,
       "roomId": 9,
       "path": "./BagshotBoxroom.png"
+    },
+    {
+      "id": 10,
+      "roomId": 10,
+      "path": "./LufkinsLanding3.png"
+    },
+    {
+      "id": 11,
+      "roomId": 11,
+      "path": "./DippetDorm.png"
     }
   ],
   "galleryImages": [
@@ -190,10 +275,10 @@
       "path": "./Cream Tea.jpeg",
       "imageAlt": "Tea in our delightful garden"
     },
-    { "id": 8,
+    {
+      "id": 8,
       "path": "./greenhouse.png",
       "imageAlt": "One of our on site greenhouses"
-      
     },
     {
       "id": 9,
@@ -204,7 +289,6 @@
       "id": 10,
       "path": "./Three Broomsticks Potting Shed.jpeg",
       "imageAlt": "One of our potting sheds"
-  
     },
     {
       "id": 12,
@@ -216,7 +300,6 @@
       "path": "./pots.jpeg",
       "imageAlt": "Kitchens"
     },
-  
     {
       "id": 14,
       "path": "./kitchen view.png",
@@ -247,7 +330,8 @@
       "path": "./pub.jpeg",
       "imageAlt": "The Pub"
     },
-    {"id": 20,
+    {
+      "id": 20,
       "path": "./sittingRoom.jpeg",
       "imageAlt": "knooks and crannies"
     },
@@ -255,7 +339,6 @@
       "id": 21,
       "path": "./Three Broomsticks fireplace.png",
       "imageAlt": "The Pub"
-      
     },
     {
       "id": 22,
@@ -277,7 +360,6 @@
       "path": "./entry.jpeg",
       "imageAlt": "One of the Entryways"
     },
-    
     {
       "id": 26,
       "path": "./bathroom.jpeg",
@@ -288,7 +370,6 @@
       "path": "./anotherHall.jpeg",
       "imageAlt": "A Hallway"
     },
-
     {
       "id": 28,
       "path": "./sitHere.jpeg",
@@ -299,13 +380,11 @@
       "path": "./anotherSittingRoom.jpeg",
       "imageAlt": "The Pub"
     },
-  
     {
       "id": 30,
       "path": "./cottages.png",
       "imageAlt": "A view from the street"
     },
-    
     {
       "id": 31,
       "path": "./grounds.png",
@@ -316,7 +395,6 @@
       "path": "./forbiddenForest.jpeg",
       "imageAlt": "A view of the Shrieking Shack from The Forbidden Forest"
     },
-
     {
       "id": 33,
       "path": "./hogwarts-express.jpeg",
@@ -359,13 +437,13 @@
     {
       "reservationId": 2,
       "serviceId": 3,
-      "isSelected": true,
+      "isSelected": false,
       "id": 2
     },
     {
       "reservationId": 2,
       "serviceId": 1,
-      "isSelected": true,
+      "isSelected": false,
       "id": 3
     },
     {
@@ -373,6 +451,174 @@
       "serviceId": 4,
       "isSelected": false,
       "id": 4
+    },
+    {
+      "reservationId": 3,
+      "serviceId": 1,
+      "isSelected": false,
+      "id": 5
+    },
+    {
+      "reservationId": 3,
+      "serviceId": 2,
+      "isSelected": false,
+      "id": 6
+    },
+    {
+      "reservationId": 3,
+      "serviceId": 3,
+      "isSelected": false,
+      "id": 7
+    },
+    {
+      "reservationId": 3,
+      "serviceId": 4,
+      "isSelected": false,
+      "id": 8
+    },
+    {
+      "reservationId": 4,
+      "serviceId": 1,
+      "isSelected": false,
+      "id": 9
+    },
+    {
+      "reservationId": 4,
+      "serviceId": 2,
+      "isSelected": false,
+      "id": 10
+    },
+    {
+      "reservationId": 4,
+      "serviceId": 3,
+      "isSelected": false,
+      "id": 11
+    },
+    {
+      "reservationId": 4,
+      "serviceId": 4,
+      "isSelected": false,
+      "id": 12
+    },
+    {
+      "reservationId": 5,
+      "serviceId": 1,
+      "isSelected": false,
+      "id": 13
+    },
+    {
+      "reservationId": 5,
+      "serviceId": 2,
+      "isSelected": true,
+      "id": 14
+    },
+    {
+      "reservationId": 5,
+      "serviceId": 3,
+      "isSelected": false,
+      "id": 15
+    },
+    {
+      "reservationId": 5,
+      "serviceId": 4,
+      "isSelected": false,
+      "id": 16
+    },
+    {
+      "reservationId": 6,
+      "serviceId": 1,
+      "isSelected": false,
+      "id": 17
+    },
+    {
+      "reservationId": 6,
+      "serviceId": 2,
+      "isSelected": false,
+      "id": 18
+    },
+    {
+      "reservationId": 6,
+      "serviceId": 3,
+      "isSelected": false,
+      "id": 19
+    },
+    {
+      "reservationId": 6,
+      "serviceId": 4,
+      "isSelected": true,
+      "id": 20
+    },
+    {
+      "reservationId": 7,
+      "serviceId": 1,
+      "isSelected": false,
+      "id": 21
+    },
+    {
+      "reservationId": 7,
+      "serviceId": 2,
+      "isSelected": false,
+      "id": 22
+    },
+    {
+      "reservationId": 7,
+      "serviceId": 3,
+      "isSelected": false,
+      "id": 23
+    },
+    {
+      "reservationId": 7,
+      "serviceId": 4,
+      "isSelected": false,
+      "id": 24
+    },
+    {
+      "reservationId": 8,
+      "serviceId": 1,
+      "isSelected": true,
+      "id": 25
+    },
+    {
+      "reservationId": 8,
+      "serviceId": 2,
+      "isSelected": true,
+      "id": 26
+    },
+    {
+      "reservationId": 8,
+      "serviceId": 3,
+      "isSelected": false,
+      "id": 27
+    },
+    {
+      "reservationId": 8,
+      "serviceId": 4,
+      "isSelected": false,
+      "id": 28
+    },
+    {
+      "reservationId": 9,
+      "serviceId": 1,
+      "isSelected": true,
+      "id": 29
+    },
+    {
+      "reservationId": 9,
+      "serviceId": 2,
+      "isSelected": false,
+      "id": 30
+    },
+    {
+      "reservationId": 9,
+      "serviceId": 3,
+      "isSelected": false,
+      "id": 31
+    },
+    {
+      "reservationId": 9,
+      "serviceId": 4,
+      "isSelected": false,
+      "id": 32
     }
   ]
 }

@@ -1,3 +1,33 @@
+# The Three Broomsticks: The Information Dashboard
+
+## What is The Three Broomsticks?
+
+The Three Broomsticks is an application serving as an online reservation tool and information center for a Bed & Breakfast in the Highlands of Scotland. It's an app that allow users to connect with the business for organizing travel accommodation at the hotel.
+
+## Setup: Follow these steps exactly
+
+1. Clone this repository using git clone and the link to this repo provided above
+2. Run the following command to change into the `api` directory
+```
+$ cd api
+```
+3. In the `api` directory, create a copy of the `broomsticks.json.example` and remove the .example extension.
+4. You will be using json-server to have a locally running API that serves your data. To run json-server from command line:
+5. Run the following command to start your JSON server: 
+```
+$ json-server -p 5002 -w broomsticks.json
+```
+6. Go to localhost:5002 to see your data.
+7. Go back up a level to the root directory `THE-THREE-BROOMSTICKS-INN`:
+```
+$ ../
+```
+8. Run `npm install` and wait for all dependencies to be installed
+9. Run `npm start` to verify that installation was successful.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

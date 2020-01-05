@@ -182,38 +182,145 @@
     },
     {
       "id": 6,
-      "path": "./kitchen view.png",
-      "imageAlt": "a glimpse outside from our kitchens"
+      "path": "./gardens.png",
+      "imageAlt": "Our on site herbs and vegetable gardens"
     },
     {
       "id": 7,
       "path": "./Cream Tea.jpeg",
       "imageAlt": "Tea in our delightful garden"
     },
-    {
-      "id": 8,
-      "path": "./gardens.png",
-      "imageAlt": "Our on site herbs and vegetable gardens"
+    { "id": 8,
+      "path": "./greenhouse.png",
+      "imageAlt": "One of our on site greenhouses"
+      
     },
     {
       "id": 9,
-      "path": "./greenhouse.png",
-      "imageAlt": "One of our on site greenhouses"
+      "path": "./outside.jpeg",
+      "imageAlt": "Outside in our gardens"
     },
     {
       "id": 10,
       "path": "./Three Broomsticks Potting Shed.jpeg",
       "imageAlt": "One of our potting sheds"
-    },
-    {
-      "id": 11,
-      "path": "./gardens.png",
-      "imageAlt": "Our on site herbs and vegetable gardens"
+  
     },
     {
       "id": 12,
-      "path": "./gardens.png",
+      "path": "./kitchenAgain.jpeg",
+      "imageAlt": "Kitchens"
+    },
+    {
+      "id": 13,
+      "path": "./pots.jpeg",
+      "imageAlt": "Kitchens"
+    },
+  
+    {
+      "id": 14,
+      "path": "./kitchen view.png",
+      "imageAlt": "a glimpse outside from our kitchens"
+    },
+    {
+      "id": 15,
+      "path": "./boomsticksKitchen.jpeg",
       "imageAlt": "Our on site herbs and vegetable gardens"
+    },
+    {
+      "id": 16,
+      "path": "./storeRoom.png",
+      "imageAlt": "Our on site herbs and vegetable gardens"
+    },
+    {
+      "id": 17,
+      "path": "./spa treatment room.png",
+      "imageAlt": "One of our spa treatment rooms"
+    },
+    {
+      "id": 18,
+      "path": "./insidePub.jpeg",
+      "imageAlt": "The Pub"
+    },
+    {
+      "id": 19,
+      "path": "./pub.jpeg",
+      "imageAlt": "The Pub"
+    },
+    {"id": 20,
+      "path": "./sittingRoom.jpeg",
+      "imageAlt": "knooks and crannies"
+    },
+    {
+      "id": 21,
+      "path": "./Three Broomsticks fireplace.png",
+      "imageAlt": "The Pub"
+      
+    },
+    {
+      "id": 22,
+      "path": "./cake.jpeg",
+      "imageAlt": "A cake at the Honesty Bar"
+    },
+    {
+      "id": 23,
+      "path": "./breakfast.jpeg",
+      "imageAlt": "Our food"
+    },
+    {
+      "id": 24,
+      "path": "./dining.jpeg",
+      "imageAlt": "A private dining room"
+    },
+    {
+      "id": 25,
+      "path": "./entry.jpeg",
+      "imageAlt": "One of the Entryways"
+    },
+    
+    {
+      "id": 26,
+      "path": "./bathroom.jpeg",
+      "imageAlt": "A Bathroom"
+    },
+    {
+      "id": 27,
+      "path": "./anotherHall.jpeg",
+      "imageAlt": "A Hallway"
+    },
+
+    {
+      "id": 28,
+      "path": "./sitHere.jpeg",
+      "imageAlt": "One of our cosy seating areas"
+    },
+    {
+      "id": 29,
+      "path": "./anotherSittingRoom.jpeg",
+      "imageAlt": "The Pub"
+    },
+  
+    {
+      "id": 30,
+      "path": "./cottages.png",
+      "imageAlt": "A view from the street"
+    },
+    
+    {
+      "id": 31,
+      "path": "./grounds.png",
+      "imageAlt": "Surrounding grounds"
+    },
+    {
+      "id": 32,
+      "path": "./forbiddenForest.jpeg",
+      "imageAlt": "A view of the Shrieking Shack from The Forbidden Forest"
+    },
+
+    {
+      "id": 33,
+      "path": "./hogwarts-express.jpeg",
+      "imageAlt": "The Hogwarts Express"
     }
   ],
   "services": [

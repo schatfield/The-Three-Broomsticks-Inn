@@ -182,11 +182,11 @@ class ReservationEditForm extends Component {
                             </div>
                         </div>
                         <div className="alignRight">
-                            <button
+                           <a> <div
                                 type="button" disabled={this.state.loadingStatus}
                                 onClick={this.updateExistingReservation}
                                 className="btn btn-primary"
-                            >Confirm</button>
+                            ><img className="modify-btn" src={require('./modify.png')} alt=""></img></div></a>
                         </div>
                     </fieldset>
                 </form>
@@ -198,3 +198,4 @@ class ReservationEditForm extends Component {
 
 export default ReservationEditForm;
 
+  

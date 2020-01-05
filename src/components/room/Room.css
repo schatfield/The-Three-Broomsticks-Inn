@@ -28,6 +28,7 @@
     width: 150px;
     height: 40px;
     margin-top: 20px;
+    padding-bottom: 15px;
 }
 
 .book-button-container:hover {
@@ -48,9 +49,7 @@ h3{
 
 .rooms-page {
     margin-top: 240px;
-    font-family: 'IM Fell English SC', serif;
-
-   
+    font-family: 'IM Fell English SC', serif;  
 }
 
 .rooms-page-message{
@@ -58,6 +57,8 @@ h3{
     margin-left:120px;
     font-size:15px;
     font-family: 'Roboto Condensed', sans-serif;
-  
-   
+}
+
+.room-desc {
+    height: 190px;
 }

@@ -178,7 +178,7 @@ class ReservationForm extends Component {
                             </div>
                         </div>
                         <div className="alignRight">
-                            <button type="button" disabled={this.state.loadingStatus} onClick={this.constructNewReservation}>Submit</button>
+                            <a><div type="button" disabled={this.state.loadingStatus} onClick={this.constructNewReservation}><img className="confirm-btn" src={require('./confirm.png')} alt=""></img></div></a>
                         </div>
                     </fieldset>
                 </form>

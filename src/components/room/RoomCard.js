@@ -15,11 +15,11 @@ class RoomCard extends Component {
                     <img className="card-image" src={require(`${this.props.imagePath}`)} alt="" />
                     <div className="card-content">
 
-                        <p>{this.props.room.description}</p>
+                        <p className="room-desc">{this.props.room.description}</p>
                         <hr></hr>
                         <div className= "cost"><img className="galleon" src={require('./galleon-icon.png')} alt="" /> {this.props.room.cost} / night</div>
-                        <div type="book-button-container" className="btn btn-secondary btn-lg btn-block"
-                            onClick={() => { this.props.history.push(`/rooms/${this.props.room.id}/book`) }}><img className="book-btn" src={require('./book-button.png')} alt="" /> </div>
+                        <a><div type="book-button-container" className="btn btn-secondary btn-lg btn-block"
+                            onClick={() => { this.props.history.push(`/rooms/${this.props.room.id}/book`) }}><img className="book-btn" src={require('./book-tan.png')} alt="" /> </div></a>
                     </div>
                 </div>
             </div>

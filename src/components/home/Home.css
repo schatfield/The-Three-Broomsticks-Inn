@@ -22,15 +22,26 @@ img {
 }
  
 .welcome-flex-item{ 
-    padding-top: 125px;
+    padding-top: 65px;
     padding-right: 200px;
     padding-left: 150px;
-    text-align: center;
+    text-align: justify;
+    font-family: 'IM Fell English SC'
    
 }
 
+.welcome-title{
+    font-family: 'IM Fell English SC';
 
+ 
+}
 
 #logo {
     margin-top: 145px;
+}
+
+.welcome{
+    height: 500px;
+    width:525px;
+    
 }

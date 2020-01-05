@@ -1,82 +1,127 @@
-
-.neighbourhood-flex-container{
-    display:flex;
+.neighbourhood-flex-container {
+    display: flex;
     justify-content: space-around;
-    margin-top: 185px;
-    /* margin-left:0px; */
-    /* margin-right:0px; */  
+    margin-top: 185px;    
+    margin-left:0px;
+    margin-right:0px;
 }
 
-.right-hand{
-    display:flex;
+.right-hand {
+    display: flex;
     vertical-align: top;
-    justify-content: space-between; 
+    justify-content: space-between;
     max-width: 20%;
     height: 50%;
     padding-top: 35px;
     margin-left: 15px;
-    
 }
 
-.left-hand{
-    display:flex;
+.left-hand {
+    display: flex;
     vertical-align: top;
     max-width: 20%;
     height: 50%;
     padding-top: 35px;
     margin-right: 15px;
-    margin-left: 0px;   
-}
-
-.hogsmede-desc {
-    display:flex;
-    max-width: 100%;
-    padding-top: 20px;
-    padding-left: 0px;
-    margin-right: 0px;
     margin-left: 0px;
-    text-align: justify;
 }
 
-.hogsmede-title-container{
-    display:flex;
+
+.hogsmede-title-container {
+    display: flex;
     justify-content: flex-end;
     max-width: 100%;
     padding-top: 50px;
 }
 
-.hogwarts-title-container{
-    display:flex;
+.hogwarts-title-container {
+    display: flex;
     justify-content: flex-start;
     max-width: 100%;
     padding-top: 50px;
 }
 
-.hogwarts-desc {
-    display:flex;
-    max-width:100%;    
+.getting-here-hogsmede {
+    max-width: 100%;
+
+}
+.getting-there-hogwarts {
+    max-width: 100%;
+   
+}
+
+.getting-there-hogwarts-title{
+    margin-left:-10px;
+}
+
+.getting-here-desc {
+
+    max-width: 100%;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left:40px;
+    text-align: justify;
+}
+.getting-there-desc {
+
+    max-width: 100%;
+    padding-left: 0px;
+    margin-right: 40px;
+    margin-left:-20px;
+    text-align: justify;
+}
+.hogsmede-desc {
+    max-width: 100%;
     padding-top: 20px;
     padding-left: 0px;
     margin-right: 0px;
-    margin-left: 0px;
+    margin-left: 40px;
     text-align: justify;
+    height: 360px;
 }
 
-
-.margin-line{
-    padding-top:200px;
-    max-width: 30%;
-    height: 65%
+.hogwarts-desc {    
+    max-width: 100%;
+    padding-top: 20px;
+    margin-right: 50px;   
+    margin-left:-20px; 
+    text-align: justify;
+    height: 360px;    
 }
 
+.margin {
+    padding-top: 100px;
+    margin-left: 31px;
+}
 
+.margin-line {
+    padding-top: 210px;
+    max-width: 20%;
+    height: 65%;
+}
 
 .neighborhoud-flex-item {
-    width: 35%;
+    width: 40%;
+    margin-left:-20px;
 }
 
 h4 {
- font-family: 'IM Fell English SC', serif;
- font-size: 32px;
-   
+    font-family: 'IM Fell English SC', serif;
+    font-size: 32px;
 }
+
+.village {
+    margin-top: 10px;
+    height: 245px;
+    width: 330px;
+    border: 1px dotted #2b001c;
+}
+
+.hogwarts-img {
+    margin-top: 10px;
+    margin-left: 75px;
+    height: 245px;
+    width: 330px;
+    border: 1px dotted #2b001c;
+}
+

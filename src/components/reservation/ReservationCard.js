@@ -37,7 +37,7 @@ class ReservationCard extends Component {
             <div className="rez-card-container">
 
                 <div className="card-content">
-                    <h3 className="rez-card-title">Upcoming Visit</h3>
+                    <h2 className="rez-card-title">Upcoming Visit</h2>
                     <div className="rez-image-container">
                         {this.state.imagePath ?
                             <img className="rez-card-image" src={require(`${this.state.imagePath}`)} alt="" />

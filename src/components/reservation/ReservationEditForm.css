@@ -46,7 +46,14 @@
 }
 
 .edit-formgrid {
-    margin-top: -910px;   
+    margin-top: -935px;   
     padding: 0 40px;
     margin-left:20px;
+}
+
+.modify-btn{
+    width:230px;
+    height: 70px;
+    margin-top: 10px;
+  
 }

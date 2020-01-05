@@ -11,9 +11,9 @@ class Account extends Component {
         return (
             <>
                 <div className="account-info">
-                    <h2>Welcome to your account page</h2>
+                    <h1 className="welcome-account">My Account</h1>
                     <p>Here you can find all of your user information and manage your bookings.</p>
-                    <br />
+                    
                     <div className="account-flex">
                         <AccountInfoCard
                             userObj={this.props.userObj}

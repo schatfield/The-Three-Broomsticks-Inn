@@ -16,7 +16,7 @@ class Home extends Component {
             
 
             <div className="welcome-flex-item">
-            <img className="welcome" src={require('./welcome-centered.png')} alt="" />
+            <img className="welcome" src={require('./welcome.png')} alt="" />
             
               
               </div>

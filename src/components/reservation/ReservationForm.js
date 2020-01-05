@@ -160,7 +160,7 @@ class ReservationForm extends Component {
 
                             <div className="services"> {this.state.services.map((service, index) =>
                                 <label key={service.id}>
-                                    <input type="checkbox"
+                                    <input className="checkmark" type="checkbox"
                                         checked={service.isSelected}
                                         onChange={(evt) => this.handleCheckbox(evt, index)}
                                         id={service.id}

@@ -17,7 +17,7 @@ class NeighbourhoodInfo extends Component {
                     <div className="hogsmede-desc">
                         <p>Welcome to Hogsmede Village, the only all-wizarding village in Britain. Founded over a thousand years ago by medieval wizard Hengist of Woodcroft. The village became a safe haven thereafter for many wizards fleeing from muggle persecution and is the site of many important historical happenings in the Wizarding World.</p>
 
-                        <p>Hosgmede has something for everyone whatever your fancy. Whether you’re a history buff, seeking some pampering, or looking for the landscape to carve out a path to adventure, there is no shortage of local fun come  sunshine or classic highlands rain!</p>
+                        <p>Today the village is a close-knit and vibrant community reflecting it's wizarding residents. Hosgmede has something for everyone whatever your fancy. Whether you’re a hunting for history, looking for the landscape to carve out a path to adventure, or just plain ready to relax, there is no shortage of local fun come  sunshine or classic highlands rain!</p>
 
                         <p>See our concierge during your stay and we’ll make certain you find what you’re looking for. </p>
 

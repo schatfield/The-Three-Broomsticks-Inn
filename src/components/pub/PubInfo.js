@@ -14,6 +14,14 @@ class PubInfo extends Component {
 
                     <div className="menu-img">
      <img className="menu" src={require('./menu.png')} alt="" />
+
+     <div className="spirits"> 
+     <center><h1 className="spirits-title">Spirited Spirits</h1></center>
+     <center><p className="pub-page-message">
+         We proudly serve a wide range of fine beverages as well. Explore our carefully selected tonics including ButterBeer, Dragon Barrel Brandy, Sherry, Gigglewater, Elderflower wines, and of course, being located in Scottish Highlands you'll be spoiled for choice in the Firewhisky department. While you're here be sure to ask our Barmen and Barmaids about seasonal offerings, house made cocktails, and locally Elf made wines.
+         </p></center>
+     
+     </div>
  </div>
  </p></center> </div>
  

@@ -35,14 +35,14 @@
     {
       "id": 1,
       "name": "The Cupboard Under The Stairs",
-      "description": " An extremely large room in spite of it's namesake. What's in a name anyway? Since you'll enter from a door that leads to a cupboard under a set of stairs, we thought we'd just tell like it is. In honor of Mr. Potter himself, we made sure this spacious room is bursting with real estate to spread out. Just mind your head on the way in and out.",
-      "cost": 25
+      "description": " An extremely large room in spite of it's namesake. What's in a name anyway? Since you'll enter from a door that leads to a cupboard under a set of stairs, we thought we'd just tell like it is. In honor of Mr. Potter himself, we made sure this massive room is bursting with real estate to spread out. Just mind your head on the way in and out.",
+      "cost": 35
     },
     {
       "id": 2,
       "name": "Lupin's Loft",
-      "description": "Minister Artemisia Lufkin, a Hufflepuff student while attending Hogwarts, eventually became the first woman ever to serve as Minister for Magic for Great Britain. A lovely loft room with her namesake fully equpped with a stocked larder, woodstove, and a four-poster bed.",
-      "cost": 35
+      "description": "Located in the East Wing, this airy room is named in honour of Professor Remus Lupin, O.M. (Order Of Merlin, First Class), affectionately known as Moony, who was a wizard and werewolf that played an instrumental role in the Battle of Hogwarts. A member of the The Order of the Phoenix, he is regarded as a war hero of WWII. In view of the nightly moonsrise, Lupin's Loft is perfect for those who fancy to while away the wee hours dwelling in the moonlight. ",
+      "cost": 28
     },
     {
       "id": 3,
@@ -78,7 +78,7 @@
       "id": 8,
       "name": "The Burbage Bedchamber",
       "description": "Charity Burbage was a British witch and the Professor of Muggle Studies at Hogwarts School of Witchcraft and Wizardry. She believed that Muggles were not so different from withces and wizards, and we agree with her. In honor of this philosphy adopted by us here at Three Broomsticks, we've named a most splendid room for her and dedicate it to every Muggle who passes through our doors.",
-      "cost": 25
+      "cost": 18
     },
     {
       "id": 9,
@@ -89,13 +89,13 @@
     {
       "id": 10,
       "name": "Dippet's Dormitory",
-      "description": "Overlooking the delightful Black Lake and the massive grounds of Hogwarts School, if it's mountainous views from the comfort of your own cosy four-poster bed you're after, look no further.",
-      "cost": 18
+      "description": "Armando Dippet was once Headmaster of Hogwarts school and was the predecessor to Albus Dumbledore himself. With a charming view of the village high-street below, and the Hogwarts castle turrets peaking through the trees just across the way, this comfortable room has bundles of character inside and out.",
+      "cost": 25
     },
     {
       "id": 11,
       "name": "Lufkin's Landing",
-      "description": "Overlooking the delightful Black Lake and the massive grounds of Hogwarts School, if it's mountainous views from the comfort of your own cosy four-poster bed you're after, look no further.",
+      "description": "Minister Artemisia Lufkin, a Hufflepuff student while attending Hogwarts, eventually became the first woman ever to serve as Minister for Magic for Great Britain. A lovely loft room with her namesake fully equpped with a stocked larder, woodstove, and a spacious bed you'll never want to leave.",
       "cost": 25
     }
   ],
@@ -117,69 +117,6 @@
       "checkOutDate": "2020-01-17",
       "persons": "1",
       "creatures": "0"
-    },
-    {
-      "userId": 1,
-      "roomId": 6,
-      "checkInDate": "2020-01-15",
-      "checkOutDate": "2020-01-17",
-      "persons": "9",
-      "creatures": "1",
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "roomId": 4,
-      "checkInDate": "2020-01-24",
-      "checkOutDate": "2020-01-25",
-      "persons": "9",
-      "creatures": "9",
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "roomId": 4,
-      "checkInDate": "2020-01-23",
-      "checkOutDate": "2020-01-30",
-      "persons": "9",
-      "creatures": "1",
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "roomId": 4,
-      "checkInDate": "2020-01-08",
-      "checkOutDate": "2020-01-16",
-      "persons": "9",
-      "creatures": "0",
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "roomId": 3,
-      "checkInDate": "2020-01-31",
-      "checkOutDate": "2020-02-08",
-      "persons": "9",
-      "creatures": "0",
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "roomId": 5,
-      "checkInDate": "2020-01-22",
-      "checkOutDate": "2020-01-24",
-      "persons": "1",
-      "creatures": "2",
-      "id": 8
-    },
-    {
-      "userId": 1,
-      "roomId": 2,
-      "checkInDate": "2020-01-02",
-      "checkOutDate": "2020-01-03",
-      "persons": "2",
-      "creatures": "3",
-      "id": 9
     }
   ],
   "roomImages": [
@@ -451,174 +388,6 @@
       "serviceId": 4,
       "isSelected": false,
       "id": 4
-    },
-    {
-      "reservationId": 3,
-      "serviceId": 1,
-      "isSelected": false,
-      "id": 5
-    },
-    {
-      "reservationId": 3,
-      "serviceId": 2,
-      "isSelected": false,
-      "id": 6
-    },
-    {
-      "reservationId": 3,
-      "serviceId": 3,
-      "isSelected": false,
-      "id": 7
-    },
-    {
-      "reservationId": 3,
-      "serviceId": 4,
-      "isSelected": false,
-      "id": 8
-    },
-    {
-      "reservationId": 4,
-      "serviceId": 1,
-      "isSelected": false,
-      "id": 9
-    },
-    {
-      "reservationId": 4,
-      "serviceId": 2,
-      "isSelected": false,
-      "id": 10
-    },
-    {
-      "reservationId": 4,
-      "serviceId": 3,
-      "isSelected": false,
-      "id": 11
-    },
-    {
-      "reservationId": 4,
-      "serviceId": 4,
-      "isSelected": false,
-      "id": 12
-    },
-    {
-      "reservationId": 5,
-      "serviceId": 1,
-      "isSelected": false,
-      "id": 13
-    },
-    {
-      "reservationId": 5,
-      "serviceId": 2,
-      "isSelected": true,
-      "id": 14
-    },
-    {
-      "reservationId": 5,
-      "serviceId": 3,
-      "isSelected": false,
-      "id": 15
-    },
-    {
-      "reservationId": 5,
-      "serviceId": 4,
-      "isSelected": false,
-      "id": 16
-    },
-    {
-      "reservationId": 6,
-      "serviceId": 1,
-      "isSelected": false,
-      "id": 17
-    },
-    {
-      "reservationId": 6,
-      "serviceId": 2,
-      "isSelected": false,
-      "id": 18
-    },
-    {
-      "reservationId": 6,
-      "serviceId": 3,
-      "isSelected": false,
-      "id": 19
-    },
-    {
-      "reservationId": 6,
-      "serviceId": 4,
-      "isSelected": true,
-      "id": 20
-    },
-    {
-      "reservationId": 7,
-      "serviceId": 1,
-      "isSelected": false,
-      "id": 21
-    },
-    {
-      "reservationId": 7,
-      "serviceId": 2,
-      "isSelected": false,
-      "id": 22
-    },
-    {
-      "reservationId": 7,
-      "serviceId": 3,
-      "isSelected": false,
-      "id": 23
-    },
-    {
-      "reservationId": 7,
-      "serviceId": 4,
-      "isSelected": false,
-      "id": 24
-    },
-    {
-      "reservationId": 8,
-      "serviceId": 1,
-      "isSelected": true,
-      "id": 25
-    },
-    {
-      "reservationId": 8,
-      "serviceId": 2,
-      "isSelected": true,
-      "id": 26
-    },
-    {
-      "reservationId": 8,
-      "serviceId": 3,
-      "isSelected": false,
-      "id": 27
-    },
-    {
-      "reservationId": 8,
-      "serviceId": 4,
-      "isSelected": false,
-      "id": 28
-    },
-    {
-      "reservationId": 9,
-      "serviceId": 1,
-      "isSelected": true,
-      "id": 29
-    },
-    {
-      "reservationId": 9,
-      "serviceId": 2,
-      "isSelected": false,
-      "id": 30
-    },
-    {
-      "reservationId": 9,
-      "serviceId": 3,
-      "isSelected": false,
-      "id": 31
-    },
-    {
-      "reservationId": 9,
-      "serviceId": 4,
-      "isSelected": false,
-      "id": 32
     }
   ]
 }

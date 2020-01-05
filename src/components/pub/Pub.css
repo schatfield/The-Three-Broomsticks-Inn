@@ -18,7 +18,8 @@
     margin-left:120px;
     font-size:15px;
     font-family: 'Roboto Condensed', sans-serif;
- 
+    text-align: justify;
+    padding-bottom: 20px;
    
 }
 
@@ -30,3 +31,9 @@
     height:900px;
     width:70%;
 }
+
+.spirits-title{
+    margin-top: 50px;
+    font-family: 'IM Fell English SC', serif;
+}
+

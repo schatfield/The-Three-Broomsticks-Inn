@@ -1,0 +1,39 @@
+.pub-container{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top:200px;
+}
+
+
+.pub-page{
+    margin-top: 275px;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.pub-page-message{
+    margin-right:120px;
+    margin-left:120px;
+    font-size:15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    padding-bottom: 20px;
+   
+}
+
+.menu-img{
+    padding-top:50px;
+}
+
+.menu{
+    height:900px;
+    width:70%;
+}
+
+.spirits-title{
+    margin-top: 50px;
+    font-family: 'IM Fell English SC', serif;
+}
+

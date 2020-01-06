@@ -15,7 +15,11 @@ class Home extends Component {
               <img className="swept-away-flex-item" src={require('./sweptAway.gif')} alt="" />
             
 
-            <p className="welcome-flex-item">Welcome to the Three Broomsticks.Lorem ipsum dolor amet occupy mumblecore pitchfork PBR&B wayfarers everyday carry. Keytar +1 hot chicken flannel direct trade raw denim truffaut tacos drinking vinegar. Tumblr lo-fi mlkshk ramps, disrupt keytar subway tile direct trade jianbing poutine banjo ethical. Pitchfork waistcoat pug glossier YOLO, live-edge microdosing messenger bag twee.</p>
+            <div className="welcome-flex-item">
+            <img className="welcome" src={require('./welcome.png')} alt="" />
+            
+              
+              </div>
 
           </div>
       </>

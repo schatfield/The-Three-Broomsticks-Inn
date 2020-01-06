@@ -1,7 +1,318 @@
 {
-"users":[],
-"rooms":[],
-"reservations":[],
-"roomImages":[],
-"galleryImages":[]
+  "users": [],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "The Cupboard Under The Stairs",
+      "description": " An extremely large room in spite of it's namesake. What's in a name anyway? Since you'll enter from a door that leads to a cupboard under a set of stairs, we thought we'd just tell like it is. In honor of Mr. Potter himself, we made sure this spacious room is bursting with real estate to spread out. Just mind your head on the way in and out.",
+      "cost": 25
+    },
+    {
+      "id": 2,
+      "name": "Lupin's Loft",
+      "description": "Minister Artemisia Lufkin, a Hufflepuff student while attending Hogwarts, eventually became the first woman ever to serve as Minister for Magic for Great Britain. A lovely loft room with her namesake fully equpped with a stocked larder, woodstove, and a four-poster bed.",
+      "cost": 35
+    },
+    {
+      "id": 3,
+      "name": "The Smethwyck Snuggery",
+      "description": "Elliot Smethwyck invented the Cushioning Charm in 1820. Because of this, he has been credited with making broomstick travel more comfortable, and for this we thank him. We can't, however, thank him for making this room more comfortable, but this mid-sized, characterful room overlooking our gardens is sure to credit us with how to make any guest in it most, well, sung, if you will.",
+      "cost": 25
+    },
+    {
+      "id": 4,
+      "name": "Black Lake Budoir",
+      "description": "Overlooking the delightful Black Lake and the massive grounds of Hogwarts School, if it's mountainous views from the comfort of your own cosy four-poster bed you're after, look no further.",
+      "cost": 25
+    },
+    {
+      "id": 5,
+      "name": "Weasleby's Watercloset",
+      "description": "A home from home in a most magical bathroom. For the travelling ghost, ghoul, or spirit who feels most at comfortable when pottering about in the plumbing.",
+      "cost": 20
+    },
+    {
+      "id": 6,
+      "name": "Albus's Attic",
+      "description": "Named for one of the greatest Wizards ever known, Albus Dumbldore, this attic room is located on the top floor of the inn. Featuring original wooden beams with a large squashy bed, and in the name of Albus, heaps of style ",
+      "cost": 25
+    },
+    {
+      "id": 7,
+      "name": "Ignotus's Inglenook",
+      "description": "The youngest of the three Peverell brothers mentioned in The Tale of the Three Brothers (The Tales of Beedle the Bard), Ignotus was described as the humblest and wisest of the siblings, surviving Death's cunning schemes using the last of the Deathly Hallows, the Cloak of Invisibility, quite cleverly. Pleasantly located  on the top floor in the eaves, one can dissapear to rest up most reasonably- all without the help of an Invisibilty Cloak. ",
+      "cost": 25
+    },
+    {
+      "id": 8,
+      "name": "The Burbage Bedchamber",
+      "description": "Charity Burbage was a British witch and the Professor of Muggle Studies at Hogwarts School of Witchcraft and Wizardry. She believed that Muggles were not so different from withces and wizards, and we agree with her. In honor of this philosphy adopted by us here at Three Broomsticks, we've named a most splendid room for her and dedicate it to every Muggle who passes through our doors.",
+      "cost": 25
+    },
+    {
+      "id": 9,
+      "name": "The Bagshot Boxroom",
+      "description": "This is an extremely small room. Delighted in solitude? This one is perfect for the for the refined solo traveler and won’t have you parting with all your galleons in one place. Note: use of undetectable extension charms to accommodate a party of larger than one in this room is strictly prohibited.",
+      "cost": 15
+    },
+    {
+      "id": 10,
+      "name": "Dippet's Dormitory",
+      "description": "Overlooking the delightful Black Lake and the massive grounds of Hogwarts School, if it's mountainous views from the comfort of your own cosy four-poster bed you're after, look no further.",
+      "cost": 18
+    },
+    {
+      "id": 11,
+      "name": "Lufkin's Landing",
+      "description": "Overlooking the delightful Black Lake and the massive grounds of Hogwarts School, if it's mountainous views from the comfort of your own cosy four-poster bed you're after, look no further.",
+      "cost": 25
+    }
+  ],
+  "reservations": [],
+  "roomImages": [
+    {
+      "id": 1,
+      "roomId": 1,
+      "path": "./cupboard.png"
+    },
+    {
+      "id": 2,
+      "roomId": 2,
+      "path": "./LupinsLoft.png"
+    },
+    {
+      "id": 3,
+      "roomId": 3,
+      "path": "./snuggery.jpeg"
+    },
+    {
+      "id": 4,
+      "roomId": 4,
+      "path": "./BlackLakeBudoir.png"
+    },
+    {
+      "id": 5,
+      "roomId": 5,
+      "path": "./WeaslebysWaterCloset.png"
+    },
+    {
+      "id": 6,
+      "roomId": 6,
+      "path": "./IgnotusInglenook.png"
+    },
+    {
+      "id": 7,
+      "roomId": 7,
+      "path": "./AlbusAttic.jpg"
+    },
+    {
+      "id": 8,
+      "roomId": 8,
+      "path": "./BurbageBedchamber.png"
+    },
+    {
+      "id": 9,
+      "roomId": 9,
+      "path": "./BagshotBoxroom.png"
+    },
+    {
+      "id": 10,
+      "roomId": 10,
+      "path": "./LufkinsLanding3.png"
+    },
+    {
+      "id": 11,
+      "roomId": 11,
+      "path": "./DippetDorm.png"
+    }
+  ],
+  "galleryImages": [
+    {
+      "id": 1,
+      "path": "./Three Broomsticks dining area.jpeg",
+      "imageAlt": "Main dining hall and Pub"
+    },
+    {
+      "id": 2,
+      "path": "./Three Broomsticks interior.jpeg",
+      "imageAlt": "One of our many sets of stairs"
+    },
+    {
+      "id": 3,
+      "path": "./sittingRoom.png",
+      "imageAlt": "a common area"
+    },
+    {
+      "id": 4,
+      "path": "./Three Broomsticks dining.jpeg",
+      "imageAlt": "A smaller dining area"
+    },
+    {
+      "id": 5,
+      "path": "./Hallway-large.png",
+      "imageAlt": "One of our many corridors"
+    },
+    {
+      "id": 6,
+      "path": "./gardens.png",
+      "imageAlt": "Our on site herbs and vegetable gardens"
+    },
+    {
+      "id": 7,
+      "path": "./Cream Tea.jpeg",
+      "imageAlt": "Tea in our delightful garden"
+    },
+    {
+      "id": 8,
+      "path": "./greenhouse.png",
+      "imageAlt": "One of our on site greenhouses"
+    },
+    {
+      "id": 9,
+      "path": "./outside.jpeg",
+      "imageAlt": "Outside in our gardens"
+    },
+    {
+      "id": 10,
+      "path": "./Three Broomsticks Potting Shed.jpeg",
+      "imageAlt": "One of our potting sheds"
+    },
+    {
+      "id": 12,
+      "path": "./kitchenAgain.jpeg",
+      "imageAlt": "Kitchens"
+    },
+    {
+      "id": 13,
+      "path": "./pots.jpeg",
+      "imageAlt": "Kitchens"
+    },
+    {
+      "id": 14,
+      "path": "./kitchen view.png",
+      "imageAlt": "a glimpse outside from our kitchens"
+    },
+    {
+      "id": 15,
+      "path": "./boomsticksKitchen.jpeg",
+      "imageAlt": "Our on site herbs and vegetable gardens"
+    },
+    {
+      "id": 16,
+      "path": "./storeRoom.png",
+      "imageAlt": "Our on site herbs and vegetable gardens"
+    },
+    {
+      "id": 17,
+      "path": "./spa treatment room.png",
+      "imageAlt": "One of our spa treatment rooms"
+    },
+    {
+      "id": 18,
+      "path": "./insidePub.jpeg",
+      "imageAlt": "The Pub"
+    },
+    {
+      "id": 19,
+      "path": "./pub.jpeg",
+      "imageAlt": "The Pub"
+    },
+    {
+      "id": 20,
+      "path": "./sittingRoom.jpeg",
+      "imageAlt": "knooks and crannies"
+    },
+    {
+      "id": 21,
+      "path": "./Three Broomsticks fireplace.png",
+      "imageAlt": "The Pub"
+    },
+    {
+      "id": 22,
+      "path": "./cake.jpeg",
+      "imageAlt": "A cake at the Honesty Bar"
+    },
+    {
+      "id": 23,
+      "path": "./breakfast.jpeg",
+      "imageAlt": "Our food"
+    },
+    {
+      "id": 24,
+      "path": "./dining.jpeg",
+      "imageAlt": "A private dining room"
+    },
+    {
+      "id": 25,
+      "path": "./entry.jpeg",
+      "imageAlt": "One of the Entryways"
+    },
+    {
+      "id": 26,
+      "path": "./bathroom.jpeg",
+      "imageAlt": "A Bathroom"
+    },
+    {
+      "id": 27,
+      "path": "./anotherHall.jpeg",
+      "imageAlt": "A Hallway"
+    },
+    {
+      "id": 28,
+      "path": "./sitHere.jpeg",
+      "imageAlt": "One of our cosy seating areas"
+    },
+    {
+      "id": 29,
+      "path": "./anotherSittingRoom.jpeg",
+      "imageAlt": "The Pub"
+    },
+    {
+      "id": 30,
+      "path": "./cottages.png",
+      "imageAlt": "A view from the street"
+    },
+    {
+      "id": 31,
+      "path": "./grounds.png",
+      "imageAlt": "Surrounding grounds"
+    },
+    {
+      "id": 32,
+      "path": "./forbiddenForest.jpeg",
+      "imageAlt": "A view of the Shrieking Shack from The Forbidden Forest"
+    },
+    {
+      "id": 33,
+      "path": "./hogwarts-express.jpeg",
+      "imageAlt": "The Hogwarts Express"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "The Daily Prophet newspaper delivery",
+      "cost": 15,
+      "description": "Have a copy of the Wizarding community's beloved daily rag waiting for you right outside your door each day of your stay. Disclaimer: your eyes are just fine, the pictures are moving."
+    },
+    {
+      "id": 2,
+      "name": "Signature Spa Treatments",
+      "cost": 21,
+      "description": "Enjoy an herbal healing spa package for the ultimate respite. Independently ran entirely by a small staff of free House Elves who love their work, proceeds earned on spa treatments are donated towards the Promotion of Elfish Welfare."
+    },
+    {
+      "id": 3,
+      "name": "Wizarding Experience Tour of Hogwarts School",
+      "cost": 15,
+      "description": "Exclusively provided through Three Broomsticks, our guests have a rare opportunity to see this legendary school through the eyes of the Wizarding World. Ticket cost will be validated on site for parents of alumni or cbildren currently accepted to Hogwarts School."
+    },
+    {
+      "id": 4,
+      "name": "Cupid's Congé",
+      "cost": 38,
+      "description": "Planning a special getaway for two? Leave it to us. With the Cupid's Confé package you'll find everything you need to tack on a bit of extra whimsy to your stay. Includes a bottle of French Champagne, premium cream cake pastries and sweets locally made, breakfast for 2 during your stay, and just for good measure, a bottle of Weasley's WonderWitch love potion."
+    }
+  ],
+  "reservationServices": []
 }

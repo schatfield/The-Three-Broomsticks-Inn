@@ -66,8 +66,8 @@ class ReservationForm extends Component {
             const userId = JSON.parse(sessionStorage.getItem("credentials"))
 
             const newReservation = {
-                userId: userId.id,
-                roomId: this.props.roomId,
+                userId: Number(userId.id),
+                roomId: Number(this.props.roomId),
                 checkInDate: this.state.checkInDate,
                 checkOutDate: this.state.checkOutDate,
                 persons: this.state.persons,
@@ -90,8 +90,8 @@ class ReservationForm extends Component {
         services.forEach(service => {
             const newRezService = {
                 // resservationId from data / reservationId argument passed into constructNewServices
-                reservationId: reservationId,
-                serviceId: service.id,
+                reservationId: Number(reservationId),
+                serviceId: Number(service.id),
                 isSelected: service.isSelected
             }
             ReservationManager.postNewReservationService(newRezService);
@@ -160,7 +160,7 @@ class ReservationForm extends Component {
 
                             <div className="services"> {this.state.services.map((service, index) =>
                                 <label key={service.id}>
-                                    <input type="checkbox"
+                                    <input className="checkmark" type="checkbox"
                                         checked={service.isSelected}
                                         onChange={(evt) => this.handleCheckbox(evt, index)}
                                         id={service.id}
@@ -178,7 +178,7 @@ class ReservationForm extends Component {
                             </div>
                         </div>
                         <div className="alignRight">
-                            <button type="button" disabled={this.state.loadingStatus} onClick={this.constructNewReservation}>Submit</button>
+                            <a><div type="button" disabled={this.state.loadingStatus} onClick={this.constructNewReservation}><img className="confirm-btn" src={require('./confirm.png')} alt=""></img></div></a>
                         </div>
                     </fieldset>
                 </form>

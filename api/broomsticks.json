@@ -35,55 +35,67 @@
     {
       "id": 1,
       "name": "The Cupboard Under The Stairs",
-      "description": " An extremely large room in spite of it's namesake. What's in a name anyway? Since you'll enter from a door that leads to a cupboard under a set of stairs, we thought we'd just tell like it is. In honor of Mr. Potter himself, we made sure this room is bursting with space to spread out so you definitely won't need to mind your head or your manners.",
-      "cost": 25
+      "description": " An extremely large room in spite of it's namesake. What's in a name anyway? Since you'll enter from a door that leads to a cupboard under a set of stairs, we thought we'd just tell like it is. In honor of Mr. Potter himself, we made sure this massive room is bursting with real estate to spread out. Just mind your head on the way in and out.",
+      "cost": 35
     },
     {
       "id": 2,
-      "name": "The Bagshot Boxroom",
-      "description": "This is an extremely small room. Delighted in solitude? This one is perfect for the for the refined solo traveler and won’t have you parting with all your galleons in one place. Note: use of undetectable extension charms to accommodate a party of larger than one in this room is strictly prohibited.",
-      "cost": 15
+      "name": "Lupin's Loft",
+      "description": "Located in the East Wing, this airy room is named in honour of Professor Remus Lupin, O.M. (Order Of Merlin, First Class), affectionately known as Moony, who was a wizard and werewolf that played an instrumental role in the Battle of Hogwarts. A member of the The Order of the Phoenix, he is regarded as a war hero of WWII. In view of the nightly moonsrise, Lupin's Loft is perfect for those who fancy to while away the wee hours dwelling in the moonlight. ",
+      "cost": 28
     },
     {
       "id": 3,
-      "name": "Weasleby's Watercloset",
-      "description": "A home from home in a most magical bathroom. For the travelling ghost who feels most at home pottering around in the plumbing",
-      "cost": 20
+      "name": "The Smethwyck Snuggery",
+      "description": "Elliot Smethwyck invented the Cushioning Charm in 1820. Because of this, he has been credited with making broomstick travel more comfortable, and for this we thank him. We can't, however, thank him for making this room more comfortable, but this mid-sized, characterful room overlooking our gardens is sure to credit us with how to make any guest in it most, well, sung, if you will.",
+      "cost": 25
     },
     {
       "id": 4,
-      "name": "The Smethwyck Snuggery",
-      "description": "an extremely small room",
+      "name": "Black Lake Budoir",
+      "description": "Overlooking the delightful Black Lake and the massive grounds of Hogwarts School, if it's mountainous views from the comfort of your own cosy four-poster bed you're after, look no further.",
       "cost": 25
     },
     {
       "id": 5,
-      "name": "Lufkin's Loft",
-      "description": "an extremely small room",
-      "cost": 35
+      "name": "Weasleby's Watercloset",
+      "description": "A home from home in a most magical bathroom. For the travelling ghost, ghoul, or spirit who feels most at comfortable when pottering about in the plumbing.",
+      "cost": 20
     },
     {
       "id": 6,
-      "name": "Black Lake Budoir",
-      "description": "an extremely small room",
+      "name": "Albus's Attic",
+      "description": "Named for one of the greatest Wizards ever known, Albus Dumbldore, this attic room is located on the top floor of the inn. Featuring original wooden beams with a large squashy bed, and in the name of Albus, heaps of style ",
       "cost": 25
     },
     {
       "id": 7,
-      "name": "Albus's Attic",
-      "description": "an extremely small room",
+      "name": "Ignotus's Inglenook",
+      "description": "The youngest of the three Peverell brothers mentioned in The Tale of the Three Brothers (The Tales of Beedle the Bard), Ignotus was described as the humblest and wisest of the siblings, surviving Death's cunning schemes using the last of the Deathly Hallows, the Cloak of Invisibility, quite cleverly. Pleasantly located  on the top floor in the eaves, one can dissapear to rest up most reasonably- all without the help of an Invisibilty Cloak. ",
       "cost": 25
     },
     {
       "id": 8,
       "name": "The Burbage Bedchamber",
-      "description": "an extremely small room",
-      "cost": 25
+      "description": "Charity Burbage was a British witch and the Professor of Muggle Studies at Hogwarts School of Witchcraft and Wizardry. She believed that Muggles were not so different from withces and wizards, and we agree with her. In honor of this philosphy adopted by us here at Three Broomsticks, we've named a most splendid room for her and dedicate it to every Muggle who passes through our doors.",
+      "cost": 18
     },
     {
       "id": 9,
-      "name": "Ignotus's Inglenook",
-      "description": "an extremely small room",
+      "name": "The Bagshot Boxroom",
+      "description": "This is an extremely small room. Delighted in solitude? This one is perfect for the for the refined solo traveler and won’t have you parting with all your galleons in one place. Note: use of undetectable extension charms to accommodate a party of larger than one in this room is strictly prohibited.",
+      "cost": 15
+    },
+    {
+      "id": 10,
+      "name": "Dippet's Dormitory",
+      "description": "Armando Dippet was once Headmaster of Hogwarts school and was the predecessor to Albus Dumbledore himself. With a charming view of the village high-street below, and the Hogwarts castle turrets peaking through the trees just across the way, this comfortable room has bundles of character inside and out.",
+      "cost": 25
+    },
+    {
+      "id": 11,
+      "name": "Lufkin's Landing",
+      "description": "Minister Artemisia Lufkin, a Hufflepuff student while attending Hogwarts, eventually became the first woman ever to serve as Minister for Magic for Great Britain. A lovely loft room with her namesake fully equpped with a stocked larder, woodstove, and a spacious bed you'll never want to leave.",
       "cost": 25
     }
   ],
@@ -99,21 +111,12 @@
     },
     {
       "userId": 1,
-      "roomId": 1,
-      "id": 3,
-      "checkInDate": "2019-12-19",
-      "checkOutDate": "2019-12-31",
+      "roomId": 2,
+      "id": 2,
+      "checkInDate": "2020-01-16",
+      "checkOutDate": "2020-01-17",
       "persons": "1",
-      "creatures": "1"
-    },
-    {
-      "userId": 1,
-      "roomId": 3,
-      "id": 4,
-      "checkInDate": "2020-01-08",
-      "checkOutDate": "2020-01-11",
-      "persons": "9",
-      "creatures": "1"
+      "creatures": "0"
     }
   ],
   "roomImages": [
@@ -125,32 +128,32 @@
     {
       "id": 2,
       "roomId": 2,
-      "path": "./BagshotBoxroom.png"
+      "path": "./LupinsLoft.png"
     },
     {
       "id": 3,
       "roomId": 3,
-      "path": "./WeaslebysWaterCloset.png"
+      "path": "./snuggery.jpeg"
     },
     {
       "id": 4,
       "roomId": 4,
-      "path": "./snuggery.jpeg"
+      "path": "./BlackLakeBudoir.png"
     },
     {
       "id": 5,
       "roomId": 5,
-      "path": "./LufkinsLoft.png"
+      "path": "./WeaslebysWaterCloset.png"
     },
     {
       "id": 6,
       "roomId": 6,
-      "path": "./BlackLakeBudoir.png"
+      "path": "./IgnotusInglenook.png"
     },
     {
       "id": 7,
       "roomId": 7,
-      "path": "./IgnotusInglenook.png"
+      "path": "./AlbusAttic.jpg"
     },
     {
       "id": 8,
@@ -160,39 +163,179 @@
     {
       "id": 9,
       "roomId": 9,
-      "path": "./AlbusAttic.jpg"
+      "path": "./BagshotBoxroom.png"
+    },
+    {
+      "id": 10,
+      "roomId": 10,
+      "path": "./LufkinsLanding3.png"
+    },
+    {
+      "id": 11,
+      "roomId": 11,
+      "path": "./DippetDorm.png"
     }
   ],
   "galleryImages": [
     {
       "id": 1,
-      "path": "./Hallway-large.png",
-      "imageAlt": ""
+      "path": "./Three Broomsticks dining area.jpeg",
+      "imageAlt": "Main dining hall and Pub"
     },
     {
       "id": 2,
-      "path": "./Hallway-large.png",
-      "imageAlt": ""
+      "path": "./Three Broomsticks interior.jpeg",
+      "imageAlt": "One of our many sets of stairs"
     },
     {
       "id": 3,
-      "path": "./Hallway-large.png",
-      "imageAlt": ""
+      "path": "./sittingRoom.png",
+      "imageAlt": "a common area"
     },
     {
       "id": 4,
-      "path": "./Hallway-large.png",
-      "imageAlt": ""
+      "path": "./Three Broomsticks dining.jpeg",
+      "imageAlt": "A smaller dining area"
     },
     {
       "id": 5,
       "path": "./Hallway-large.png",
-      "imageAlt": ""
+      "imageAlt": "One of our many corridors"
     },
     {
       "id": 6,
-      "path": "./Hallway-large.png",
-      "imageAlt": ""
+      "path": "./gardens.png",
+      "imageAlt": "Our on site herbs and vegetable gardens"
+    },
+    {
+      "id": 7,
+      "path": "./Cream Tea.jpeg",
+      "imageAlt": "Tea in our delightful garden"
+    },
+    {
+      "id": 8,
+      "path": "./greenhouse.png",
+      "imageAlt": "One of our on site greenhouses"
+    },
+    {
+      "id": 9,
+      "path": "./outside.jpeg",
+      "imageAlt": "Outside in our gardens"
+    },
+    {
+      "id": 10,
+      "path": "./Three Broomsticks Potting Shed.jpeg",
+      "imageAlt": "One of our potting sheds"
+    },
+    {
+      "id": 12,
+      "path": "./kitchenAgain.jpeg",
+      "imageAlt": "Kitchens"
+    },
+    {
+      "id": 13,
+      "path": "./pots.jpeg",
+      "imageAlt": "Kitchens"
+    },
+    {
+      "id": 14,
+      "path": "./kitchen view.png",
+      "imageAlt": "a glimpse outside from our kitchens"
+    },
+    {
+      "id": 15,
+      "path": "./boomsticksKitchen.jpeg",
+      "imageAlt": "Our on site herbs and vegetable gardens"
+    },
+    {
+      "id": 16,
+      "path": "./storeRoom.png",
+      "imageAlt": "Our on site herbs and vegetable gardens"
+    },
+    {
+      "id": 17,
+      "path": "./spa treatment room.png",
+      "imageAlt": "One of our spa treatment rooms"
+    },
+    {
+      "id": 18,
+      "path": "./insidePub.jpeg",
+      "imageAlt": "The Pub"
+    },
+    {
+      "id": 19,
+      "path": "./pub.jpeg",
+      "imageAlt": "The Pub"
+    },
+    {
+      "id": 20,
+      "path": "./sittingRoom.jpeg",
+      "imageAlt": "knooks and crannies"
+    },
+    {
+      "id": 21,
+      "path": "./Three Broomsticks fireplace.png",
+      "imageAlt": "The Pub"
+    },
+    {
+      "id": 22,
+      "path": "./cake.jpeg",
+      "imageAlt": "A cake at the Honesty Bar"
+    },
+    {
+      "id": 23,
+      "path": "./breakfast.jpeg",
+      "imageAlt": "Our food"
+    },
+    {
+      "id": 24,
+      "path": "./dining.jpeg",
+      "imageAlt": "A private dining room"
+    },
+    {
+      "id": 25,
+      "path": "./entry.jpeg",
+      "imageAlt": "One of the Entryways"
+    },
+    {
+      "id": 26,
+      "path": "./bathroom.jpeg",
+      "imageAlt": "A Bathroom"
+    },
+    {
+      "id": 27,
+      "path": "./anotherHall.jpeg",
+      "imageAlt": "A Hallway"
+    },
+    {
+      "id": 28,
+      "path": "./sitHere.jpeg",
+      "imageAlt": "One of our cosy seating areas"
+    },
+    {
+      "id": 29,
+      "path": "./anotherSittingRoom.jpeg",
+      "imageAlt": "The Pub"
+    },
+    {
+      "id": 30,
+      "path": "./cottages.png",
+      "imageAlt": "A view from the street"
+    },
+    {
+      "id": 31,
+      "path": "./grounds.png",
+      "imageAlt": "Surrounding grounds"
+    },
+    {
+      "id": 32,
+      "path": "./forbiddenForest.jpeg",
+      "imageAlt": "A view of the Shrieking Shack from The Forbidden Forest"
+    },
+    {
+      "id": 33,
+      "path": "./hogwarts-express.jpeg",
+      "imageAlt": "The Hogwarts Express"
     }
   ],
   "services": [
@@ -204,71 +347,47 @@
     },
     {
       "id": 2,
-      "name": "service 2",
-      "cost": 15,
-      "description": ""
+      "name": "Signature Spa Treatments",
+      "cost": 21,
+      "description": "Enjoy an herbal healing spa package for the ultimate respite. Independently ran entirely by a small staff of free House Elves who love their work, proceeds earned on spa treatments are donated towards the Promotion of Elfish Welfare."
     },
     {
       "id": 3,
-      "name": "service 3",
+      "name": "Wizarding Experience Tour of Hogwarts School",
       "cost": 15,
-      "description": ""
+      "description": "Exclusively provided through Three Broomsticks, our guests have a rare opportunity to see this legendary school through the eyes of the Wizarding World. Ticket cost will be validated on site for parents of alumni or cbildren currently accepted to Hogwarts School."
     },
     {
       "id": 4,
-      "name": "service 4",
-      "cost": 15,
-      "description": ""
+      "name": "Cupid's Congé",
+      "cost": 38,
+      "description": "Planning a special getaway for two? Leave it to us. With the Cupid's Confé package you'll find everything you need to tack on a bit of extra whimsy to your stay. Includes a bottle of French Champagne, premium cream cake pastries and sweets locally made, breakfast for 2 during your stay, and just for good measure, a bottle of Weasley's WonderWitch love potion."
     }
   ],
   "reservationServices": [
     {
-      "reservationId": "3",
-      "serviceId": 1,
-      "isSelected": true,
+      "reservationId": 2,
+      "serviceId": 2,
+      "isSelected": false,
+      "id": 1
+    },
+    {
+      "reservationId": 2,
+      "serviceId": 3,
+      "isSelected": false,
       "id": 2
     },
     {
-      "reservationId": "3",
-      "serviceId": 2,
-      "isSelected": true,
+      "reservationId": 2,
+      "serviceId": 1,
+      "isSelected": false,
       "id": 3
     },
     {
-      "reservationId": "3",
-      "serviceId": 3,
-      "isSelected": true,
+      "reservationId": 2,
+      "serviceId": 4,
+      "isSelected": false,
       "id": 4
-    },
-    {
-      "reservationId": "3",
-      "serviceId": 4,
-      "isSelected": true,
-      "id": 5
-    },
-    {
-      "reservationId": "4",
-      "serviceId": 1,
-      "isSelected": false,
-      "id": 6
-    },
-    {
-      "reservationId": "4",
-      "serviceId": 2,
-      "isSelected": false,
-      "id": 7
-    },
-    {
-      "reservationId": "4",
-      "serviceId": 4,
-      "isSelected": false,
-      "id": 8
-    },
-    {
-      "reservationId": "4",
-      "serviceId": 3,
-      "isSelected": false,
-      "id": 9
     }
   ]
 }

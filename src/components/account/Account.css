@@ -8,22 +8,29 @@
 .account-flex {
     display: flex;
     justify-content: space-around;
+    margin-top:80px;
 }
 
 .account-flex-item {
-    width:40% 
+    width:40% ;
+   
 }
 
 .logout-btn{
     width:230px;
     height: 70px;
-    margin-top: 75px;
+    margin-top: 45px;
   
 }
 
 
 .margin-line{
     padding-top:50px;
-    max-width: 30%;
-    height: 85%
+    max-width: 15%;
+    height: 85%;
+    padding-right:65px;
+}
+
+.welcome-account{
+    font-family:'IM Fell English SC';
 }

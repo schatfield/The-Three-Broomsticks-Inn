@@ -8,36 +8,68 @@ class NeighbourhoodInfo extends Component {
 
             <div className="neighbourhood-flex-container">
 
-                <div className="hogsmede-flex neighborhoud-flex-item">
+                <div className="neighborhoud-flex-item">
                     <div className="hogsmede-title-container">
-                        <img className="left-hand" src={require('./dark-leftHand.png')} alt=""></img>  
-                          <h4 className="hogsmede-title"> Hogsmede </h4>
+                        <img className="left-hand" src={require('./dark-leftHand.png')} alt=""></img>
+                        <h4 className="hogsmede-title"> Hogsmede </h4>
                     </div>
-                    <p className="hogsmede-desc">Welcome to Hogsmede Village, the only all-wizarding village in Britain. Founded over a thousand years ago by medieval wizard Hengist of Woodcroft as he was fleeing persecution by Muggles, The village is the site of many important historical happenings in the wizarding world often serving as a wizards’ headquarters during wartime’s.</p>
+                    <img className="village" src={require('./village.jpeg')} alt=""></img>
+                    <div className="hogsmede-desc">
+                        <p>Welcome to Hogsmede Village, the only all-wizarding village in Britain. Founded over a thousand years ago by medieval wizard Hengist of Woodcroft. The village became a safe haven thereafter for many wizards fleeing from muggle persecution and is the site of many important historical happenings in the Wizarding World.</p>
 
-                    <p className="hogsmede-desc">Hosgmede has something for everyone whatever your fancy. Whether you’re a history buff, seeking some pampering, or looking for the landscape to carve out a path to adventure , there is no shortage of local fun come  sunshine or classic highlands rain!</p>
+                        <p>Today the village is a close-knit and vibrant community reflecting it's wizarding residents. Hosgmede has something for everyone whatever your fancy. Whether you’re a hunting for history, looking for the landscape to carve out a path to adventure, or just plain ready to relax, there is no shortage of local fun come  sunshine or classic highlands rain!</p>
 
-                    <p className="hogsmede-desc">See our concierge at your leisure during your stay and we’ll make certain you find what you’re looking for. Don’t miss: We’re a short stroll from the legendary honeydukes sweet shop and the recently reopenedZonkos joke shop.  Many thanks to hogwarts alumni, George Weasley for swooping in and saving a local treasure. For the pub hoppers, there’s another local watering hole to frequent as well, the hogs head.</p>
+                        <p>See our concierge during your stay and we’ll make certain you find what you’re looking for. </p>
+
+                        <p>Don’t miss: We’re a short stroll from the legendary Honeydukes, a sweets shop, and the recently reopened Zonkos Joke Shop.  Many thanks to Hogwarts alumni, George Weasley for swooping in and saving a local treasure. For the pub hoppers, drop in to The Hogs Head, another local watering hole just a short walk away.</p>
+                    </div>
+
+                    <div className="getting-here-hogsmede">
+                        <div className="hogsmede-title-container">
+                            <img className="left-hand" src={require('./green-leftHand.png')} alt=""></img>
+                            <h4 className="getting-here-hogsmede-title">Getting Here</h4>
+
+                        </div>
+
+                        <p className="getting-here-desc">
+
+                            As a registered muggle you may now arrive via platform 9 3/4 at Kings Cross station. If you plan to arrive by muggle motor car, take please send us an owl ahead of your arrival and we will arrange for an invisibility booster to be set up in your vehicle prior to your visit. We are, At the heart of hogsmede , a true wizarding community and In an effort to preserve our unspoiled way of life, all motor cars must remain invisible for the duration of your stay. </p>
+
+
+                    </div>
+
                 </div>
 
                 <div className="margin">
                     <img className="margin-line" src={require('./margins.png')} alt=""></img>
                 </div>
 
-                <div className="hogwarts-flex neighborhoud-flex-item">
+                <div className="neighborhoud-flex-item">
                     <div className="hogwarts-title-container">
                         <h4>Hogwarts</h4>
                         <img className="right-hand" src={require('./dark-rightHand.png')} alt=""></img>
                     </div>
 
-                    <p className="hogwarts-desc"> Just a stone’s skim from the village of Hogsmede, Hogwarts School of Witchcraft and Wizardry is the British wizarding school located right here in the Scottish Highlands. Founded in the 10th century, It accepts magical students from Great Britain and Ireland for enrolment. The precise location of the school can never be uncovered because it was rendered Unplottable. To Muggles, the school generally looks like an old abandoned castle to protect the students and institution from any harm. however as a muggle patron of three broomsticks, the unplottable charm can be temporality lifted during private tours of the school exclusively available through your stay with us!</p>
+                    <img className="hogwarts-img" src={require('./hogwarts.jpeg')} alt=""></img>
 
+                    <div className="hogwarts-desc">
+                        <p> Just a stone’s skim from the village of Hogsmede, Hogwarts School of Witchcraft and Wizardry is a school of magic located right here in the Scottish Highlands. Founded in the 10th century, it accepts magical students from Great Britain and Ireland. The precise location of the school can never be uncovered because it was rendered Unplottable.</p>
+                            
+                        <p>To Muggles, the school generally looks like an old abandoned castle to protect the students and institution from any harm. As of tbis year, the Unplottable Charm can be temporality lifted during private tours of the school exclusively available through your stay with us!</p>
 
-                    <p className="hogwarts-desc"> Home to some of the most historical moments in wizarding history, 142 moving staircases, a professional grade Quidditch pitch,  extensive grounds and greenhouses, a loch called the Black Lake, as well as an insight owlery, which houses all the owls owned by the school, Hogwarts is considered to be one of the finest magical institutions in the Wizarding World.</p>
+                        <p> Home to some of the most historical moments in Wizarding history, Hogwarts is considered to be one of the finest magical institutions in the Wizarding World.</p>
 
+                        <p>Don't miss: Tour the school to see centuries' old architecture, 142 moving staircases, the Headmaster's office, and send a postcard home via an onsight owlery housing all the owls owned by the school. The extensive grounds of the school are home to many gardens, a professional grade Quidditch pitch, the Black Lake, and the entrance to The Forbidden Forest, an enchanted wood full of magical creatures.  </p>
+                    </div>
+                    <div className="getting-there-hogwarts">
+                        <div className="hogwarts-title-container">
+                            <h4 className="getting-there-hogwarts-title">Getting There</h4>
+                            <img className="right-hand" src={require('./green-rightHand.png')} alt=""></img>
+                        </div>
+                        <p className="getting-there-desc">
 
-                    <p className="hogwarts-desc">Due to the high levels of magic, Muggle substitutes for magic, such as computers, radar and electricity, "go haywire" around Hogwarts. Radios, however, are an exception as they are not powered by electricity, but by magic.</p>
-
+                            Hogwarts school can be easily accessed by footpath from Hogsmede Village. For those with mobility issues, we can arrange transfer to and from the school via the Hogwarts carriages.  As a muggle patron of Three Broomsticks, please note that  we offer an exclusive Wizarding experience tour of hogwarts school and grounds which can be purchased online during your reservation request or at the booking office we have on site following your arrival.  </p>
+                    </div>
                 </div>
             </div>
 

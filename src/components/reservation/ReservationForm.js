@@ -140,6 +140,7 @@ class ReservationForm extends Component {
                             <p className="number"> <label htmlFor="persons">Number of persons </label>
                             </p>
                             <input
+                                className="persons"
                                 type="text"
                                 required
                                 onChange={this.handleFieldChange}
@@ -149,6 +150,7 @@ class ReservationForm extends Component {
 
                             <p className="number"> <label htmlFor="creatures">Number of creatures  </label></p>
                             <input
+                                className="creatures"
                                 type="text"
                                 required
                                 onChange={this.handleFieldChange}
@@ -160,7 +162,7 @@ class ReservationForm extends Component {
 
                             <div className="services"> {this.state.services.map((service, index) =>
                                 <label key={service.id}>
-                                    <input className="checkmark" type="checkbox"
+                                    <input type="checkbox"
                                         checked={service.isSelected}
                                         onChange={(evt) => this.handleCheckbox(evt, index)}
                                         id={service.id}

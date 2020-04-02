@@ -47,7 +47,7 @@
     {
       "id": 3,
       "name": "The Smethwyck Snuggery",
-      "description": "Elliot Smethwyck invented the Cushioning Charm in 1820. Because of this, he has been credited with making broomstick travel more comfortable, and for this we thank him. We can't, however, thank him for making this room more comfortable, but this mid-sized, characterful room overlooking our gardens is sure to credit us with how to make any guest in it most, well, sung, if you will.",
+      "description": "Elliot Smethwyck invented the Cushioning Charm in 1820. Because of this, he has been credited with making broomstick travel more comfortable, and for this we thank him. We can't, however, thank him for making this room more comfortable, but this mid-sized, characterful room overlooking our gardens is sure to credit us with how to make any guest in it most, well, snug.",
       "cost": 25
     },
     {
@@ -108,15 +108,6 @@
       "checkOutDate": "2019-12-27",
       "persons": "9",
       "creatures": "19"
-    },
-    {
-      "userId": 1,
-      "roomId": 2,
-      "id": 2,
-      "checkInDate": "2020-01-16",
-      "checkOutDate": "2020-01-17",
-      "persons": "1",
-      "creatures": "0"
     }
   ],
   "roomImages": [
@@ -364,30 +355,5 @@
       "description": "Planning a special getaway for two? Leave it to us. With the Cupid's Confé package you'll find everything you need to tack on a bit of extra whimsy to your stay. Includes a bottle of French Champagne, premium cream cake pastries and sweets locally made, breakfast for 2 during your stay, and just for good measure, a bottle of Weasley's WonderWitch love potion."
     }
   ],
-  "reservationServices": [
-    {
-      "reservationId": 2,
-      "serviceId": 2,
-      "isSelected": false,
-      "id": 1
-    },
-    {
-      "reservationId": 2,
-      "serviceId": 3,
-      "isSelected": false,
-      "id": 2
-    },
-    {
-      "reservationId": 2,
-      "serviceId": 1,
-      "isSelected": false,
-      "id": 3
-    },
-    {
-      "reservationId": 2,
-      "serviceId": 4,
-      "isSelected": false,
-      "id": 4
-    }
-  ]
+  "reservationServices": []
 }

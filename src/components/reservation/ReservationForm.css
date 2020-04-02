@@ -56,9 +56,14 @@
   
 }
 
-
-
+.creatures{
+    width:130px;
+}
   
-.container input:checked ~ .checkmark {
-    background-color:white;
-  }
+.persons{
+    width:130px;
+}
+  
+/* input{
+    width:130px;
+} */

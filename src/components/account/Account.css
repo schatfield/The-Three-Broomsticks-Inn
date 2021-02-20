@@ -25,11 +25,11 @@
 
 
 .margin-line{
-    display: flex;
-    margin-top:-250px;
-    max-width: 25%;
-    height: 200%;
-    justify-content: space-around;
+    padding-right:120px;
+    margin-top:-320px;
+    max-width: 15%;
+    height: 100%;
+    
     
 }
 

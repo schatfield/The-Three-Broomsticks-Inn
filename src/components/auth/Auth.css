@@ -67,6 +67,10 @@ a {
 }
 
 .margin-line{
-    display:flex;
-    justify-content: space-evenly;
+    padding-right:110px;
+    margin-top:-320px;
+    max-width: 20%;
+    height: 100%;
+    
+    
 }

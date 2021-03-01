@@ -1,4 +1,4 @@
-const remoteURL = "http://localhost:5002";
+const remoteURL = "https://broomsticks-json.herokuapp.com";
 
 export default {
   get(reservationId) {

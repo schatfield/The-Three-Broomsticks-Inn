@@ -133,7 +133,7 @@
     {
       "id": 3,
       "roomId": 3,
-      "path": "./snuggery.jpeg"
+      "path": "./snuggery.png"
     },
     {
       "id": 4,
@@ -153,7 +153,7 @@
     {
       "id": 7,
       "roomId": 7,
-      "path": "./AlbusAttic.jpg"
+      "path": "./AlbusAttic.png"
     },
     {
       "id": 8,
@@ -179,12 +179,12 @@
   "galleryImages": [
     {
       "id": 1,
-      "path": "./Three Broomsticks dining area.jpeg",
+      "path": "./Three Broomsticks dining area.png",
       "imageAlt": "Main dining hall and Pub"
     },
     {
       "id": 2,
-      "path": "./Three Broomsticks interior.jpeg",
+      "path": "./Three Broomsticks interior.png",
       "imageAlt": "One of our many sets of stairs"
     },
     {
@@ -194,7 +194,7 @@
     },
     {
       "id": 4,
-      "path": "./Three Broomsticks dining.jpeg",
+      "path": "./Three Broomsticks dining.png",
       "imageAlt": "A smaller dining area"
     },
     {
@@ -209,7 +209,7 @@
     },
     {
       "id": 7,
-      "path": "./Cream Tea.jpeg",
+      "path": "./Cream Tea.png",
       "imageAlt": "Tea in our delightful garden"
     },
     {
@@ -219,22 +219,22 @@
     },
     {
       "id": 9,
-      "path": "./outside.jpeg",
+      "path": "./outside.png",
       "imageAlt": "Outside in our gardens"
     },
     {
       "id": 10,
-      "path": "./Three Broomsticks Potting Shed.jpeg",
+      "path": "./Three Broomsticks Potting Shed.png",
       "imageAlt": "One of our potting sheds"
     },
     {
       "id": 12,
-      "path": "./kitchenAgain.jpeg",
+      "path": "./kitchenAgain.png",
       "imageAlt": "Kitchens"
     },
     {
       "id": 13,
-      "path": "./pots.jpeg",
+      "path": "./pots.png",
       "imageAlt": "Kitchens"
     },
     {
@@ -244,7 +244,7 @@
     },
     {
       "id": 15,
-      "path": "./boomsticksKitchen.jpeg",
+      "path": "./boomsticksKitchen.png",
       "imageAlt": "Our on site herbs and vegetable gardens"
     },
     {
@@ -259,17 +259,17 @@
     },
     {
       "id": 18,
-      "path": "./insidePub.jpeg",
+      "path": "./insidePub.png",
       "imageAlt": "The Pub"
     },
     {
       "id": 19,
-      "path": "./pub.jpeg",
+      "path": "./pub.png",
       "imageAlt": "The Pub"
     },
     {
       "id": 20,
-      "path": "./sittingRoom.jpeg",
+      "path": "./sittingRoom.png",
       "imageAlt": "knooks and crannies"
     },
     {
@@ -279,42 +279,42 @@
     },
     {
       "id": 22,
-      "path": "./cake.jpeg",
+      "path": "./cake.png",
       "imageAlt": "A cake at the Honesty Bar"
     },
     {
       "id": 23,
-      "path": "./breakfast.jpeg",
+      "path": "./breakfast.png",
       "imageAlt": "Our food"
     },
     {
       "id": 24,
-      "path": "./dining.jpeg",
+      "path": "./dining.png",
       "imageAlt": "A private dining room"
     },
     {
       "id": 25,
-      "path": "./entry.jpeg",
+      "path": "./entry.png",
       "imageAlt": "One of the Entryways"
     },
     {
       "id": 26,
-      "path": "./bathroom.jpeg",
+      "path": "./bathroom.png",
       "imageAlt": "A Bathroom"
     },
     {
       "id": 27,
-      "path": "./anotherHall.jpeg",
+      "path": "./anotherHall.png",
       "imageAlt": "A Hallway"
     },
     {
       "id": 28,
-      "path": "./sitHere.jpeg",
+      "path": "./sitHere.png",
       "imageAlt": "One of our cosy seating areas"
     },
     {
       "id": 29,
-      "path": "./anotherSittingRoom.jpeg",
+      "path": "./anotherSittingRoom.png",
       "imageAlt": "The Pub"
     },
     {
@@ -329,12 +329,12 @@
     },
     {
       "id": 32,
-      "path": "./forbiddenForest.jpeg",
+      "path": "./forbiddenForest.png",
       "imageAlt": "A view of the Shrieking Shack from The Forbidden Forest"
     },
     {
       "id": 33,
-      "path": "./hogwarts-express.jpeg",
+      "path": "./hogwarts-express.png",
       "imageAlt": "The Hogwarts Express"
     }
   ],

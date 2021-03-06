@@ -1,46 +1,57 @@
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    height: 700px;
-}
 
-.home-flex-container{
+
+/* .home-flex-container {
     display:flex;
     justify-content: space-around;
     
-}
+} */
 
-.swept-away-flex-item {
-    /* display:flex;
-    justify-content: space-around; */
-    max-width: 50%;
-    height:600px;
-    margin-right: 0px;
-    margin-left: 200px;
-}
  
-.welcome-flex-item{ 
-    padding-top: 65px;
-    padding-right: 200px;
-    padding-left: 150px;
-    text-align: justify;
-    font-family: 'IM Fell English SC'
-   
+.welcome-flex-container { 
+    display: flex;
+    /* flex-wrap: wrap;   */
+    justify-content: space-between;  
+    margin: 0 auto;
+    width: 70%;   
 }
 
-.welcome-title{
+
+.welcome-item1 {
+    flex: 1 40 300px;
+    height: 500px;
+
+}
+
+.welcome-item2 {
+    padding-left: 10%;
+    flex: 1 2 494px;
+    height: 500px;
+}
+
+
+.welcome-message {
+    width:50%;
+    height: 400px;
+}
+
+.welcome-title {
     font-family: 'IM Fell English SC';
-
- 
 }
 
-#logo {
+
+.hero-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 700px;
+}
+
+#hero {
     margin-top: 175px;
 }
 
-.welcome{
+.welcome {
     height: 500px;
     width:525px;
     

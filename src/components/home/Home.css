@@ -2,8 +2,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
-    height: 700px;
 }
 
 .home-flex-container{
@@ -12,21 +10,11 @@ img {
     
 }
 
-.swept-away-flex-item {
-    /* display:flex;
-    justify-content: space-around; */
-    max-width: 50%;
-    height:600px;
-    margin-right: 0px;
-    margin-left: 200px;
-}
  
-.welcome-flex-item{ 
-    padding-top: 65px;
-    padding-right: 200px;
-    padding-left: 150px;
-    text-align: justify;
-    font-family: 'IM Fell English SC'
+.welcome-flex-container { 
+    display: flex;
+    flex-wrap: wrap;
+
    
 }
 
@@ -36,7 +24,12 @@ img {
  
 }
 
-#logo {
+.hero-image{
+    width: 75%;
+    height: 700px;
+}
+
+#hero {
     margin-top: 175px;
 }
 

@@ -12,7 +12,7 @@
     /* flex-wrap: wrap;   */
     justify-content: space-between;  
     margin: 0 auto;
-    width: 70%;   
+    width: 67%;   
 }
 
 
@@ -43,12 +43,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 67%;
     height: 700px;
 }
 
 #hero {
     margin-top: 175px;
+    margin-bottom: 50px;
 }
 
 .welcome {
